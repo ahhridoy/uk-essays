@@ -2,6 +2,13 @@
   text-align: center;
 }
 
+.a {
+  fill: #fff;
+}
+.b {
+  fill: #FE5F00;
+}
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;
