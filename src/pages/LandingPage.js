@@ -225,39 +225,97 @@ const LandingPage = () => {
       </section>
 
       <section id="why-we-are">
-         <Container className="py-5">
-            <h1 className="my-4">Find out why we are the best</h1>
-            <Row>
-               <Col md={6} xs={12}>
-                  <h3>The World's Best Writers</h3>
-                  <p>Unlike other essay writing companies, we don't just use any writers – we use the best of the best. Every writer is not only directly qualified in the subject they write for, but has been through and understands the challenges and difficulties of Higher Education. Every writer is hand selected by our team to produce the best piece of work possible. We simply won't settle for less.</p>
-               </Col>
-               <Col md={6} xs={12}>
-                  <h3>Loved by Customers</h3>
-                  <p>UKEssays have lots of press coverage from all over the world confirming that we deliver what we promise, and our customers regularly leave verified reviews describing their experience. Delivering what we promise means we get great feedback!</p>
-               </Col>
-               <Col md={6} xs={12}>
-                  <h3>Outstanding Customer Support</h3>
-                  <p>At UKEssays, every part of your experience is special. From start to finish, we provide continuous support with our friendly and helpful customer experience team. We'll not only help you with placing your order, but help you get the most out of your investment – making you a better learner and a stronger academic.</p>
-               </Col>
-               <Col md={6} xs={12}>
-                  <h3>18 Years in Business</h3>
-                  <p>Ever since we started back in 2003, we've led the industry from the front, setting trends and smashing expectations. We were the first company in the world to offer you guaranteed 2:1 and 1st class work and we're one of the few companies located in the UK. Why don't you come and say hello?</p>
-               </Col>
-            </Row>
-            <Button variant="danger" className="my-4">
+        <Container className="py-5">
+          <h1 className="my-4">Find out why we are the best</h1>
+          <Row>
+            <Col md={6} xs={12}>
+              <h3>The World's Best Writers</h3>
+              <p>
+                Unlike other essay writing companies, we don't just use any
+                writers – we use the best of the best. Every writer is not only
+                directly qualified in the subject they write for, but has been
+                through and understands the challenges and difficulties of
+                Higher Education. Every writer is hand selected by our team to
+                produce the best piece of work possible. We simply won't settle
+                for less.
+              </p>
+            </Col>
+            <Col md={6} xs={12}>
+              <h3>Loved by Customers</h3>
+              <p>
+                UKEssays have lots of press coverage from all over the world
+                confirming that we deliver what we promise, and our customers
+                regularly leave verified reviews describing their experience.
+                Delivering what we promise means we get great feedback!
+              </p>
+            </Col>
+            <Col md={6} xs={12}>
+              <h3>Outstanding Customer Support</h3>
+              <p>
+                At UKEssays, every part of your experience is special. From
+                start to finish, we provide continuous support with our friendly
+                and helpful customer experience team. We'll not only help you
+                with placing your order, but help you get the most out of your
+                investment – making you a better learner and a stronger
+                academic.
+              </p>
+            </Col>
+            <Col md={6} xs={12}>
+              <h3>18 Years in Business</h3>
+              <p>
+                Ever since we started back in 2003, we've led the industry from
+                the front, setting trends and smashing expectations. We were the
+                first company in the world to offer you guaranteed 2:1 and 1st
+                class work and we're one of the few companies located in the UK.
+                Why don't you come and say hello?
+              </p>
+            </Col>
+          </Row>
+          <Button variant="danger" className="my-4">
             Read about our services >
           </Button>
-         </Container>
+        </Container>
       </section>
 
       <section id="order-now">
-         <Container className="py-5 text-light">
-            <h1>Order an Essay Today!</h1>
-            <p>We have over 500 expert essay writers, ready and waiting to help you achieve academic success</p>
-            <Button variant="dark" className="mx-4">Order an Essay</Button>
-            <Button variant="light">Check Prices</Button>
-         </Container>
+        <Container className="py-5 text-light">
+          <h1>Order an Essay Today!</h1>
+          <p>
+            We have over 500 expert essay writers, ready and waiting to help you
+            achieve academic success
+          </p>
+          <Button variant="dark" className="mx-4">
+            Order an Essay
+          </Button>
+          <Button variant="light">Check Prices</Button>
+        </Container>
+      </section>
+
+      <section id="reviews">
+        <Container className="py-5">
+          <Row>
+            <Col md={6} xs={12} className="text-start">
+              <h1>Customer Reviews</h1>
+              <p>Overall rating</p>
+              <span className="fs-1">4.4 </span>{" "}
+              <span className="fs-3"> / 5</span>
+              <p>1721 Reviews</p>
+              <p>
+                All reviews are supplied by verified UK Essays customers via the
+                trusted and independent online review site, Reviews.io.
+              </p>
+            </Col>
+            <Col md={6} xs={12} className="text-start review-sec">
+              <h1>Reviews.io</h1>
+              <p>Reviewed on 12/12/2019</p>
+              <p>1721 Reviews</p>
+              <b>
+              “I would highly recommend this service as it is an excellent service that assists students of different levels in their thinking and analysis of their work. the service is delivered to a high quality and everyone is keen to help and go the extra mile.”
+              </b>
+              <p>Yasmin D</p>
+            </Col>
+          </Row>
+        </Container>
       </section>
     </main>
   );
