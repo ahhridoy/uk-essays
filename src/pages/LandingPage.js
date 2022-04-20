@@ -12,13 +12,13 @@ const LandingPage = () => {
 
       {/* hero */}
       <section id="hero">
-        <Container>
+        <Container className="py-5">
           <div>
             <h1>UK Essays</h1>
             <p>Trusted by thousands of students since 2003</p>
           </div>
           <Row>
-            <Col md={4}>
+            <Col md={4} xs={12}>
               <div className="bg-dark text-light p-3 rounded ">
                 <h1>Order Today</h1>
                 <p>1721 reviews</p>
@@ -30,7 +30,7 @@ const LandingPage = () => {
                 <Button variant="success">Place an order</Button>
               </div>
             </Col>
-            <Col md={8}>
+            <Col md={8} xs={12}>
               <div className="bg-dark text-light p-3 rounded text-end">
                 <h1>Our Services</h1>
                 <p>Find out how </p> <b>UKEssays can help YOU</b>
@@ -43,7 +43,7 @@ const LandingPage = () => {
                 <a href="#">View our service portfolio</a>
               </div>
             </Col>
-            <Col md={4}>
+            <Col md={4} xs={12}>
               <div className="bg-dark text-light p-3 rounded text-end">
                 <h1>Press Coverage</h1>
                 <p> BBC </p>
@@ -54,7 +54,7 @@ const LandingPage = () => {
                 <a href="#">Read more</a>
               </div>
             </Col>
-            <Col md={4}>
+            <Col md={4} xs={12}>
               <div className="bg-dark text-light p-3 rounded text-end">
                 <h1>Service Samples</h1>
                 <p>
@@ -65,18 +65,199 @@ const LandingPage = () => {
                 <a href="#">View samples</a>
               </div>
             </Col>
-            <Col md={4}>
+            <Col md={4} xs={12}>
               <div className="bg-dark text-light p-3 rounded text-end">
                 <h1>Essay Writing</h1>
                 <b>Leading</b> <p> UK Based Provider</p>
                 <p>
-                Our essay writing service can help you make the most of your university studies.
+                  Our essay writing service can help you make the most of your
+                  university studies.
                 </p>
                 <a href="#">Essay Services</a>
               </div>
             </Col>
           </Row>
         </Container>
+      </section>
+
+      <section id="services">
+        <Container>
+          <Row>
+            <Col></Col>
+          </Row>
+        </Container>
+      </section>
+
+      <section id="examples">
+        <Container className="py-5">
+          <h1 className="heading">Example Essays</h1>
+          <p className="sub-text">
+            We have over 100,000 free essays available to help you with your
+            studies!
+          </p>
+          <p>
+            Each of these essays was written by a student who submitted their
+            work to our database to help other students working on similar
+            assignments. Some of our most popular subject areas are linked
+            below:
+          </p>
+          <h1>Popular Subject Areas</h1>
+          <Row>
+            <Col md={4} xs={12}>
+              <div className="text-start text-none">
+                <p>
+                  <a href="#">Biology</a>
+                </p>
+                <p>
+                  <a href="#">Business</a>
+                </p>
+                <p>
+                  <a href="#">Economics</a>
+                </p>
+                <p>
+                  <a href="#">Education</a>
+                </p>
+                <p>
+                  <a href="#">English Language</a>
+                </p>
+                <p>
+                  <a href="#">English Literature</a>
+                </p>
+              </div>
+            </Col>
+            <Col md={4} xs={12}>
+              <div className="text-start">
+                <p>
+                  <a href="#">Environmental Sciences </a>
+                </p>
+                <p>
+                  <a href="#">Finance</a>
+                </p>
+                <p>
+                  <a href="#">Health & Social Care </a>
+                </p>
+                <p>
+                  <a href="#">Information Technology</a>
+                </p>
+                <p>
+                  <a href="#">Law </a>
+                </p>
+                <p>
+                  <a href="#">Management</a>
+                </p>
+              </div>
+            </Col>
+            <Col md={4} xs={12}>
+              <div className="text-start">
+                <p>
+                  <a href="#">Marketing</a>
+                </p>
+                <p>
+                  <a href="#">Nursing</a>
+                </p>
+                <p>
+                  <a href="#">Psychology</a>
+                </p>
+                <p>
+                  <a href="#">Sciences</a>
+                </p>
+                <p>
+                  <a href="#">Sociology</a>
+                </p>
+                <p>
+                  <a href="#">Teaching</a>
+                </p>
+              </div>
+            </Col>
+          </Row>
+
+          <Button variant="danger" className="mx-4">
+            All Essays >
+          </Button>
+          <Button variant="primary">Latest Article Updates > </Button>
+        </Container>
+      </section>
+
+      <section id="promises">
+        <Container className="py-5">
+          <h1 className="my-4">
+            UKEssays <span className="text-success">promises</span> you:
+          </h1>
+          <Row>
+            <Col md={3} xs={12}>
+              <h3>Plagiarism-free</h3>
+              <p>
+                If the work we produce contains plagiarism we'll pay out a
+                £5,000 guarantee.
+              </p>
+            </Col>
+            <Col md={3} xs={12}>
+              <h3>Always on Time</h3>
+              <p>If we are a minute late, the work is on us - it's free!</p>
+            </Col>
+            <Col md={3} xs={12}>
+              <h3>Written to Standard</h3>
+              <p>
+                All of our assignments go through a stringent quality checking
+                process from start to finish.
+              </p>
+            </Col>
+            <Col md={3} xs={12}>
+              <h3>Quality</h3>
+              <p>
+                Providing quality work is core to our beliefs, which is why we
+                will strive to give you exactly that, and more!
+              </p>
+            </Col>
+          </Row>
+          <Button variant="success" className="my-4">
+            Latest Article Updates >
+          </Button>
+        </Container>
+      </section>
+
+      <section id="policy">
+        <Container>
+          <Row>
+            <Col></Col>
+          </Row>
+        </Container>
+      </section>
+
+      <section id="why-we-are">
+         <Container className="py-5">
+            <h1 className="my-4">Find out why we are the best</h1>
+            <Row>
+               <Col md={6} xs={12}>
+                  <h3>The World's Best Writers</h3>
+                  <p>Unlike other essay writing companies, we don't just use any writers – we use the best of the best. Every writer is not only directly qualified in the subject they write for, but has been through and understands the challenges and difficulties of Higher Education. Every writer is hand selected by our team to produce the best piece of work possible. We simply won't settle for less.</p>
+               </Col>
+               <Col md={6} xs={12}>
+                  <h3>Loved by Customers</h3>
+                  <p>UKEssays have lots of press coverage from all over the world confirming that we deliver what we promise, and our customers regularly leave verified reviews describing their experience. Delivering what we promise means we get great feedback!</p>
+               </Col>
+               <Col md={6} xs={12}>
+                  <h3>Outstanding Customer Support</h3>
+                  <p>At UKEssays, every part of your experience is special. From start to finish, we provide continuous support with our friendly and helpful customer experience team. We'll not only help you with placing your order, but help you get the most out of your investment – making you a better learner and a stronger academic.</p>
+               </Col>
+               <Col md={6} xs={12}>
+                  <h3>18 Years in Business</h3>
+                  <p>Ever since we started back in 2003, we've led the industry from the front, setting trends and smashing expectations. We were the first company in the world to offer you guaranteed 2:1 and 1st class work and we're one of the few companies located in the UK. Why don't you come and say hello?</p>
+               </Col>
+            </Row>
+            <Button variant="danger" className="my-4">
+            Read about our services >
+          </Button>
+         </Container>
+      </section>
+
+      <section id="order-now">
+         <Container className="py-5 text-light">
+            <h1>Order an Essay Today!</h1>
+            <p>We have over 500 expert essay writers, ready and waiting to help you achieve academic success</p>
+            <Button variant="dark" className="mx-4">Order an Essay</Button>
+            <Button variant="light">Check Prices</Button>
+         </Container>
       </section>
     </main>
   );
