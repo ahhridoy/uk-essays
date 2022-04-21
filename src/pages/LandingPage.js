@@ -107,66 +107,66 @@ const LandingPage = () => {
             <Col md={4} xs={12}>
               <div className="text-start text-none">
                 <p>
-                  <a href="#">Biology</a>
+                  <a href="#">Biology ></a>
                 </p>
                 <p>
-                  <a href="#">Business</a>
+                  <a href="#">Business ></a>
                 </p>
                 <p>
-                  <a href="#">Economics</a>
+                  <a href="#">Economics ></a>
                 </p>
                 <p>
-                  <a href="#">Education</a>
+                  <a href="#">Education ></a>
                 </p>
                 <p>
-                  <a href="#">English Language</a>
+                  <a href="#">English Language ></a>
                 </p>
                 <p>
-                  <a href="#">English Literature</a>
-                </p>
-              </div>
-            </Col>
-            <Col md={4} xs={12}>
-              <div className="text-start">
-                <p>
-                  <a href="#">Environmental Sciences </a>
-                </p>
-                <p>
-                  <a href="#">Finance</a>
-                </p>
-                <p>
-                  <a href="#">Health & Social Care </a>
-                </p>
-                <p>
-                  <a href="#">Information Technology</a>
-                </p>
-                <p>
-                  <a href="#">Law </a>
-                </p>
-                <p>
-                  <a href="#">Management</a>
+                  <a href="#">English Literature ></a>
                 </p>
               </div>
             </Col>
             <Col md={4} xs={12}>
               <div className="text-start">
                 <p>
-                  <a href="#">Marketing</a>
+                  <a href="#">Environmental Sciences ></a>
                 </p>
                 <p>
-                  <a href="#">Nursing</a>
+                  <a href="#">Finance ></a>
                 </p>
                 <p>
-                  <a href="#">Psychology</a>
+                  <a href="#">Health & Social Care ></a>
                 </p>
                 <p>
-                  <a href="#">Sciences</a>
+                  <a href="#">Information Technology ></a>
                 </p>
                 <p>
-                  <a href="#">Sociology</a>
+                  <a href="#">Law ></a>
                 </p>
                 <p>
-                  <a href="#">Teaching</a>
+                  <a href="#">Management ></a>
+                </p>
+              </div>
+            </Col>
+            <Col md={4} xs={12}>
+              <div className="text-start">
+                <p>
+                  <a href="#">Marketing ></a>
+                </p>
+                <p>
+                  <a href="#">Nursing ></a>
+                </p>
+                <p>
+                  <a href="#">Psychology ></a>
+                </p>
+                <p>
+                  <a href="#">Sciences ></a>
+                </p>
+                <p>
+                  <a href="#">Sociology ></a>
+                </p>
+                <p>
+                  <a href="#">Teaching ></a>
                 </p>
               </div>
             </Col>
@@ -218,9 +218,17 @@ const LandingPage = () => {
       </section>
 
       <section id="policy">
-        <Container>
+        <Container className="py-5 text-light">
           <Row>
-            <Col></Col>
+            <Col md={6}>
+              <h2>Our Fair Use Policy</h2>
+              <p>
+                Understanding how to use your essay is key to gaining the most
+                from your experience with us. Watch now to learn how:
+              </p>
+              <Button variant="warning">Our Fair Use Policy ></Button>
+            </Col>
+            <Col md={6}>Video</Col>
           </Row>
         </Container>
       </section>
