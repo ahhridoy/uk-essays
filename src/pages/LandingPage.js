@@ -1,5 +1,6 @@
 import React from "react";
 import { Button, Col, Container, Row } from "react-bootstrap";
+import Footer from "../components/Footer";
 import Header from "../components/Header";
 import "../styles/pages/_landing.scss";
 
@@ -310,12 +311,20 @@ const LandingPage = () => {
               <p>Reviewed on 12/12/2019</p>
               <p>1721 Reviews</p>
               <b>
-              “I would highly recommend this service as it is an excellent service that assists students of different levels in their thinking and analysis of their work. the service is delivered to a high quality and everyone is keen to help and go the extra mile.”
+                “I would highly recommend this service as it is an excellent
+                service that assists students of different levels in their
+                thinking and analysis of their work. the service is delivered to
+                a high quality and everyone is keen to help and go the extra
+                mile.”
               </b>
               <p>Yasmin D</p>
             </Col>
           </Row>
         </Container>
+      </section>
+
+      <section>
+        <Footer />
       </section>
     </main>
   );

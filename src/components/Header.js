@@ -1,4 +1,3 @@
-// import { Button } from "bootstrap";
 import React from "react";
 import {
   Button,
@@ -7,7 +6,6 @@ import {
   FormControl,
   Nav,
   Navbar,
-  NavDropdown,
 } from "react-bootstrap";
 
 const Header = () => {
