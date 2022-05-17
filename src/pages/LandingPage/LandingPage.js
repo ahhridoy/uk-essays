@@ -1,16 +1,10 @@
 import React from "react";
 import { Button, Col, Container, Row } from "react-bootstrap";
-import Footer from "../components/Footer";
-import Header from "../components/Header";
-import "../styles/pages/_landing.scss";
+import "../../styles/pages/_landing.scss";
 
 const LandingPage = () => {
   return (
     <main>
-      <section>
-        <Header />
-      </section>
-
       {/* hero */}
       <section id="hero">
         <Container className="py-5">
@@ -329,10 +323,6 @@ const LandingPage = () => {
             </Col>
           </Row>
         </Container>
-      </section>
-
-      <section>
-        <Footer />
       </section>
     </main>
   );

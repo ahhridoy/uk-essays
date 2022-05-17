@@ -7,6 +7,7 @@ import {
   Nav,
   Navbar,
 } from "react-bootstrap";
+import { Link } from "react-router-dom";
 
 const Header = () => {
   return (
@@ -17,10 +18,10 @@ const Header = () => {
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
           <Navbar.Collapse id="responsive-navbar-nav">
             <Nav className="ms-auto">
-              <Nav.Link href="#features">Offers</Nav.Link>
-              <Nav.Link href="#pricing">Support</Nav.Link>
-              <Nav.Link href="#pricing">Notification</Nav.Link>
-              <Nav.Link href="#pricing">Sign In</Nav.Link>
+              <Nav.Link as={Link} to="/features" eventKey="/">Offers</Nav.Link>
+              <Nav.Link as={Link} to="/pricing" eventKey="/">Support</Nav.Link>
+              <Nav.Link as={Link} to="/pricing" eventKey="/">Notification</Nav.Link>
+              <Nav.Link as={Link} to="/pricing" eventKey="/">Sign In</Nav.Link>
               <Form className="d-flex">
                 <Button variant="outline-warning">Search</Button>
                 <FormControl
@@ -39,14 +40,14 @@ const Header = () => {
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
           <Navbar.Collapse id="responsive-navbar-nav">
             <Nav className="me-auto">
-              <Nav.Link href="#home">UK Essays</Nav.Link>
-              <Nav.Link href="#features">Services</Nav.Link>
-              <Nav.Link href="#pricing">How It Works</Nav.Link>
-              <Nav.Link href="#pricing">Offers</Nav.Link>
-              <Nav.Link href="#pricing">Samples</Nav.Link>
-              <Nav.Link href="#pricing">Reviews</Nav.Link>
-              <Nav.Link href="#pricing">About Us</Nav.Link>
-              <Nav.Link href="#pricing">Free Resources</Nav.Link>
+              <Nav.Link as={Link} to="/home"     eventKey="/home">    UK Essays</Nav.Link>
+              <Nav.Link as={Link} to="/services" eventKey="/services">Services</Nav.Link>
+              <Nav.Link as={Link} to="/pricing"  eventKey="/home"> How It Works</Nav.Link>
+              <Nav.Link as={Link} to="/pricing"  eventKey="/home">Offers</Nav.Link>
+              <Nav.Link as={Link} to="/pricing"  eventKey="/home">Samples</Nav.Link>
+              <Nav.Link as={Link} to="/pricing"  eventKey="/home">Reviews</Nav.Link>
+              <Nav.Link as={Link} to="/pricing"  eventKey="/home">About Us</Nav.Link>
+              <Nav.Link as={Link} to="/pricing"  eventKey="/home">Free Resources</Nav.Link>
             </Nav>
             <Nav className="ms-auto">
             <Button variant="success">Place an order</Button>

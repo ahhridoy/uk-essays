@@ -1,0 +1,25 @@
+@import "../includes/imports";
+
+#portfolio {
+   background-color: #071d37;
+   padding-top: 50px;
+   .sub-text {
+      font-size: 1.25rem;
+   }
+   .rate-review {
+      background-color: #fe5f00;
+      color: white;
+      text-decoration: none;
+      max-width: 400px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      border-radius: 10px;
+   }
+   .dotted-link {
+      color: white;
+      text-decoration: none;
+      border-bottom: 1px dotted white;
+   }
+}
