@@ -62,7 +62,7 @@ const Services = () => {
       </section>
       <section id="essay-heros">
         <Container className="text-box">
-          <h1>We Writing</h1>
+          <h1>Meet The Essay Heroes</h1>
           <p>
             We use a team of experts and academics to build your order and
             create a fantastic, unique and exciting piece of work every time. We
