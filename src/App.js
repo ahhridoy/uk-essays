@@ -13,6 +13,7 @@ function App() {
         <Header />
         <Routes>
           <Route path="/" element={<LandingPage />} />
+          <Route path="/home" element={<LandingPage />} />
           <Route path="/services" element={<Services />} />
           <Route path="/how-it-works" element={<HowItWorks />} />
         </Routes>

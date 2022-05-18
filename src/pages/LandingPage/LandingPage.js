@@ -8,27 +8,29 @@ const LandingPage = () => {
       {/* hero */}
       <section id="hero">
         <Container className="py-5">
-          <div>
+          <div className="text-center">
             <h1>UK Essays</h1>
             <p>Trusted by thousands of students since 2003</p>
           </div>
           <Row>
-            <Col md={4} xs={12}>
-              <div className="bg-dark text-light p-3 rounded ">
-                <h1>Order Today</h1>
-                <p>1721 reviews</p>
+            <Col md={4} xs={12} >
+              <div className="bg-dark text-light p-3 rounded text-end box">
+                <h2>Order Today</h2>
+                <span>1721 reviews</span>
                 <p>
                   UKEssays.com is rated 4.4 out of 5 by <br /> trusted reviews
                   site:
                 </p>
-                <h1>Reviews</h1>
+                <h2>Reviews</h2>
                 <Button variant="success">Place an order</Button>
               </div>
             </Col>
             <Col md={8} xs={12}>
-              <div className="bg-dark text-light p-3 rounded text-end">
-                <h1>Our Services</h1>
-                <p>Find out how </p> <b>UKEssays can help YOU</b>
+              <div className="bg-dark text-light p-3 rounded text-end box">
+                <h2>Our Services</h2>
+                <p>
+                  Find out how <b>UKEssays can help YOU</b>{" "}
+                </p>
                 <p>
                   UK Essays are a UK-based company who aim to be the ultimate
                   provider of educational support. <br /> From personalised
@@ -39,8 +41,8 @@ const LandingPage = () => {
               </div>
             </Col>
             <Col md={4} xs={12}>
-              <div className="bg-dark text-light p-3 rounded text-end">
-                <h1>Press Coverage</h1>
+              <div className="bg-dark text-light p-3 rounded text-end box">
+                <h2>Press Coverage</h2>
                 <p> BBC </p>
                 <p>
                   You can view national and international <br /> press coverage
@@ -50,8 +52,8 @@ const LandingPage = () => {
               </div>
             </Col>
             <Col md={4} xs={12}>
-              <div className="bg-dark text-light p-3 rounded text-end">
-                <h1>Service Samples</h1>
+              <div className="bg-dark text-light p-3 rounded text-end box">
+                <h2>Service Samples</h2>
                 <p>
                   Our academic writing service samples <br /> reflect the high
                   quality of work our essay <br /> writers produce and show why
@@ -61,8 +63,8 @@ const LandingPage = () => {
               </div>
             </Col>
             <Col md={4} xs={12}>
-              <div className="bg-dark text-light p-3 rounded text-end">
-                <h1>Essay Writing</h1>
+              <div className="bg-dark text-light p-3 rounded text-end box">
+                <h2>Essay Writing</h2>
                 <b>Leading</b> <p> UK Based Provider</p>
                 <p>
                   Our essay writing service can help you make the most of your
@@ -85,21 +87,21 @@ const LandingPage = () => {
 
       <section id="examples">
         <Container className="py-5">
-          <h1 className="heading">Example Essays</h1>
-          <p className="sub-text">
+          <h1 className="heading text-center">Example Essays</h1>
+          <p className="sub-text text-center">
             We have over 100,000 free essays available to help you with your
             studies!
           </p>
-          <p>
+          <p className="text-center">
             Each of these essays was written by a student who submitted their
             work to our database to help other students working on similar
             assignments. Some of our most popular subject areas are linked
             below:
           </p>
-          <h1>Popular Subject Areas</h1>
-          <Row>
+          <h2 className="text-center my-5">Popular Subject Areas</h2>
+          <Row className="sub-area">
             <Col md={4} xs={12}>
-              <div className="text-start text-none">
+              <div className="text-start">
                 <p>
                   <a href="#">Biology ></a>
                 </p>
@@ -166,10 +168,12 @@ const LandingPage = () => {
             </Col>
           </Row>
 
+          <div className="text-center my-4">
           <Button variant="danger" className="mx-4">
             All Essays >
           </Button>
           <Button variant="primary">Latest Article Updates > </Button>
+          </div>
         </Container>
       </section>
 
