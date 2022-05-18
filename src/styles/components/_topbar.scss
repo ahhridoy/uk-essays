@@ -1,0 +1,41 @@
+#topbar {
+  background-color: #071d37;
+  .content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .logo-name {
+      display: flex;
+      text-decoration: none;
+      .logo {
+        width: 100px;
+      }
+      .sub-text {
+        color: #fe5f00;
+      }
+    }
+    .router-links {
+      display: flex;
+      a {
+        text-decoration: none;
+        color: white;
+        margin-right: 10px;
+      }
+      .search-form {
+         display: flex;
+      }
+    }
+    @media screen and (max-width: 768px) {
+       .logo-name {
+          .site-name {
+             display: none;
+          }
+       }
+       .router-links {
+         .search-form {
+            display: none;
+         }
+       }
+   }
+  }
+}
