@@ -1,5 +1,6 @@
 import React from "react";
 import { Button, Col, Container, Row } from "react-bootstrap";
+import ReviewRating from "../../components/ReviewRating/ReviewRating";
 import "../../styles/pages/_landing.scss";
 
 const LandingPage = () => {
@@ -13,7 +14,7 @@ const LandingPage = () => {
             <p>Trusted by thousands of students since 2003</p>
           </div>
           <Row>
-            <Col md={4} xs={12} >
+            <Col md={4} xs={12}>
               <div className="bg-dark text-light p-3 rounded text-end box">
                 <h2>Order Today</h2>
                 <span>1721 reviews</span>
@@ -80,21 +81,89 @@ const LandingPage = () => {
       <section id="services">
         <Container>
           <Row>
-            <Col></Col>
+            <h4>Services</h4>
+            <Col md={3} xs={6}>
+              <div>
+                <img src="/assets/services1.png" alt="img" className="w-100" />
+                <h5 className="p-2 bg-dark text-light">
+                  Essay Writing Service
+                </h5>
+              </div>
+            </Col>
+            <Col md={3} xs={6}>
+              <div>
+                <img src="/assets/services2.png" alt="img" className="w-100" />
+                <h5 className="p-2 bg-dark text-light">
+                  Assignment Writing Service
+                </h5>
+              </div>
+            </Col>
+            <Col md={3} xs={6}>
+              <div>
+                <img src="/assets/services3.png" alt="img" className="w-100" />
+                <h5 className="p-2 bg-dark text-light">
+                  Dissertation Writing Service
+                </h5>
+              </div>
+            </Col>
+            <Col md={3} xs={6}>
+              <div>
+                <img src="/assets/services4.png" alt="img" className="w-100" />
+                <h5 className="p-2 bg-dark text-light">
+                  Dissertation Proposals
+                </h5>
+              </div>
+            </Col>
+          </Row>
+          <Row>
+            <h4>Resources</h4>
+            <Col md={3} xs={6}>
+              <div>
+                <img src="/assets/resources1.png" alt="img" className="w-100" />
+                <h5 className="p-2 bg-dark text-light">
+                  <span>FREE</span> Lectures
+                </h5>
+              </div>
+            </Col>
+            <Col md={3} xs={6}>
+              <div>
+                <img src="/assets/resources2.png" alt="img" className="w-100" />
+                <h5 className="p-2 bg-dark text-light">
+                  <span>FREE</span> Essays
+                </h5>
+              </div>
+            </Col>
+            <Col md={3} xs={6}>
+              <div>
+                <img src="/assets/resources3.png" alt="img" className="w-100" />
+                <h5 className="p-2 bg-dark text-light">
+                  <span>FREE</span> Study Guides
+                </h5>
+              </div>
+            </Col>
+            <Col md={3} xs={6}>
+              <div>
+                <img src="/assets/resources4.png" alt="img" className="w-100" />
+                <h5 className="p-2 bg-dark text-light">
+                  <span>FREE</span> Referencing Resources
+                </h5>
+              </div>
+            </Col>
           </Row>
         </Container>
       </section>
 
       <section id="examples">
         <Container className="py-5">
-          <h1 className="heading text-center">Example Essays</h1>
+          <h2 className="heading text-center">Example Essays</h2>
           <p className="sub-text text-center">
             We have over 100,000 free essays available to help you with your
             studies!
           </p>
           <p className="text-center">
             Each of these essays was written by a student who submitted their
-            work to our database to help other students working on similar
+            work to our database to help other students working on similar{" "}
+            <br />
             assignments. Some of our most popular subject areas are linked
             below:
           </p>
@@ -169,39 +238,39 @@ const LandingPage = () => {
           </Row>
 
           <div className="text-center my-4">
-          <Button variant="danger" className="mx-4">
-            All Essays >
-          </Button>
-          <Button variant="primary">Latest Article Updates > </Button>
+            <Button variant="danger" className="mx-4">
+              All Essays >
+            </Button>
+            <Button variant="primary">Latest Article Updates > </Button>
           </div>
         </Container>
       </section>
 
       <section id="promises">
         <Container className="py-5">
-          <h1 className="my-4">
+          <h2 className="my-5 text-center">
             UKEssays <span className="text-success">promises</span> you:
-          </h1>
+          </h2>
           <Row>
-            <Col md={3} xs={12}>
+            <Col md={3} xs={12} className="text-center">
               <h3>Plagiarism-free</h3>
               <p>
                 If the work we produce contains plagiarism we'll pay out a
                 £5,000 guarantee.
               </p>
             </Col>
-            <Col md={3} xs={12}>
+            <Col md={3} xs={12} className="text-center">
               <h3>Always on Time</h3>
               <p>If we are a minute late, the work is on us - it's free!</p>
             </Col>
-            <Col md={3} xs={12}>
+            <Col md={3} xs={12} className="text-center">
               <h3>Written to Standard</h3>
               <p>
                 All of our assignments go through a stringent quality checking
                 process from start to finish.
               </p>
             </Col>
-            <Col md={3} xs={12}>
+            <Col md={3} xs={12} className="text-center">
               <h3>Quality</h3>
               <p>
                 Providing quality work is core to our beliefs, which is why we
@@ -209,9 +278,11 @@ const LandingPage = () => {
               </p>
             </Col>
           </Row>
-          <Button variant="success" className="my-4">
-            Latest Article Updates >
-          </Button>
+          <div className="text-center">
+            <Button variant="success" className="my-4">
+              Latest Article Updates >
+            </Button>
+          </div>
         </Container>
       </section>
 
@@ -233,7 +304,9 @@ const LandingPage = () => {
 
       <section id="why-we-are">
         <Container className="py-5">
-          <h1 className="my-4">Find out why we are the best</h1>
+          <h2 className="my-4 text-center heading">
+            Find out <span>why we are the best</span>
+          </h2>
           <Row>
             <Col md={6} xs={12}>
               <h3>The World's Best Writers</h3>
@@ -278,15 +351,15 @@ const LandingPage = () => {
               </p>
             </Col>
           </Row>
-          <Button variant="danger" className="my-4">
-            Read about our services >
-          </Button>
+          <div className="my-4 text-center">
+            <Button variant="danger">Read about our services ></Button>
+          </div>
         </Container>
       </section>
 
       <section id="order-now">
-        <Container className="py-5 text-light">
-          <h1>Order an Essay Today!</h1>
+        <Container className="py-5 text-light text-center">
+          <h2>Order an Essay Today!</h2>
           <p>
             We have over 500 expert essay writers, ready and waiting to help you
             achieve academic success
@@ -298,35 +371,8 @@ const LandingPage = () => {
         </Container>
       </section>
 
-      <section id="reviews">
-        <Container className="py-5">
-          <Row>
-            <Col md={6} xs={12} className="text-start">
-              <h1>Customer Reviews</h1>
-              <p>Overall rating</p>
-              <span className="fs-1">4.4 </span>{" "}
-              <span className="fs-3"> / 5</span>
-              <p>1721 Reviews</p>
-              <p>
-                All reviews are supplied by verified UK Essays customers via the
-                trusted and independent online review site, Reviews.io.
-              </p>
-            </Col>
-            <Col md={6} xs={12} className="text-start review-sec">
-              <h1>Reviews.io</h1>
-              <p>Reviewed on 12/12/2019</p>
-              <p>1721 Reviews</p>
-              <b>
-                “I would highly recommend this service as it is an excellent
-                service that assists students of different levels in their
-                thinking and analysis of their work. the service is delivered to
-                a high quality and everyone is keen to help and go the extra
-                mile.”
-              </b>
-              <p>Yasmin D</p>
-            </Col>
-          </Row>
-        </Container>
+      <section>
+        <ReviewRating />
       </section>
     </main>
   );

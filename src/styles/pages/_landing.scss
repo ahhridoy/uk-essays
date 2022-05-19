@@ -19,10 +19,15 @@
 }
 
 #services {
+  margin: 50px 0;
+  h5 {
+    font-size: clamp(14px, 3vw, 18px);
+  }
 }
 
 #examples {
   background-color: #f8f9fa;
+  border: 1px solid gray;
   .sub-area {
     max-width: 1100px;
     margin: 0 auto;
@@ -37,8 +42,14 @@
 }
 
 #why-we-are {
+  .heading {
+    span {
+      color: #ca4a00;
+    }
+  }
 }
 
 #order-now {
   background-color: #ca4a00;
 }
+

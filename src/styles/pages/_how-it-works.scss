@@ -1,35 +1,41 @@
 @import "../includes/imports";
 
 #how-it-works-hero {
-   margin: 50px 0;
+  margin: 50px 0;
 }
 
 #how-ukessays-works {
-margin: 50px 0;
+  padding: 50px 0;
+  border: 1px solid rgb(194, 194, 194);
+  .description {
+    max-width: 1040px;
+    margin: 0 auto;
+  }
 }
 
 #build-drive {
-   margin: 50px 0;
+  margin: 50px 0;
 }
 
 #customer-review {
-   background-color: #f8f9fa;
-   padding: 50px 0;
+  background-color: #f8f9fa;
+  border: 1px solid rgb(194, 194, 194);
+  padding: 50px 0;
 }
 
 #guarantees {
-   padding: 50px 0;
-   background-color: #ffdecb;
+  padding: 50px 0;
+  background-color: #ffdecb;
 }
 
 #why-choose {
-   margin: 50px 0;
+  margin: 50px 0;
 }
 
 #popular-question {
-   margin: 50px 0;
+  margin: 50px 0;
 }
 
 #place-order {
-   background-color: #ca4a00;
+  background-color: #ca4a00;
 }

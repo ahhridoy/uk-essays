@@ -8,6 +8,7 @@ import {
   DropdownButton,
   Row,
 } from "react-bootstrap";
+import ReviewRating from "../../components/ReviewRating/ReviewRating";
 import "../../styles/pages/_how-it-works.scss";
 
 const HowItWorks = () => {
@@ -49,7 +50,11 @@ const HowItWorks = () => {
             </Col>
             <Col md={6} xs={12}>
               <div className="">
-                <img src="/assets/how-it-works-hero.png" alt="" />
+                <img
+                  src="/assets/how-it-works-hero.png"
+                  alt=""
+                  className="w-100"
+                />
               </div>
             </Col>
           </Row>
@@ -59,14 +64,15 @@ const HowItWorks = () => {
       <section id="how-ukessays-works">
         <Container>
           <h2 className="text-center">How UKEssays works</h2>
-          <p className="text-center">
+          <p className="text-center mb-5">
             At UK Essays, we like to keep things simple and transparent. Every
             step of our process is clear and open and has been perfected over
-            17+ years to make sure you get the very best quality work and
+            17+ years to make sure <br /> you get the very best quality work and
             exactly what you’ve requested. Nobody else has been in the industry
-            as long as we have – and in our opinion, nobody does it better!
+            as long as we have – and in our opinion, nobody <br /> does it
+            better!
           </p>
-          <div>
+          <div className="description mb-4">
             <h5 className="text-start">
               <span className="text-warning">1.</span>Tell us what you need
             </h5>
@@ -111,7 +117,7 @@ const HowItWorks = () => {
 
       <section id="build-drive">
         <Container>
-          <h1 className="text-center">Built to drive your success</h1>
+          <h2 className="text-center my-4">Built to drive your success</h2>
           <Row>
             <Col md={4} xs={12}>
               <h5>Perfectly written work</h5>
@@ -147,44 +153,9 @@ const HowItWorks = () => {
           </Row>
         </Container>
       </section>
-      <section id="customer-review">
-        <Container>
-          <Row>
-            <Col md={6} xs={6}>
-              <h2>Customer Reviews</h2>
-              <p>Overall rating</p>
-              <h2>4.4 / 5</h2>
-              <p>
-                start icon <a href="#">1748 Reviews</a>
-              </p>
-              <p>
-                The internet is filled with fake, overly positive reviews.
-                That’s why we partner with verified review partner Reviews.co.uk
-                to make sure that those reviews are 100% genuine – every one has
-                been left by a real customer. Whilst Facebook, Google and
-                Trustpilot reviews may not always be genuine, you can rest
-                assured knowing that every review you see of UK Essays on
-                Reviews.co.uk is genuine. If you’re looking at a website with
-                hundreds of 5-star reviews and no others, don’t trust them!
-              </p>
-            </Col>
-            <Col>
-              <div className="bg-white p-5">
-                <h2>star icon REVIEWS</h2>
-                <p>
-                  start icon <a href="#">1748 Reviews</a>
-                </p>
-                <h4>
-                  “Just what I needed. Helped me to get a starting point on my
-                  essay when I was completely overwhelmed by it. Gave me
-                  brilliant pointers to be able to go on and write my essay
-                  myself.” <br />
-                </h4>
-                <small>Debbie W</small>
-              </div>
-            </Col>
-          </Row>
-        </Container>
+
+      <section>
+        <ReviewRating />
       </section>
 
       <section id="guarantees">
@@ -334,18 +305,25 @@ const HowItWorks = () => {
               </Accordion.Body>
             </Accordion.Item>
           </Accordion>
-          <p className="text-center my-5">Still have questions? Head to our FAQs or get in touch.</p>
+          <p className="text-center my-5">
+            Still have questions? Head to our FAQs or get in touch.
+          </p>
         </Container>
       </section>
 
       <section id="place-order">
         <Container>
           <h2 className="text-center text-light pt-5">Place an Order Today!</h2>
-          <p className="text-light text-center">You'll love our service - our expert writers are ready to help you achieve success</p>
-         <div className="text-center pb-5">
-         <Button variant="light" className="mx-2">Place an order</Button>
-          <Button variant="light">Check prices</Button>
-         </div>
+          <p className="text-light text-center">
+            You'll love our service - our expert writers are ready to help you
+            achieve success
+          </p>
+          <div className="text-center pb-5">
+            <Button variant="light" className="mx-2">
+              Place an order
+            </Button>
+            <Button variant="light">Check prices</Button>
+          </div>
         </Container>
       </section>
     </main>

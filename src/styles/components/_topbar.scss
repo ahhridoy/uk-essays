@@ -8,7 +8,8 @@
       display: flex;
       text-decoration: none;
       .logo {
-        width: 100px;
+        max-width: 100px;
+        max-height: 100px;
       }
       .sub-text {
         color: #fe5f00;
