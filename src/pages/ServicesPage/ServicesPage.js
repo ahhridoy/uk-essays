@@ -1,8 +1,8 @@
 import React from "react";
-import { Button, Col, Container, Row } from "react-bootstrap";
+import { Button, Container } from "react-bootstrap";
 import FaqComponent from "../../components/FaqComponent";
 import Press from "../../components/Press/Press";
-import "../../styles/pages/_services.scss";
+import "../../styles/pages/_services-page.scss";
 
 const Services = () => {
   return (

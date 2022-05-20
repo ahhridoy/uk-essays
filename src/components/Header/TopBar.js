@@ -1,11 +1,11 @@
 import React from "react";
-import { Button, Container, Form, FormControl } from "react-bootstrap";
+import { Button, Container, Form, FormControl, Navbar } from "react-bootstrap";
 import { Link } from "react-router-dom";
 
 const TopBar = () => {
   return (
-    <main style={{ overflow: "hidden" }}>
-      <section id="topbar">
+    <main >
+      <Navbar fixed="top" id="topbar">
         <Container className="content">
           <Link to="/" className="logo-name">
             <img src="/assets/ukessays-logo.png" alt="logo" className="logo" />
@@ -34,7 +34,7 @@ const TopBar = () => {
             </Form>
           </div>
         </Container>
-      </section>
+      </Navbar>
     </main>
   );
 };

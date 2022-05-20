@@ -2,6 +2,7 @@
 @import "./globallyStyles";
 
 // Components
+@import "../components/header";
 @import "../components/topbar";
 @import "../components/footer";
 @import "../components/services-component";
@@ -10,3 +11,6 @@
 @import "../components/press";
 @import "../components/essay-today";
 @import "../components/fair-use-policy";
+
+// Services
+@import "../services/writing-service";
