@@ -1,6 +1,10 @@
 import React from "react";
 import { Button, Col, Container, Row } from "react-bootstrap";
+import EssayToday from "../../components/EssayToday/EssayToday";
+import FairUsePolicy from "../../components/FairUsePolicy/FairUsePolicy";
+import Resources from "../../components/Resources/Resources";
 import ReviewRating from "../../components/ReviewRating/ReviewRating";
+import ServicesComponent from "../../components/ServicesComponent/ServicesComponent";
 import "../../styles/pages/_landing.scss";
 
 const LandingPage = () => {
@@ -78,79 +82,9 @@ const LandingPage = () => {
         </Container>
       </section>
 
-      <section id="services">
-        <Container>
-          <Row>
-            <h4>Services</h4>
-            <Col md={3} xs={6}>
-              <div>
-                <img src="/assets/services1.png" alt="img" className="w-100" />
-                <h5 className="p-2 bg-dark text-light">
-                  Essay Writing Service
-                </h5>
-              </div>
-            </Col>
-            <Col md={3} xs={6}>
-              <div>
-                <img src="/assets/services2.png" alt="img" className="w-100" />
-                <h5 className="p-2 bg-dark text-light">
-                  Assignment Writing Service
-                </h5>
-              </div>
-            </Col>
-            <Col md={3} xs={6}>
-              <div>
-                <img src="/assets/services3.png" alt="img" className="w-100" />
-                <h5 className="p-2 bg-dark text-light">
-                  Dissertation Writing Service
-                </h5>
-              </div>
-            </Col>
-            <Col md={3} xs={6}>
-              <div>
-                <img src="/assets/services4.png" alt="img" className="w-100" />
-                <h5 className="p-2 bg-dark text-light">
-                  Dissertation Proposals
-                </h5>
-              </div>
-            </Col>
-          </Row>
-          <Row>
-            <h4>Resources</h4>
-            <Col md={3} xs={6}>
-              <div>
-                <img src="/assets/resources1.png" alt="img" className="w-100" />
-                <h5 className="p-2 bg-dark text-light">
-                  <span>FREE</span> Lectures
-                </h5>
-              </div>
-            </Col>
-            <Col md={3} xs={6}>
-              <div>
-                <img src="/assets/resources2.png" alt="img" className="w-100" />
-                <h5 className="p-2 bg-dark text-light">
-                  <span>FREE</span> Essays
-                </h5>
-              </div>
-            </Col>
-            <Col md={3} xs={6}>
-              <div>
-                <img src="/assets/resources3.png" alt="img" className="w-100" />
-                <h5 className="p-2 bg-dark text-light">
-                  <span>FREE</span> Study Guides
-                </h5>
-              </div>
-            </Col>
-            <Col md={3} xs={6}>
-              <div>
-                <img src="/assets/resources4.png" alt="img" className="w-100" />
-                <h5 className="p-2 bg-dark text-light">
-                  <span>FREE</span> Referencing Resources
-                </h5>
-              </div>
-            </Col>
-          </Row>
-        </Container>
+      <section className="my-5">
+        <ServicesComponent />
+        <Resources />
       </section>
 
       <section id="examples">
@@ -286,20 +220,8 @@ const LandingPage = () => {
         </Container>
       </section>
 
-      <section id="policy">
-        <Container className="py-5 text-light">
-          <Row>
-            <Col md={6}>
-              <h2>Our Fair Use Policy</h2>
-              <p>
-                Understanding how to use your essay is key to gaining the most
-                from your experience with us. Watch now to learn how:
-              </p>
-              <Button variant="warning">Our Fair Use Policy ></Button>
-            </Col>
-            <Col md={6}>Video</Col>
-          </Row>
-        </Container>
+      <section>
+        <FairUsePolicy />
       </section>
 
       <section id="why-we-are">
@@ -357,18 +279,8 @@ const LandingPage = () => {
         </Container>
       </section>
 
-      <section id="order-now">
-        <Container className="py-5 text-light text-center">
-          <h2>Order an Essay Today!</h2>
-          <p>
-            We have over 500 expert essay writers, ready and waiting to help you
-            achieve academic success
-          </p>
-          <Button variant="dark" className="mx-4">
-            Order an Essay
-          </Button>
-          <Button variant="light">Check Prices</Button>
-        </Container>
+      <section>
+        <EssayToday />
       </section>
 
       <section>

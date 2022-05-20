@@ -4,6 +4,7 @@ import Header from "./components/Header/Header";
 import TopBar from "./components/Header/TopBar";
 import HowItWorks from "./pages/HowItWorks/HowItWorks";
 import LandingPage from "./pages/LandingPage/LandingPage";
+import Offers from "./pages/Offers/Offers";
 import Services from "./pages/Services/Services";
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
           <Route path="/home" element={<LandingPage />} />
           <Route path="/services" element={<Services />} />
           <Route path="/how-it-works" element={<HowItWorks />} />
+          <Route path="/offers" element={<Offers />} />
         </Routes>
         <Footer />
       </BrowserRouter>

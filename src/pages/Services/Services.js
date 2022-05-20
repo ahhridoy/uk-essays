@@ -1,11 +1,12 @@
 import React from "react";
 import { Button, Col, Container, Row } from "react-bootstrap";
 import FaqComponent from "../../components/FaqComponent";
+import Press from "../../components/Press/Press";
 import "../../styles/pages/_services.scss";
 
 const Services = () => {
   return (
-    <main>
+    <main style={{overflow: "hidden"}}>
       <section id="portfolio">
         <Container>
           <div>
@@ -72,6 +73,7 @@ const Services = () => {
           </div>
         </Container>
       </section>
+      
       <section id="essay-heros">
         <Container className="text-box">
           <h2 className="text-center">Meet The Essay Heroes</h2>
@@ -90,28 +92,8 @@ const Services = () => {
           </div>
         </Container>
       </section>
-
-      <section id="press">
-        <Container>
-          <h4 className="heading text-center text-light">
-            We'have received widespread<a href="#"> press coverage </a>since
-            2003
-          </h4>
-          <Row>
-            <Col md={3} xs={6}>
-              <h2>THE TIMES</h2>
-            </Col>
-            <Col md={3} xs={6}>
-              <h2>INDEPENDENT</h2>
-            </Col>
-            <Col md={3} xs={6}>
-              <h2>BBC</h2>
-            </Col>
-            <Col md={3} xs={6}>
-              <h2>DAILY MAIL</h2>
-            </Col>
-          </Row>
-        </Container>
+      <section>
+        <Press />
       </section>
     </main>
   );

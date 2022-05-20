@@ -26,7 +26,7 @@ const Header = () => {
                 {" "}
                 How It Works
               </Nav.Link>
-              <Nav.Link as={Link} to="/pricing" eventKey="/home">
+              <Nav.Link as={Link} to="/offers" eventKey="/offers">
                 Offers
               </Nav.Link>
               <Nav.Link as={Link} to="/pricing" eventKey="/home">
