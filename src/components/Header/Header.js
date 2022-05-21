@@ -21,9 +21,33 @@ const Header = () => {
                 {" "}
                 UK Essays
               </Nav.Link>
-              <Nav.Link as={Link} to="/services" eventKey="/services">
-                Services
-              </Nav.Link>
+              <div className="services-container">
+                <Nav.Link as={Link} to="/services" eventKey="/services">
+                  Services
+                  <div className="services-content">
+                    <div>
+                      <h4>Essay Services</h4>
+                      <hr />
+                      <Link to="/essay-service">Essay Writing Service</Link>
+                      <Link to="/assignment-service">
+                        Assignment Writing Service
+                      </Link>
+                      <Link to="/coursework-service">
+                        Coursework Writing Service
+                      </Link>
+                      <Link to="/essay-plan-service">
+                        Essay plan Writing Service
+                      </Link>
+                      <Link to="/reflective-service">
+                        Reflective Essay Writing Service
+                      </Link>
+                      <Link to="/paper-service">
+                        Research paper Writing Service
+                      </Link>
+                    </div>
+                  </div>
+                </Nav.Link>
+              </div>
               <Nav.Link as={Link} to="/how-it-works" eventKey="/how-it-works">
                 {" "}
                 How It Works
