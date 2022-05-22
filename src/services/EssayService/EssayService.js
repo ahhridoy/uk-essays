@@ -7,6 +7,7 @@ import {
   InputGroup,
   Row,
 } from "react-bootstrap";
+import AskedQuestion from "../../components/AskedQuestion/AskedQuestion";
 import EssayToday from "../../components/EssayToday/EssayToday";
 import FairUsePolicy from "../../components/FairUsePolicy/FairUsePolicy";
 import PhoneOrder from "../../components/PhoneOrder/PhoneOrder";
@@ -14,10 +15,10 @@ import Press from "../../components/Press/Press";
 import ReviewsComponent from "../../components/ReviewsComponent/ReviewsComponent";
 import WhyChoose from "../../components/WhyChoose/WhyChoose";
 
-const WritingService = () => {
+const EssayService = () => {
   return (
     <main>
-      <section id="writing-service-hero">
+      <section id="essay-service-hero">
         <Container>
           <Row>
             <Col md={8} xs={12}>
@@ -249,19 +250,8 @@ const WritingService = () => {
         <ReviewsComponent />
       </section>
 
-      <section id="asked-question">
-        <Container>
-          <h2 className="mb-4 text-center">Frequently asked questions</h2>
-          <h4 className="text-center my-3">Search Support Articles</h4>
-          <InputGroup className="mb-3">
-            <FormControl placeholder="Enter a search term..." />
-            <Button variant="primary">Search</Button>
-          </InputGroup>
-          <p className="text-center">
-            *You can also{" "}
-            <a href="£">browse our support documentation here ></a>
-          </p>
-        </Container>
+      <section>
+        <AskedQuestion />
       </section>
 
       <section>
@@ -314,4 +304,4 @@ const WritingService = () => {
   );
 };
 
-export default WritingService;
+export default EssayService;
