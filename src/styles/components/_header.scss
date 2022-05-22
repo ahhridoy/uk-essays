@@ -4,7 +4,6 @@
     display: inline;
     position: relative;
     .services-content {
-      
       background-color: rgba(var(--bs-light-rgb), var(--bs-bg-opacity));
       position: absolute;
       top: 40px;
@@ -17,6 +16,7 @@
          padding: 20px;
         a {
           display: block;
+          text-decoration: none;
         }
         div {
            margin-right: 50px;

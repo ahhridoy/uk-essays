@@ -1,0 +1,38 @@
+[
+  {
+    "id": 1,
+    "rating": 5,
+    "description": "I ordered a plan to help me with a difficult question I wasn't sure where to start. I used the plan to write my full essay and it worked great, gave me everything I needed to understand. Really good value.",
+    "author": "Cho S"
+  },
+  {
+    "id": 2,
+    "rating": 5,
+    "description": "The writer followed my instructions perfectly and produced an excellent piece of work. I’m delighted with the results.",
+    "author": "Oliver K"
+  },
+  {
+    "id": 3,
+    "rating": 4,
+    "description": "This is actually legitimate and not a scam. Used it multiple times.",
+    "author": "David M"
+  },
+  {
+    "id": 4,
+    "rating": 5,
+    "description": "I'm very happy with your help! Would def. recommend it",
+    "author": "Karin S"
+  },
+  {
+    "id": 5,
+    "rating": 5,
+    "description": "I am very happy with the service I receive and received from UK Essays.",
+    "author": "James G"
+  },
+  {
+    "id": 6,
+    "rating": 5,
+    "description": "The project that I’ve ordered was done wonderfully and was exactly what I wanted and even more.",
+    "author": "Melissa"
+  }
+]

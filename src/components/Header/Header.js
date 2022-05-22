@@ -82,23 +82,21 @@ const Header = () => {
                       </div>
                       <div>
                         <div>
-                        <h5>EDITING / MARKING SERVICES</h5>
-                        <hr />
-                        <Link to="/marking-service">Marking Service</Link>
-                        <Link to="/editing-service">
-                        Editing Service
-                        </Link>
+                          <h5>EDITING / MARKING SERVICES</h5>
+                          <hr />
+                          <Link to="/marking-service">Marking Service</Link>
+                          <Link to="/editing-service">Editing Service</Link>
                         </div>
                         <div>
-                        <h5>OTHER SERVICES</h5>
-                        <hr />
-                        <Link to="/exam-revision-service">Exam Revision Service</Link>
-                        <Link to="/academic-poster-service">
-                        Academic Poster Service
-                        </Link>
-                        <Link to="/cv-service">
-                        CV Writing Service
-                        </Link>
+                          <h5>OTHER SERVICES</h5>
+                          <hr />
+                          <Link to="/exam-revision-service">
+                            Exam Revision Service
+                          </Link>
+                          <Link to="/academic-poster-service">
+                            Academic Poster Service
+                          </Link>
+                          <Link to="/cv-service">CV Writing Service</Link>
                         </div>
                       </div>
                     </div>
