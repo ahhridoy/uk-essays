@@ -36,7 +36,7 @@ const Header = () => {
                         <Link to="/coursework-service">
                           Coursework Writing Service
                         </Link>
-                        <Link to="/essay-plan-service">
+                        <Link to="/essayplan-service">
                           Essay plan Writing Service
                         </Link>
                         <Link to="/reflective-service">
