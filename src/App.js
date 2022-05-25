@@ -11,6 +11,7 @@ import CourseworkService from "./services/CourseworkService/CourseworkService";
 import EssayplanService from "./services/EssayplanService/EssayplanService";
 import EssayService from "./services/EssayService/EssayService";
 import ReflectiveService from "./services/ReflectiveService/ReflectiveService";
+import ResearchService from "./services/ResearchService/ResearchService";
 function App() {
   return (
     <>
@@ -31,6 +32,8 @@ function App() {
           <Route path="/essayplan-service" element={<EssayplanService />} />
 
           <Route path="/reflective-service" element={<ReflectiveService />} />
+
+          <Route path="/research-service" element={<ResearchService />} />
 
           <Route path="/how-it-works" element={<HowItWorks />} />
           <Route path="/offers" element={<Offers />} />
