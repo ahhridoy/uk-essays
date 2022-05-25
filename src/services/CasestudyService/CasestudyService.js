@@ -1,30 +1,22 @@
 import React from "react";
-import {
-  Button,
-  Col,
-  Container,
-  FormControl,
-  InputGroup,
-  Row,
-} from "react-bootstrap";
+import { Button, Col, Container, Row } from "react-bootstrap";
+import AboutCompany from "../../components/AboutCompany/AboutCompany";
 import AskedQuestion from "../../components/AskedQuestion/AskedQuestion";
-import EssayToday from "../../components/EssayToday/EssayToday";
 import FairUsePolicy from "../../components/FairUsePolicy/FairUsePolicy";
 import PhoneOrder from "../../components/PhoneOrder/PhoneOrder";
 import Press from "../../components/Press/Press";
 import ReviewsComponent from "../../components/ReviewsComponent/ReviewsComponent";
 import WhyChoose from "../../components/WhyChoose/WhyChoose";
-import WhyLove from "../../components/WhyLove/WhyLove";
 
-const EssayService = () => {
+const CasestudyService = () => {
   return (
     <main>
-      <section id="essay-service-hero">
+      <section id="casestudy-service-hero">
         <Container>
           <Row>
             <Col md={8} xs={12}>
               <div className="text-light">
-                <h2 className="my-2">Essay Writing Service</h2>
+                <h2 className="my-2">Case Study Writing Service</h2>
                 <div className="text-start">
                   <span>Share this: </span>
                   <span>Facebook </span>
@@ -34,16 +26,22 @@ const EssayService = () => {
                   <span>Whatsapp </span>
                 </div>
                 <h4 className="text-success my-2">
-                  Get Essay Help from the Academic Experts
+                  Get Expert Help with Your Case Study
                 </h4>
                 <p className="fs-5">
-                  Our essay writing service is designed to get you the extra
-                  help you need in completing your next university essay. We
-                  match the best academic writers, qualified across an enormous
-                  range of subjects and grades, to requests for help from
-                  students just like you. Writing in perfect English, our
-                  writers will create a custom piece of work designed just for
-                  you and to help you reach the grade you require.
+                  Case Studies are written as a special type of{" "}
+                  <a href="#">academic report</a> that focuses on a specific
+                  case – producing a focused, well-structured and well written
+                  case study can be very challenging! Our case study writing
+                  service is designed to help you achieve success with your case
+                  study report, giving you all the tools that you need to
+                  effectively examine the case at hand and produce a detailed
+                  report. We can provide you with an exceptionally written case
+                  study, researched and prepared by a fully qualified academic
+                  in your subject area. Your case study report will be a
+                  detailed yet easy to understand analysis of the case –
+                  everything you need to gain a full understanding of how to
+                  produce a fantastic case study!
                 </p>
                 <div className="bg-black p-3 my-2">
                   <h4>See for yourself</h4>
@@ -87,6 +85,7 @@ const EssayService = () => {
               </div>
             </Col>
           </Row>
+
           <Row className="mt-5">
             <Col md={3} xs={6}>
               <div className="text-light d-flex">
@@ -116,84 +115,59 @@ const EssayService = () => {
         </Container>
       </section>
 
-      <section>
-        <WhyChoose />
+      <section id="study-report">
+        <Container>
+          <h2>What is a case study report?</h2>
+          <p>
+            In General, a case study is a powerful academic tool used to
+            identify, examine and attempt to solve an issue – usually within a
+            business or organization. A typical case study has a clear set of
+            instructions and is structured very similarly to a standard Report.
+            You will be asked to examine the case and provide your findings in a
+            structured document with sub-headings and clearly defined sections
+            (for example: Introduction, Analysis, Conclusion are the three most
+            common sections). <br /> <br />
+            Firstly, you are presented with a case study, which will outline a
+            situation – for example, it may be about a specific business, and a
+            problem (or problems) that business is having. The case study report
+            will initially outline the facts, then identify and investigate the
+            issue(s) or problem(s) being faced, determining what is happening
+            and why. Then, it should outline potential solutions to solve the
+            issue(s), before selecting one as the most effective solution. You
+            may be asked to focus on certain questions and key points – for
+            example providing an answer to a given question or being asked to
+            consider specific points as part of your proposed solution(s).
+          </p>
+        </Container>
       </section>
 
       <section>
-        <EssayToday />
+        <WhyChoose />
       </section>
 
       <section>
         <PhoneOrder />
       </section>
 
-      <section id="difference">
+      <section id="your-order">
         <Container>
-          <h2 className="text-center mb-4">The UKEssays Difference</h2>
-          <div className="text-box">
-            <div>
-              <p>Academic Level</p>
-              <p>Originality</p>
-              <p>Security</p>
-              <p>Support</p>
-            </div>
-            <div>
-              <p>Degree Qualified Writers</p>
-              <p>Guaranteed Plagiarism-free</p>
-              <p>Checked Daily by McAfee</p>
-              <p>Dedicated UK Customer Service</p>
-            </div>
-          </div>
-        </Container>
-      </section>
-
-      <section id="how-to-use">
-        <Container>
-          <h2>How to use your model essay</h2>
-          <p className="mb-5">
-            <a href="#">Our Fair Use Policy</a> is designed to guide you through
-            the best way to use and rewrite your order - be sure to read it
-            through!
+          <h2>How to use your order</h2>
+          <p>
+            When you receive your completed case study, you get everything you
+            need to create your own piece of work and meet your requirements. By
+            taking the model case study we produce, you’ll be able to understand
+            how to correctly structure your report, the key sources and
+            references to utilize, and how to effectively examine the case study
+            to produce an excellent answer. Make sure you use your completed
+            case study in accordance with our Fair Use Policy – this will help
+            you make sure you don’t break any rules and gain the most from your
+            experience with us.
           </p>
-          <div>
-            <div className="my-4">
-              <h3>Read through the work</h3>
-              <p>
-                Once you've downloaded the essay, the next step is to make sure
-                you gain a full understanding of it.
-              </p>
-            </div>
-            <div className="my-4">
-              <h3>Read through the related literature</h3>
-              <p>
-                We strongly suggest reading the references used in the paper,
-                too, to deepen your knowledge of the topic.
-              </p>
-            </div>
-            <div className="my-4">
-              <h3>Write your own essay</h3>
-              <p>
-                <b>You should re-write the paper,</b> so it is in your own
-                words, and so that you gain the valuable information it
-                contains. You'll improve your own essay writing skills, learning
-                how to structure a conclusive answer and discuss it in detail.
-              </p>
-            </div>
-          </div>
           <p className="text-center">
             You can find further information about how our service works in the{" "}
             <a href="#">FAQs section</a>
           </p>
         </Container>
-      </section>
-
-      <section>
-        <EssayToday />
-      </section>
-
-      <section>
-        <WhyLove />
       </section>
 
       <section>
@@ -205,46 +179,39 @@ const EssayService = () => {
       </section>
 
       <section>
-        <AskedQuestion />
+        <AboutCompany />
       </section>
 
       <section>
-        <EssayToday />
+        <AskedQuestion />
       </section>
 
       <section id="related-service">
         <Container>
-          <h2 className="text-center">Related services</h2>
-          <p className="text-center my-3">
-            We can help you no matter what level you’re writing for. Many of our
-            writers hold masters degrees or higher, so we can help regardless of
-            whether you are writing an undergraduate or postgraduate essay! We
-            also have a variety of other academic services that may be able to
-            assist you.
-          </p>
-          <p className="text-center mb-5">
-            If you are looking for a reflective piece of work, then take a look
-            at our <a href="#">specialist Reflective Essay Writing Service.</a>
-          </p>
+          <h2 className="text-center my-4">Related services</h2>
           <Row>
             <Col md={4} xs={12}>
               <div className="shadow">
                 <img src="/assets/writing-1.webp" alt="" className="w-100" />
-                <h4 className="text-center py-4">Editing Service</h4>
-              </div>
-            </Col>
-            <Col md={4} xs={12}>
-              <div className="shadow">
-                <img src="/assets/typing-2.webp" alt="" className="w-100" />
-                <h4 className="text-center py-4">
-                  Dissertation Writing Service
-                </h4>
+                <h4 className="text-center py-4">Report Writing Service</h4>
               </div>
             </Col>
             <Col md={4} xs={12}>
               <div className="shadow">
                 <img src="/assets/writing-2.webp" alt="" className="w-100" />
-                <h4 className="text-center py-4">Essay Plan Writing Service</h4>
+                <h4 className="text-center py-4">Essay Writing Service</h4>
+              </div>
+            </Col>
+            <Col md={4} xs={12}>
+              <div className="shadow">
+                <img
+                  src="/assets/highlighting-1.jpg"
+                  alt=""
+                  className="w-100"
+                />
+                <h4 className="text-center py-4">
+                  Reflective Practice Service
+                </h4>
               </div>
             </Col>
           </Row>
@@ -258,4 +225,4 @@ const EssayService = () => {
   );
 };
 
-export default EssayService;
+export default CasestudyService;

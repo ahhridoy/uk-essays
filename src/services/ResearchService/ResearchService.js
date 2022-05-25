@@ -209,7 +209,7 @@ const ResearchService = () => {
 
       <section id="related-service">
         <Container>
-          <h2 className="text-center">Related services</h2>
+          <h2 className="text-center my-4">Related services</h2>
           <Row>
             <Col md={4} xs={12}>
               <div className="shadow">

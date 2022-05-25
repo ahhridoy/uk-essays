@@ -7,10 +7,12 @@ import LandingPage from "./pages/LandingPage/LandingPage";
 import Offers from "./pages/Offers/Offers";
 import Services from "./pages/ServicesPage/ServicesPage";
 import AssignmentService from "./services/AssignmentService/AssignmentService";
+import CasestudyService from "./services/CasestudyService/CasestudyService";
 import CourseworkService from "./services/CourseworkService/CourseworkService";
 import EssayplanService from "./services/EssayplanService/EssayplanService";
 import EssayService from "./services/EssayService/EssayService";
 import ReflectiveService from "./services/ReflectiveService/ReflectiveService";
+import ReportService from "./services/ReportService/ReportService";
 import ResearchService from "./services/ResearchService/ResearchService";
 function App() {
   return (
@@ -24,7 +26,7 @@ function App() {
           <Route path="/services" element={<Services />} />
 
           <Route path="/essay-service" element={<EssayService />} />
-          
+
           <Route path="/assignment-service" element={<AssignmentService />} />
 
           <Route path="/coursework-service" element={<CourseworkService />} />
@@ -34,6 +36,10 @@ function App() {
           <Route path="/reflective-service" element={<ReflectiveService />} />
 
           <Route path="/research-service" element={<ResearchService />} />
+
+          <Route path="/report-service" element={<ReportService />} />
+
+          <Route path="/case-study-service" element={<CasestudyService />} />
 
           <Route path="/how-it-works" element={<HowItWorks />} />
           <Route path="/offers" element={<Offers />} />
