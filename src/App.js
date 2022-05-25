@@ -7,6 +7,7 @@ import LandingPage from "./pages/LandingPage/LandingPage";
 import Offers from "./pages/Offers/Offers";
 import Services from "./pages/ServicesPage/ServicesPage";
 import AssignmentService from "./services/AssignmentService/AssignmentService";
+import CourseworkService from "./services/CourseworkService/CourseworkService";
 import EssayService from "./services/EssayService/EssayService";
 function App() {
   return (
@@ -22,6 +23,8 @@ function App() {
           <Route path="/essay-service" element={<EssayService />} />
           
           <Route path="/assignment-service" element={<AssignmentService />} />
+
+          <Route path="/coursework-service" element={<CourseworkService />} />
 
           <Route path="/how-it-works" element={<HowItWorks />} />
           <Route path="/offers" element={<Offers />} />
