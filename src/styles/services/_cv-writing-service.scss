@@ -1,0 +1,36 @@
+#cv-service-hero {
+  margin-top: 140px;
+  padding: 50px 0;
+  background-color: #071d37;
+  .price {
+    font-size: 80px;
+    font-weight: 300;
+  }
+}
+
+#choose-cv {
+  margin: 50px 0;
+}
+
+#what-we-do {
+   margin: 50px 0;
+  background-color: #f8f9fa;
+  .editing-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .editing-text {
+      max-width: 600px;
+      margin: 0 auto;
+    }
+    @media screen and (max-width: 768px) {
+      .editing-img {
+        display: none;
+      }
+    }
+  }
+}
+
+#did-you-know {
+  margin: 50px 0;
+}

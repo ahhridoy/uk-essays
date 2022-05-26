@@ -6,9 +6,11 @@ import HowItWorks from "./pages/HowItWorks/HowItWorks";
 import LandingPage from "./pages/LandingPage/LandingPage";
 import Offers from "./pages/Offers/Offers";
 import Services from "./pages/ServicesPage/ServicesPage";
+import AcademicService from "./services/AcademicService/AcademicService";
 import AssignmentService from "./services/AssignmentService/AssignmentService";
 import CasestudyService from "./services/CasestudyService/CasestudyService";
 import CourseworkService from "./services/CourseworkService/CourseworkService";
+import CVWritingService from "./services/CVWritingService/CVWritingService";
 import EditingService from "./services/EditingService/EditingService";
 import EssayplanService from "./services/EssayplanService/EssayplanService";
 import EssayService from "./services/EssayService/EssayService";
@@ -52,6 +54,10 @@ function App() {
           <Route path="/editing-service" element={<EditingService />} />
 
           <Route path="/exam-service" element={<ExamService />} />
+
+          <Route path="/academic-service" element={<AcademicService />} />
+
+          <Route path="/cv-service" element={<CVWritingService />} />
 
           <Route path="/how-it-works" element={<HowItWorks />} />
           <Route path="/offers" element={<Offers />} />

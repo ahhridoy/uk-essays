@@ -93,7 +93,7 @@ const Header = () => {
                           <Link to="/exam-service">
                             Exam Revision Service
                           </Link>
-                          <Link to="/academic-poster-service">
+                          <Link to="/academic-service">
                             Academic Poster Service
                           </Link>
                           <Link to="/cv-service">CV Writing Service</Link>
