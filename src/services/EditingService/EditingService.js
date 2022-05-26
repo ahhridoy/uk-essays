@@ -30,38 +30,18 @@ const EditingService = () => {
                   your subject area, allowing them to focus on the key
                   terminology and theories specific to your subject.
                 </p>
-                <div className="bg-black p-3 my-2">
-                  <h4>See for yourself</h4>
-                  <h3>
-                    <span className="text-success">Samples</span> of our work
-                  </h3>
-                  <p>
-                    We have a number of sample essays to illustrate the quality
-                    of our services. Each sample has been written to a specific
-                    academic grade.
-                  </p>
-                  <Button variant="success" className="mx-2">
-                    Samples of our work
+                <div>
+                  <Button variant="success" className="mx-3">
+                    Order Now
                   </Button>
-                  <Button variant="success">Samples of essays</Button>
+                  <Link to="/check-prices">Check Prices</Link>
                 </div>
               </div>
             </Col>
 
             <Col md={4} xs={12}>
               <div className="bg-light p-4 text-center rounded">
-                <i>Prices from</i>
-                <h1 className="price">34</h1>
-                <p>Undergraduate • 1000 words • 2 day delivery</p>
-                <img src="/assets/trusted-site.svg" alt="" /> <br />
-                <Button variant="success" className="w-100 my-2">
-                  Place an order
-                </Button>
-                <p>Delivered on-time or your money back</p>
-                <Button variant="primary" className="w-100 my-2">
-                  Request a call back
-                </Button>
-                <br />
+                <p>Get help with questions about our services or pricing.</p>
                 <Button variant="success" className="w-100 my-2">
                   Message us on WhatsApp
                 </Button>
@@ -101,7 +81,7 @@ const EditingService = () => {
         </Container>
       </section>
 
-      <section id="editing">
+      <section id="effective-editing">
         <Container>
           <h2>Simple, powerful and effective editing</h2>
           <p>
