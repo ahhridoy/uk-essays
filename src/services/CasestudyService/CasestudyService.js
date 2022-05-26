@@ -10,7 +10,7 @@ import WhyChoose from "../../components/WhyChoose/WhyChoose";
 
 const CasestudyService = () => {
   return (
-    <main>
+    <main style={{ overflow: "hidden" }}>
       <section id="casestudy-service-hero">
         <Container>
           <Row>

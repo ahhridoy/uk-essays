@@ -18,7 +18,7 @@ import WhyLove from "../../components/WhyLove/WhyLove";
 
 const EssayService = () => {
   return (
-    <main>
+    <main style={{ overflow: "hidden" }}>
       <section id="essay-service-hero">
         <Container>
           <Row>

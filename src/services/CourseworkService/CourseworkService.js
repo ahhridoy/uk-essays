@@ -10,7 +10,7 @@ import WhyChoose from "../../components/WhyChoose/WhyChoose";
 
 const CourseworkService = () => {
   return (
-    <main>
+    <main style={{ overflow: "hidden" }}>
       <section id="coursework-service-hero">
         <Container>
           <Row>

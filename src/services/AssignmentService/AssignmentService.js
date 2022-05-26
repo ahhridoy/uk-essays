@@ -11,7 +11,7 @@ import WhyChoose from "../../components/WhyChoose/WhyChoose";
 
 const AssignmentService = () => {
   return (
-    <main>
+    <main style={{ overflow: "hidden" }}>
       <section id="assignment-service-hero">
         <Container>
           <Row>

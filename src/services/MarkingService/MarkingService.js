@@ -9,7 +9,7 @@ import WhyLove from "../../components/WhyLove/WhyLove";
 
 const MarkingService = () => {
   return (
-    <main>
+    <main style={{ overflow: "hidden" }}>
       <section id="marking-service-hero">
         <Container>
           <Row>

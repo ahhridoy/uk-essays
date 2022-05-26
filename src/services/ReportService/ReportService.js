@@ -10,7 +10,7 @@ import WhyLove from "../../components/WhyLove/WhyLove";
 
 const ReportService = () => {
   return (
-    <main>
+    <main style={{ overflow: "hidden" }}>
       <section id="report-service-hero">
         <Container>
           <Row>

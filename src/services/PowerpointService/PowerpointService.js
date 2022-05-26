@@ -10,7 +10,7 @@ import WhyLove from "../../components/WhyLove/WhyLove";
 
 const PowerpointService = () => {
   return (
-    <main>
+    <main style={{ overflow: "hidden" }}>
       <section id="powerpoint-service-hero">
         <Container>
           <Row>

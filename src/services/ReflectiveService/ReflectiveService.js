@@ -8,7 +8,7 @@ import WhyChoose from "../../components/WhyChoose/WhyChoose";
 
 const ReflectiveService = () => {
   return (
-    <main>
+    <main style={{ overflow: "hidden" }}>
       <section id="reflective-service-hero">
         <Container>
           <Row>

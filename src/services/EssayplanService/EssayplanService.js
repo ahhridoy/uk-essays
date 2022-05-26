@@ -9,7 +9,7 @@ import WhyChoose from "../../components/WhyChoose/WhyChoose";
 
 const EssayplanService = () => {
   return (
-    <main>
+    <main style={{ overflow: "hidden" }}>
       <section id="essayplan-service-hero">
         <Container>
           <Row>
