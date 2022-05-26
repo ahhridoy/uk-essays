@@ -9,8 +9,11 @@ import Services from "./pages/ServicesPage/ServicesPage";
 import AssignmentService from "./services/AssignmentService/AssignmentService";
 import CasestudyService from "./services/CasestudyService/CasestudyService";
 import CourseworkService from "./services/CourseworkService/CourseworkService";
+import EditingService from "./services/EditingService/EditingService";
 import EssayplanService from "./services/EssayplanService/EssayplanService";
 import EssayService from "./services/EssayService/EssayService";
+import MarkingService from "./services/MarkingService/MarkingService";
+import PowerpointService from "./services/PowerpointService/PowerpointService";
 import ReflectiveService from "./services/ReflectiveService/ReflectiveService";
 import ReportService from "./services/ReportService/ReportService";
 import ResearchService from "./services/ResearchService/ResearchService";
@@ -40,6 +43,12 @@ function App() {
           <Route path="/report-service" element={<ReportService />} />
 
           <Route path="/case-study-service" element={<CasestudyService />} />
+
+          <Route path="/powerpoint-service" element={<PowerpointService />} />
+
+          <Route path="/marking-service" element={<MarkingService />} />
+
+          <Route path="/editing-service" element={<EditingService />} />
 
           <Route path="/how-it-works" element={<HowItWorks />} />
           <Route path="/offers" element={<Offers />} />

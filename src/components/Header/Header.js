@@ -76,7 +76,7 @@ const Header = () => {
                         <Link to="/case-study-service">
                           Case Study Writing Service
                         </Link>
-                        <Link to="/power-point-service">
+                        <Link to="/powerpoint-service">
                           PowerPoint Presentation Service
                         </Link>
                       </div>
@@ -84,7 +84,7 @@ const Header = () => {
                         <div>
                           <h5>EDITING / MARKING SERVICES</h5>
                           <hr />
-                          <Link to="/marking-service">Marking Service</Link>
+                          <Link to="/marketing-service">Marking Service</Link>
                           <Link to="/editing-service">Editing Service</Link>
                         </div>
                         <div>

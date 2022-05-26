@@ -1,6 +1,6 @@
 import React from "react";
 import { Button, Col, Container, Row } from "react-bootstrap";
-import ConfidenceService from "../../components/ConfidenceC/ConfidenceService";
+import ConfidenceService from "../../components/ConfidenceSerivce/ConfidenceService";
 import FairUsePolicy from "../../components/FairUsePolicy/FairUsePolicy";
 import PhoneOrder from "../../components/PhoneOrder/PhoneOrder";
 import ReviewsComponent from "../../components/ReviewsComponent/ReviewsComponent";
