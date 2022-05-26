@@ -1,13 +1,14 @@
-import { Button } from "bootstrap";
 import React from "react";
-import { Accordion, Col, Container, Row } from "react-bootstrap";
+import { Accordion, Button, Col, Container, Row } from "react-bootstrap";
+import FairUsePolicy from "../../components/FairUsePolicy/FairUsePolicy";
 import PhoneOrder from "../../components/PhoneOrder/PhoneOrder";
+import ReviewsComponent from "../../components/ReviewsComponent/ReviewsComponent";
 import WhyChoose from "../../components/WhyChoose/WhyChoose";
 
 const ExamService = () => {
   return (
     <main style={{ overflow: "hidden" }}>
-      <section id="exam-service-hero">
+      <section id="assignment-service-hero">
         <Container>
           <Row>
             <Col md={8} xs={12}>
@@ -22,7 +23,7 @@ const ExamService = () => {
                   time, can be a difficult balancing act. Students often feel
                   nervous before entering the exam hall, and this is completely
                   natural, but revision is key to calming your anxiety: the more
-                  prepared you are, the more confident you will feel. <br />
+                  prepared you are, the more confident you will feel. <br />{" "}
                   <br />
                   Our Exam Revision Service can help you prepare for any type of
                   exam: it’s personalised to your needs and will support you in
@@ -55,33 +56,6 @@ const ExamService = () => {
               </div>
             </Col>
           </Row>
-
-          <Row className="mt-5">
-            <Col md={3} xs={6}>
-              <div className="text-light d-flex">
-                <span>icon</span>
-                <p>Written to Standard</p>
-              </div>
-            </Col>
-            <Col md={3} xs={6}>
-              <div className="text-light d-flex">
-                <span>icon</span>
-                <p>Plagiarism-free</p>
-              </div>
-            </Col>
-            <Col md={3} xs={6}>
-              <div className="text-light d-flex">
-                <span>icon</span>
-                <p>Always on Time</p>
-              </div>
-            </Col>
-            <Col md={3} xs={6}>
-              <div className="text-light d-flex">
-                <span>icon</span>
-                <p>Unrivalled Quality</p>
-              </div>
-            </Col>
-          </Row>
         </Container>
       </section>
 
@@ -93,7 +67,7 @@ const ExamService = () => {
         <PhoneOrder />
       </section>
 
-      <section id="model-report">
+      <section id="service-include">
         <Container>
           <h2>What the service includes</h2>
           <Accordion defaultActiveKey="0">
@@ -208,6 +182,105 @@ const ExamService = () => {
               every stage of your order.
             </p>
           </div>
+        </Container>
+      </section>
+
+      <section id="service-include">
+        <Container>
+          <h2>How to use our Exam Revision service</h2>
+          <p>
+            After the order has been written and checked over, you’ll be able to
+            download your work. It’s then time for you to begin revising! We
+            have a page entirely dedicated to Exam Tips and Techniques and you
+            should use our work as a guide to help you.
+          </p>
+          <Accordion defaultActiveKey="0">
+            <Accordion.Item eventKey="0">
+              <Accordion.Header>Read through the work</Accordion.Header>
+              <Accordion.Body>
+                Firstly, learn the key terms and definitions we’ve given you.
+                Knowing and – more importantly – showing you understand key
+                terminology can be an easy way to get marks, and they are often
+                very short and simple to remember. Test yourself on these by
+                having a list of definitions to learn.
+              </Accordion.Body>
+            </Accordion.Item>
+            <Accordion.Item eventKey="1">
+              <Accordion.Header>Create a structure</Accordion.Header>
+              <Accordion.Body>
+                Use our exam revision to create a structure for what you’re
+                going to write and make notes for things to talk about. Practice
+                writing your own answer under mock exam conditions: we recommend
+                timing yourself in a quiet room, ideally at a desk, in a place
+                where you won’t be interrupted. It’s important to ensure you are
+                not simply re-writing your notes over and over: instead, test
+                yourself to see what you’ve learned from your revision. Making
+                flashcards for yourself or getting someone else to ask you
+                quick-fire questions can be really useful ways to do this!
+              </Accordion.Body>
+            </Accordion.Item>
+            <Accordion.Item eventKey="2">
+              <Accordion.Header>Exam day</Accordion.Header>
+              <Accordion.Body>
+                Eventually, exam day will come around. When the exam starts,
+                take a few deep breaths before turning over your paper to help
+                you keep calm. It’s a great idea to spend at least five or ten
+                minutes writing a plan for how you’re going to answer the
+                question you have been set; this is something that you can plan
+                before you even enter the exam hall if you have a seen exam!{" "}
+                <br /> <br />
+                Lastly, don’t panic and plan something fun to do after your exam
+                – you deserve it!
+              </Accordion.Body>
+            </Accordion.Item>
+          </Accordion>
+        </Container>
+      </section>
+
+      <section>
+        <FairUsePolicy />
+      </section>
+
+      <section>
+        <ReviewsComponent />
+      </section>
+
+      <section id="related-service">
+        <Container>
+          <h2 className="text-center">Related services</h2>
+          <p className="text-center my-3">
+            We can help you no matter what level you’re writing for. Many of our
+            writers hold master's degrees or higher, so we can help regardless
+            of whether you are studying for an undergraduate or postgraduate
+            assignment! We have a variety of other services that you can use.
+          </p>
+          <Row>
+            <Col md={4} xs={12}>
+              <div className="shadow">
+                <img src="/assets/writing-2.webp" alt="" className="w-100" />
+                <h4 className="text-center py-4">Essay Writing</h4>
+              </div>
+            </Col>
+            <Col md={4} xs={12}>
+              <div className="shadow">
+                <img
+                  src="/assets/student-group.webp"
+                  alt=""
+                  className="w-100"
+                />
+                <h4 className="text-center py-4">Assignment Writing</h4>
+              </div>
+            </Col>
+            <Col md={4} xs={12}>
+              <div className="shadow">
+                <img src="/assets/writing-1.webp" alt="" className="w-100" />
+                <h4 className="text-center py-4">Dissertation Writing</h4>
+              </div>
+            </Col>
+          </Row>
+          <p className="text-center">
+            View our <a href="#">full service portfolio</a>
+          </p>
         </Container>
       </section>
     </main>

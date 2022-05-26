@@ -12,6 +12,7 @@ import CourseworkService from "./services/CourseworkService/CourseworkService";
 import EditingService from "./services/EditingService/EditingService";
 import EssayplanService from "./services/EssayplanService/EssayplanService";
 import EssayService from "./services/EssayService/EssayService";
+import ExamService from "./services/ExamService/ExamService";
 import MarkingService from "./services/MarkingService/MarkingService";
 import PowerpointService from "./services/PowerpointService/PowerpointService";
 import ReflectiveService from "./services/ReflectiveService/ReflectiveService";
@@ -49,6 +50,8 @@ function App() {
           <Route path="/marking-service" element={<MarkingService />} />
 
           <Route path="/editing-service" element={<EditingService />} />
+
+          <Route path="/exam-service" element={<ExamService />} />
 
           <Route path="/how-it-works" element={<HowItWorks />} />
           <Route path="/offers" element={<Offers />} />

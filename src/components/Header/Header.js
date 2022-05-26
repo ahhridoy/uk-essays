@@ -84,13 +84,13 @@ const Header = () => {
                         <div>
                           <h5>EDITING / MARKING SERVICES</h5>
                           <hr />
-                          <Link to="/marketing-service">Marking Service</Link>
+                          <Link to="/marking-service">Marking Service</Link>
                           <Link to="/editing-service">Editing Service</Link>
                         </div>
                         <div>
                           <h5>OTHER SERVICES</h5>
                           <hr />
-                          <Link to="/exam-revision-service">
+                          <Link to="/exam-service">
                             Exam Revision Service
                           </Link>
                           <Link to="/academic-poster-service">
