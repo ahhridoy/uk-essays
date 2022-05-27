@@ -1,5 +1,6 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import AboutUK from "./about/AboutUK/AboutUK";
+import Guarantees from "./about/Guarantees/Guarantees";
 import OurExpert from "./about/OurExpert/OurExpert";
 import Footer from "./components/Footer/Footer";
 import Header from "./components/Header/Header";
@@ -68,6 +69,8 @@ function App() {
           <Route path="/about" element={<AboutUK />} />
 
           <Route path="/expert-writers" element={<OurExpert />} />
+
+          <Route path="/guarantees" element={<Guarantees />} />
 
           <Route path="/how-it-works" element={<HowItWorks />} />
           <Route path="/offers" element={<Offers />} />
