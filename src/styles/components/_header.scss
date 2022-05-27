@@ -10,20 +10,48 @@
       left: 0px;
       display: none;
       .services-router {
-         width: 1100px;
-         display: flex;
-         justify-content: center;
-         padding: 20px;
+        width: 1100px;
+        display: flex;
+        justify-content: center;
+        padding: 20px;
         a {
           display: block;
           text-decoration: none;
         }
         div {
-           margin-right: 50px;
+          margin-right: 50px;
         }
       }
     }
     &:hover .services-content {
+      display: block;
+    }
+  }
+
+  .about-container {
+    display: inline;
+    position: relative;
+    .about-content {
+      background-color: rgba(var(--bs-light-rgb), var(--bs-bg-opacity));
+      position: absolute;
+      top: 40px;
+      left: -200px;
+      display: none;
+      .about-router {
+        width: 1200px;
+        display: flex;
+        justify-content: center;
+        padding: 20px;
+        a {
+          display: block;
+          text-decoration: none;
+        }
+        div {
+          margin-right: 50px;
+        }
+      }
+    }
+    &:hover .about-content {
       display: block;
     }
   }

@@ -90,9 +90,7 @@ const Header = () => {
                         <div>
                           <h5>OTHER SERVICES</h5>
                           <hr />
-                          <Link to="/exam-service">
-                            Exam Revision Service
-                          </Link>
+                          <Link to="/exam-service">Exam Revision Service</Link>
                           <Link to="/academic-service">
                             Academic Poster Service
                           </Link>
@@ -116,9 +114,58 @@ const Header = () => {
               <Nav.Link as={Link} to="/pricing" eventKey="/home">
                 Reviews
               </Nav.Link>
-              <Nav.Link as={Link} to="/pricing" eventKey="/home">
-                About Us
-              </Nav.Link>
+              <div className="about-container">
+                <Nav.Link as={Link} to="/services" eventKey="/about">
+                  About Us
+                  <div className="about-content">
+                    <div className="about-router">
+                      <div>
+                        <h5>ABOUT UKESSAYS</h5>
+                        <hr />
+                        <Link to="/about">About UK Essays</Link>
+                        <Link to="/expert-writers">Our Expert Writers</Link>
+                        <Link to="/guarantees">Our Guarantees</Link>
+                        <Link to="/quality-procedures">
+                          Our Quality Procedures
+                        </Link>
+                        <Link to="/customer-reviews">Customer Reviews</Link>
+                        <Link to="/essay-guide">Essay Buying Guide</Link>
+                        <Link to="/finance">Payl8r Finance</Link>
+                      </div>
+                      <div>
+                        <h5>CONTACT</h5>
+                        <hr />
+                        <Link to="/contact">Contact UK Essays</Link>
+                        <Link to="/press-centre">Press Centre & Enquiries</Link>
+                        <Link to="/write-ukessays">Write for UK Essays</Link>
+                        <Link to="/faqs">FAQs</Link>
+                      </div>
+                      <div>
+                        <div>
+                          <img
+                            src="/assets/fair-use.jpg"
+                            alt=""
+                            className="w-100"
+                          />
+                          <p>
+                            <a href="#">Fair Use Policy</a>
+                          </p>
+                        </div>
+                      </div>
+                      <div>
+                        <img
+                          src="/assets/sign-in.jpg"
+                          alt=""
+                          className="w-100"
+                        />
+                        <p>
+                          <a href="#">Fair Use Policy</a>
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </Nav.Link>
+              </div>
               <Nav.Link as={Link} to="/pricing" eventKey="/home">
                 Free Resources
               </Nav.Link>

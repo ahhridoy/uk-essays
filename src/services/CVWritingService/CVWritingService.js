@@ -5,7 +5,7 @@ import Press from "../../components/Press/Press";
 
 const CVWritingService = () => {
   return (
-    <div>
+    <main style={{ overflow: "hidden" }}>
       <section id="cv-service-hero">
         <Container>
           <Row>
@@ -354,7 +354,7 @@ const CVWritingService = () => {
       <section>
         <Press />
       </section>
-    </div>
+    </main>
   );
 };
 
