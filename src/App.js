@@ -1,5 +1,6 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import AboutUK from "./about/AboutUK/AboutUK";
+import OurExpert from "./about/OurExpert/OurExpert";
 import Footer from "./components/Footer/Footer";
 import Header from "./components/Header/Header";
 import TopBar from "./components/Header/TopBar";
@@ -65,6 +66,8 @@ function App() {
           {/* ------------------------ */}
 
           <Route path="/about" element={<AboutUK />} />
+
+          <Route path="/expert-writers" element={<OurExpert />} />
 
           <Route path="/how-it-works" element={<HowItWorks />} />
           <Route path="/offers" element={<Offers />} />

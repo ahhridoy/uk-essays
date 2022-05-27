@@ -1,5 +1,6 @@
 import React from "react";
 import { Col, Container, Row } from "react-bootstrap";
+import Press from "../../components/Press/Press";
 import ServicesComponent from "../../components/ServicesComponent/ServicesComponent";
 
 const AboutUK = () => {
@@ -315,6 +316,10 @@ const AboutUK = () => {
 
       <section>
         <ServicesComponent />
+      </section>
+
+      <section>
+        <Press />
       </section>
     </main>
   );
