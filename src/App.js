@@ -1,5 +1,7 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import AboutUK from "./about/AboutUK/AboutUK";
+import Contact from "./about/Contact/Contact";
+import FairUse from "./about/FairUse/FairUse";
 import Guarantees from "./about/Guarantees/Guarantees";
 import OurExpert from "./about/OurExpert/OurExpert";
 import Quality from "./about/Quality/Quality";
@@ -67,6 +69,8 @@ function App() {
 
           {/* ------------------------ */}
 
+          <Route path="/contact" element={<Contact />} />
+
           <Route path="/about" element={<AboutUK />} />
 
           <Route path="/expert-writers" element={<OurExpert />} />
@@ -74,6 +78,8 @@ function App() {
           <Route path="/guarantees" element={<Guarantees />} />
 
           <Route path="/quality" element={<Quality />} />
+
+          <Route path="/fair-use" element={<FairUse />} />
 
           <Route path="/how-it-works" element={<HowItWorks />} />
           <Route path="/offers" element={<Offers />} />

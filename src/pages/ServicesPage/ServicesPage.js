@@ -1,25 +1,24 @@
 import React from "react";
 import { Button, Container } from "react-bootstrap";
-import FaqComponent from "../../components/FaqComponent";
+import LookingFor from "../../components/LookingFor/LookingFor";
 import Press from "../../components/Press/Press";
 import "../../styles/pages/_services-page.scss";
 
 const Services = () => {
   return (
-    <main style={{overflow: "hidden"}}>
+    <main style={{ overflow: "hidden" }}>
       <section id="portfolio">
         <Container>
-          <div>
-            <h2 className="heading text-light text-center">
-              Academic Service Portfolio
-            </h2>
-            <p className="sub-text text-light text-center">
-              In the business for over 17 years. The world’s best writers. Loved
-              by students and the global press. <br />
-              So how do you create the world’s best work? Let us show you the
-              services we have on offer and start your journey to success now:
-            </p>
-          </div>
+          <h2 className="heading text-light text-center">
+            Academic Service Portfolio
+          </h2>
+          <p className="sub-text text-light text-center">
+            In the business for over 17 years. The world’s best writers. Loved
+            by students and the global press. <br />
+            So how do you create the world’s best work? Let us show you the
+            services we have on offer and start your journey to success now:
+          </p>
+
           <a href="#" className="rate-review">
             <div className="d-flex justify-content-center align-items-center">
               <span>rating star icon</span>
@@ -45,11 +44,11 @@ const Services = () => {
 
       <section id="looking-for">
         <Container>
-          <div className="heading">
+          <div className="shadow heading">
             <h2 className="text-center">What are you looking for?</h2>
           </div>
           <div className="accordion">
-            <FaqComponent />
+            <LookingFor />
           </div>
         </Container>
       </section>
@@ -73,7 +72,7 @@ const Services = () => {
           </div>
         </Container>
       </section>
-      
+
       <section id="essay-heros">
         <Container className="text-box">
           <h2 className="text-center">Meet The Essay Heroes</h2>

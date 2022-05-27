@@ -1,6 +1,7 @@
 import React from "react";
 import { Button, Container, Nav, Navbar } from "react-bootstrap";
 import { Link } from "react-router-dom";
+import { IoIosHome } from "react-icons/io";
 
 const Header = () => {
   return (
@@ -19,7 +20,7 @@ const Header = () => {
             <Nav className="me-auto">
               <Nav.Link as={Link} to="/home" eventKey="/home">
                 {" "}
-                UK Essays
+                <IoIosHome /> UK Essays
               </Nav.Link>
               <div className="services-container">
                 <Nav.Link as={Link} to="/services" eventKey="/services">
@@ -115,7 +116,7 @@ const Header = () => {
                 Reviews
               </Nav.Link>
               <div className="about-container">
-                <Nav.Link as={Link} to="/about" eventKey="/about">
+                <Nav.Link as={Link} to="/contact" eventKey="/contact">
                   About Us
                   <div className="about-content">
                     <div className="about-router">
@@ -139,16 +140,16 @@ const Header = () => {
                         <Link to="/faqs">FAQs</Link>
                       </div>
                       <div>
-                        <div>
+                        <Link to="/fair-use">
                           <img
                             src="/assets/fair-use.jpg"
                             alt=""
                             className="w-100"
                           />
                           <p>
-                            <a href="#">Fair Use Policy</a>
+                            <Link to="/fair-use">Fair Use Policy</Link>
                           </p>
-                        </div>
+                        </Link>
                       </div>
                       <div>
                         <img
@@ -157,7 +158,7 @@ const Header = () => {
                           className="w-100"
                         />
                         <p>
-                          <a href="#">Fair Use Policy</a>
+                          <a href="#">Account Login</a>
                         </p>
                       </div>
                     </div>

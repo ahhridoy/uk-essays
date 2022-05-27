@@ -3,7 +3,7 @@ import { Accordion } from "react-bootstrap";
 
 import React from "react";
 
-const FaqComponent = () => {
+const LookingFor = () => {
   return (
     <Accordion
       defaultActiveKey="0"
@@ -60,4 +60,4 @@ const FaqComponent = () => {
   );
 };
 
-export default FaqComponent;
+export default LookingFor;
