@@ -2,6 +2,7 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import AboutUK from "./about/AboutUK/AboutUK";
 import Guarantees from "./about/Guarantees/Guarantees";
 import OurExpert from "./about/OurExpert/OurExpert";
+import Quality from "./about/Quality/Quality";
 import Footer from "./components/Footer/Footer";
 import Header from "./components/Header/Header";
 import TopBar from "./components/Header/TopBar";
@@ -71,6 +72,8 @@ function App() {
           <Route path="/expert-writers" element={<OurExpert />} />
 
           <Route path="/guarantees" element={<Guarantees />} />
+
+          <Route path="/quality" element={<Quality />} />
 
           <Route path="/how-it-works" element={<HowItWorks />} />
           <Route path="/offers" element={<Offers />} />

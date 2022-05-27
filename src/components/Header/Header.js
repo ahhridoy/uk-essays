@@ -125,9 +125,7 @@ const Header = () => {
                         <Link to="/about">About UK Essays</Link>
                         <Link to="/expert-writers">Our Expert Writers</Link>
                         <Link to="/guarantees">Our Guarantees</Link>
-                        <Link to="/quality-procedures">
-                          Our Quality Procedures
-                        </Link>
+                        <Link to="/quality">Our Quality Procedures</Link>
                         <Link to="/customer-reviews">Customer Reviews</Link>
                         <Link to="/essay-guide">Essay Buying Guide</Link>
                         <Link to="/finance">Payl8r Finance</Link>
