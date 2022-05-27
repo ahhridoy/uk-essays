@@ -115,7 +115,7 @@ const Header = () => {
                 Reviews
               </Nav.Link>
               <div className="about-container">
-                <Nav.Link as={Link} to="/services" eventKey="/about">
+                <Nav.Link as={Link} to="/about" eventKey="/about">
                   About Us
                   <div className="about-content">
                     <div className="about-router">

@@ -1,4 +1,5 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
+import AboutUK from "./about/AboutUK/AboutUK";
 import Footer from "./components/Footer/Footer";
 import Header from "./components/Header/Header";
 import TopBar from "./components/Header/TopBar";
@@ -31,6 +32,8 @@ function App() {
           <Route path="/home" element={<LandingPage />} />
           <Route path="/services" element={<Services />} />
 
+          {/* --------------------- */}
+
           <Route path="/essay-service" element={<EssayService />} />
 
           <Route path="/assignment-service" element={<AssignmentService />} />
@@ -58,6 +61,10 @@ function App() {
           <Route path="/academic-service" element={<AcademicService />} />
 
           <Route path="/cv-service" element={<CVWritingService />} />
+
+          {/* ------------------------ */}
+
+          <Route path="/about" element={<AboutUK />} />
 
           <Route path="/how-it-works" element={<HowItWorks />} />
           <Route path="/offers" element={<Offers />} />
