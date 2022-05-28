@@ -3,6 +3,8 @@ import { Button, Container } from "react-bootstrap";
 import LookingFor from "../../components/LookingFor/LookingFor";
 import Press from "../../components/Press/Press";
 import "../../styles/pages/_services-page.scss";
+import { AiFillStar, AiFillHeart } from "react-icons/ai";
+import { BsStarHalf, BsPeopleFill } from "react-icons/bs";
 
 const Services = () => {
   return (
@@ -21,17 +23,25 @@ const Services = () => {
 
           <a href="#" className="rate-review">
             <div className="d-flex justify-content-center align-items-center">
-              <span>rating star icon</span>
+              <span>
+                <AiFillStar className="fs-4" />
+                <AiFillStar className="fs-4" />
+                <AiFillStar className="fs-4" />
+                <AiFillStar className="fs-4" />
+                <BsStarHalf className="fs-4" />
+              </span>
               <div>
                 <h2>4.4</h2>
                 <small>average</small>
               </div>
             </div>
             <div className="bg-light text-dark text-center px-2 my-2 rounded">
-              <h3>1748</h3>
-              <span>
-                star icon<small> REVIEWS</small>
-              </span>
+              <h3>1755</h3>
+              <img
+                src="/assets/reviewsio-logo.webp"
+                alt="logo"
+                className="services-reviewsio-logo"
+              />
             </div>
           </a>
           <div className="text-center mt-4">
@@ -55,8 +65,10 @@ const Services = () => {
 
       <section id="we-writing">
         <Container className="text-box">
-          <h2 className="text-center">We Writing</h2>
-          <p>
+          <h2 className="text-center my-3">
+            We <AiFillHeart className="text-danger" /> Writing
+          </h2>
+          <p className="text-center">
             At UK Essays, we're proud to know exactly what goes into making an
             awesome essay. We've dedicated over 14 years towards becoming
             experts in all things academic – from essays, assignments and
@@ -75,8 +87,8 @@ const Services = () => {
 
       <section id="essay-heros">
         <Container className="text-box">
-          <h2 className="text-center">Meet The Essay Heroes</h2>
-          <p>
+          <h2 className="text-center my-3"><BsPeopleFill className="text-primary" /> Meet The Essay Heroes</h2>
+          <p className="text-center">
             We use a team of experts and academics to build your order and
             create a fantastic, unique and exciting piece of work every time. We
             only use highly qualified writers, including lecturers, teachers and
