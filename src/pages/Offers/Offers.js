@@ -3,6 +3,14 @@ import { Accordion, Button, Container } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import Press from "../../components/Press/Press";
 import "../../styles/pages/_offers.scss";
+import { FaTelegramPlane, FaFacebookF } from "react-icons/fa";
+import {
+  AiOutlinePlusCircle,
+  AiOutlineReddit,
+  AiFillLinkedin,
+  AiOutlineWhatsApp,
+} from "react-icons/ai";
+import { BsTwitter } from "react-icons/bs";
 
 const Offers = () => {
   return (
@@ -31,7 +39,10 @@ const Offers = () => {
       <section id="signup-subscribe">
         <Container>
           <div className="d-flex justify-content-center align-items-center">
-            <h3>Sign up for our latest offers</h3>
+            <h3>
+              {" "}
+              <FaTelegramPlane /> Sign up for our latest offers
+            </h3>
             <input type="email" placeholder="Email address" />
             <Button variant="primary">Subscribe</Button>
           </div>
@@ -40,7 +51,7 @@ const Offers = () => {
               <Accordion.Item eventKey="0">
                 <Accordion.Header>
                   <h6 className="text-primary">
-                    {" "}
+                    <AiOutlinePlusCircle className="me-2" />
                     By submitting your details you consent to their use in
                     accordance with our Privacy Policy
                   </h6>
@@ -66,11 +77,21 @@ const Offers = () => {
           <h2 className="text-center my-3">Current offers</h2>
           <div className="text-center">
             <span>Share this: </span>
-            <span>Facebook </span>
-            <span>Twitter </span>
-            <span>Reddit </span>
-            <span>Linkedin </span>
-            <span>Whatsapp </span>
+            <span className="bg-primary p-1 text-light me-2">
+              Facebook <FaFacebookF />{" "}
+            </span>
+            <span className="bg-info p-1 text-light me-2">
+              Twitter <BsTwitter />{" "}
+            </span>
+            <span className="bg-danger p-1 text-light me-2">
+              Reddit <AiOutlineReddit />{" "}
+            </span>
+            <span className="bg-info p-1 text-light me-2">
+              Linkedin <AiFillLinkedin />{" "}
+            </span>
+            <span className="bg-success p-1 text-light me-2">
+              WhatsApp <AiOutlineWhatsApp />{" "}
+            </span>
           </div>
           <div className="d-flex my-4 py-4 border rounded">
             <div>

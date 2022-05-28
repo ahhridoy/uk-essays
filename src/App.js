@@ -11,6 +11,7 @@ import TopBar from "./components/Header/TopBar";
 import HowItWorks from "./pages/HowItWorks/HowItWorks";
 import LandingPage from "./pages/LandingPage/LandingPage";
 import Offers from "./pages/Offers/Offers";
+import Samples from "./pages/Samples/Samples";
 import Services from "./pages/ServicesPage/ServicesPage";
 import AcademicService from "./services/AcademicService/AcademicService";
 import AssignmentService from "./services/AssignmentService/AssignmentService";
@@ -81,8 +82,11 @@ function App() {
 
           <Route path="/fair-use" element={<FairUse />} />
 
+          {/* ------------------------- */}
+
           <Route path="/how-it-works" element={<HowItWorks />} />
           <Route path="/offers" element={<Offers />} />
+          <Route path="/samples" element={<Samples />} />
         </Routes>
         <Footer />
       </BrowserRouter>

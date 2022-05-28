@@ -109,7 +109,7 @@ const Header = () => {
               <Nav.Link as={Link} to="/offers" eventKey="/offers">
                 Offers
               </Nav.Link>
-              <Nav.Link as={Link} to="/pricing" eventKey="/home">
+              <Nav.Link as={Link} to="/samples" eventKey="/samples">
                 Samples
               </Nav.Link>
               <Nav.Link as={Link} to="/pricing" eventKey="/home">
