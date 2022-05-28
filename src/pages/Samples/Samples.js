@@ -1,8 +1,7 @@
 import React from "react";
 import "../../styles/pages/_samples.scss";
-import { FaTelegramPlane, FaFacebookF } from "react-icons/fa";
+import { FaFacebookF } from "react-icons/fa";
 import {
-  AiOutlinePlusCircle,
   AiOutlineReddit,
   AiFillLinkedin,
   AiOutlineWhatsApp,

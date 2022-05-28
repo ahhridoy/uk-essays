@@ -1,0 +1,40 @@
+@import "../includes/imports";
+
+#reviews-page-top {
+  margin-top: 140px;
+  background-color: #071d37;
+  padding-top: 50px;
+  padding-bottom: 100px;
+  .sub-text {
+    font-size: 1.25rem;
+    a {
+      text-decoration: none;
+      color: #ca4a00;
+      border-bottom: 1px dotted #ca4a00;
+    }
+  }
+  .rate-review-box {
+    max-width: 300px;
+    margin: 0 auto;
+    padding: 10px;
+    .rate-review {
+      text-decoration: none;
+      .reviewspage-review-logo {
+        width: 150px;
+      }
+    }
+  }
+  .dotted-link {
+    color: white;
+    text-decoration: none;
+    border-bottom: 1px dotted white;
+  }
+  .services-reviewsio-logo {
+    width: 100px;
+  }
+}
+
+#professional-services {
+  background-color: #f8f9fa;
+  padding: 50px 0;
+}

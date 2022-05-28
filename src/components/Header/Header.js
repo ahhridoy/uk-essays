@@ -112,7 +112,7 @@ const Header = () => {
               <Nav.Link as={Link} to="/samples" eventKey="/samples">
                 Samples
               </Nav.Link>
-              <Nav.Link as={Link} to="/pricing" eventKey="/home">
+              <Nav.Link as={Link} to="/reviews" eventKey="/reviews">
                 Reviews
               </Nav.Link>
               <div className="about-container">
@@ -165,7 +165,7 @@ const Header = () => {
                   </div>
                 </Nav.Link>
               </div>
-              <Nav.Link as={Link} to="/pricing" eventKey="/home">
+              <Nav.Link as={Link} to="/resources" eventKey="/resources">
                 Free Resources
               </Nav.Link>
             </Nav>
