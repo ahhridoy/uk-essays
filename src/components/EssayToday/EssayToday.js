@@ -5,7 +5,7 @@ const EssayToday = () => {
   return (
     <main id="essay-today">
       <Container className="py-5 text-light text-center">
-        <h2>Order an Essay Today!</h2>
+        <h1>Order an Essay Today!</h1>
         <p>
           We have over 500 expert essay writers, ready and waiting to help you
           achieve academic success

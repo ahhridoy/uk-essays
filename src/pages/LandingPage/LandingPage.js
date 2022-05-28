@@ -6,10 +6,13 @@ import Resources from "../../components/Resources/Resources";
 import ReviewRating from "../../components/ReviewRating/ReviewRating";
 import ServicesComponent from "../../components/ServicesComponent/ServicesComponent";
 import "../../styles/pages/_landing.scss";
+import { AiFillStar, AiOutlineFileDone, AiFillHeart } from "react-icons/ai";
+import { BsStarHalf, BsPencil, BsPeopleFill } from "react-icons/bs";
+import { MdDone, MdOutlineWatchLater } from "react-icons/md";
 
 const LandingPage = () => {
   return (
-    <main>
+    <main style={{ overflow: "hidden" }}>
       {/* hero */}
       <section id="hero">
         <Container className="py-5">
@@ -19,21 +22,33 @@ const LandingPage = () => {
           </div>
           <Row>
             <Col md={4} xs={12}>
-              <div className="bg-dark text-light p-3 rounded text-end box">
+              <div className="text-light p-3 text-end box">
                 <h2>Order Today</h2>
-                <span>1721 reviews</span>
+                <span>
+                  <AiFillStar className="text-warning" />
+                  <AiFillStar className="text-warning" />
+                  <AiFillStar className="text-warning" />
+                  <AiFillStar className="text-warning" />
+                  <BsStarHalf className="text-warning" />
+                  1755 reviews
+                </span>
                 <p>
                   UKEssays.com is rated 4.4 out of 5 by <br /> trusted reviews
                   site:
                 </p>
-                <h2>Reviews</h2>
+                <img
+                  src="/assets/reviewsio-logo-white.webp"
+                  className="w-100"
+                  alt=""
+                />{" "}
+                <br />
                 <Button variant="success">Place an order</Button>
               </div>
             </Col>
             <Col md={8} xs={12}>
-              <div className="bg-dark text-light p-3 rounded text-end box">
+              <div className="text-light p-3 text-end box">
                 <h2>Our Services</h2>
-                <p>
+                <p className="text-warning">
                   Find out how <b>UKEssays can help YOU</b>{" "}
                 </p>
                 <p>
@@ -46,9 +61,25 @@ const LandingPage = () => {
               </div>
             </Col>
             <Col md={4} xs={12}>
-              <div className="bg-dark text-light p-3 rounded text-end box">
+              <div className="text-light p-3 text-end box">
                 <h2>Press Coverage</h2>
-                <p> BBC </p>
+                <div className="d-flex justify-content-between">
+                  <img
+                    src="/assets/the-telegraph-logo.webp"
+                    alt="logo"
+                    className="news-logo"
+                  />
+                  <img
+                    src="/assets/bbc-logo.webp"
+                    alt="logo"
+                    className="news-logo"
+                  />
+                  <img
+                    src="/assets/independent-logo.webp"
+                    alt="logo"
+                    className="news-logo"
+                  />
+                </div>
                 <p>
                   You can view national and international <br /> press coverage
                   of our academic services in <br /> our press center.
@@ -57,7 +88,7 @@ const LandingPage = () => {
               </div>
             </Col>
             <Col md={4} xs={12}>
-              <div className="bg-dark text-light p-3 rounded text-end box">
+              <div className="text-light p-3 text-end box">
                 <h2>Service Samples</h2>
                 <p>
                   Our academic writing service samples <br /> reflect the high
@@ -68,9 +99,12 @@ const LandingPage = () => {
               </div>
             </Col>
             <Col md={4} xs={12}>
-              <div className="bg-dark text-light p-3 rounded text-end box">
+              <div className="text-light p-3 text-end box">
                 <h2>Essay Writing</h2>
-                <b>Leading</b> <p> UK Based Provider</p>
+                <p className="text-warning">
+                  {" "}
+                  <b>Leading</b> UK Based Provider
+                </p>
                 <p>
                   Our essay writing service can help you make the most of your
                   university studies.
@@ -90,7 +124,7 @@ const LandingPage = () => {
       <section id="examples">
         <Container className="py-5">
           <h2 className="heading text-center">Example Essays</h2>
-          <p className="sub-text text-center">
+          <p className="sub-text text-center fs-5 font-weight-light">
             We have over 100,000 free essays available to help you with your
             studies!
           </p>
@@ -101,7 +135,9 @@ const LandingPage = () => {
             assignments. Some of our most popular subject areas are linked
             below:
           </p>
-          <h2 className="text-center my-5">Popular Subject Areas</h2>
+          <h2 className="text-center my-5">
+            <strong>Popular</strong> Subject Areas
+          </h2>
           <Row className="sub-area">
             <Col md={4} xs={12}>
               <div className="text-start">
@@ -183,10 +219,11 @@ const LandingPage = () => {
       <section id="promises">
         <Container className="py-5">
           <h2 className="my-5 text-center">
-            UKEssays <span className="text-success">promises</span> you:
+            UKEssays <strong className="text-success">promises</strong> you:
           </h2>
           <Row>
             <Col md={3} xs={12} className="text-center">
+              <MdDone className="fs-3 text-success mb-4" />
               <h3>Plagiarism-free</h3>
               <p>
                 If the work we produce contains plagiarism we'll pay out a
@@ -194,10 +231,12 @@ const LandingPage = () => {
               </p>
             </Col>
             <Col md={3} xs={12} className="text-center">
+              <MdOutlineWatchLater className="fs-3 text-success mb-4" />
               <h3>Always on Time</h3>
               <p>If we are a minute late, the work is on us - it's free!</p>
             </Col>
             <Col md={3} xs={12} className="text-center">
+              <BsPencil className="fs-3 text-success mb-4" />
               <h3>Written to Standard</h3>
               <p>
                 All of our assignments go through a stringent quality checking
@@ -205,6 +244,7 @@ const LandingPage = () => {
               </p>
             </Col>
             <Col md={3} xs={12} className="text-center">
+              <AiOutlineFileDone className="fs-3 text-success mb-4" />
               <h3>Quality</h3>
               <p>
                 Providing quality work is core to our beliefs, which is why we
@@ -227,50 +267,79 @@ const LandingPage = () => {
       <section id="why-we-are">
         <Container className="py-5">
           <h2 className="my-4 text-center heading">
-            Find out <span>why we are the best</span>
+            Find out <strong>why we are the best</strong>
           </h2>
-          <Row>
+          <Row className="gy-4">
             <Col md={6} xs={12}>
-              <h3>The World's Best Writers</h3>
-              <p>
-                Unlike other essay writing companies, we don't just use any
-                writers – we use the best of the best. Every writer is not only
-                directly qualified in the subject they write for, but has been
-                through and understands the challenges and difficulties of
-                Higher Education. Every writer is hand selected by our team to
-                produce the best piece of work possible. We simply won't settle
-                for less.
-              </p>
+              <div className="d-flex">
+                <div>
+                  <BsPeopleFill className="fs-2 why-we-are-icons" />
+                </div>
+                <div className="ms-4">
+                  <h3>The World's Best Writers</h3>
+                  <p>
+                    Unlike other essay writing companies, we don't just use any
+                    writers – we use the best of the best. Every writer is not
+                    only directly qualified in the subject they write for, but
+                    has been through and understands the challenges and
+                    difficulties of Higher Education. Every writer is hand
+                    selected by our team to produce the best piece of work
+                    possible. <a href="#">We simply won't settle for less.</a>
+                  </p>
+                </div>
+              </div>
             </Col>
             <Col md={6} xs={12}>
-              <h3>Loved by Customers</h3>
-              <p>
-                UKEssays have lots of press coverage from all over the world
-                confirming that we deliver what we promise, and our customers
-                regularly leave verified reviews describing their experience.
-                Delivering what we promise means we get great feedback!
-              </p>
+              <div className="d-flex">
+                <div>
+                  <AiFillHeart className="fs-2 why-we-are-icons" />
+                </div>
+                <div className="ms-4">
+                  <h3>Loved by Customers</h3>
+                  <p>
+                    UKEssays have lots of press coverage from all over the world
+                    confirming that we deliver what we promise, and our
+                    customers regularly leave verified reviews describing their
+                    experience. Delivering what we promise means we get great
+                    feedback!
+                  </p>
+                </div>
+              </div>
             </Col>
             <Col md={6} xs={12}>
-              <h3>Outstanding Customer Support</h3>
-              <p>
-                At UKEssays, every part of your experience is special. From
-                start to finish, we provide continuous support with our friendly
-                and helpful customer experience team. We'll not only help you
-                with placing your order, but help you get the most out of your
-                investment – making you a better learner and a stronger
-                academic.
-              </p>
+              <div className="d-flex">
+                <div>
+                  <AiOutlineFileDone className="fs-2 why-we-are-icons" />
+                </div>
+                <div className="ms-4">
+                  <h3>Outstanding Customer Support</h3>
+                  <p>
+                    At UKEssays, every part of your experience is special. From
+                    start to finish, we provide continuous support with our
+                    friendly and helpful customer experience team. We'll not
+                    only help you with placing your order, but help you get the
+                    most out of your investment – making you a better learner
+                    and a stronger academic.
+                  </p>
+                </div>
+              </div>
             </Col>
             <Col md={6} xs={12}>
-              <h3>18 Years in Business</h3>
-              <p>
-                Ever since we started back in 2003, we've led the industry from
-                the front, setting trends and smashing expectations. We were the
-                first company in the world to offer you guaranteed 2:1 and 1st
-                class work and we're one of the few companies located in the UK.
-                Why don't you come and say hello?
-              </p>
+              <div className="d-flex">
+                <div>
+                  <MdOutlineWatchLater className="fs-2 why-we-are-icons" />
+                </div>
+                <div className="ms-4">
+                  <h3>18 Years in Business</h3>
+                  <p>
+                    Ever since we started back in 2003, we've led the industry
+                    from the front, setting trends and smashing expectations. We
+                    were the first company in the world to offer you guaranteed
+                    2:1 and 1st class work and we're one of the few companies
+                    located in the UK. Why don't you come and say hello?
+                  </p>
+                </div>
+              </div>
             </Col>
           </Row>
           <div className="my-4 text-center">

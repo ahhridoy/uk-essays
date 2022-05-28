@@ -8,6 +8,10 @@
   .box {
     height: 250px;
     margin-bottom: 20px;
+    background-color: #071d37;
+    .news-logo {
+      width: 100px;
+    }
     a {
       color: #ffbb00;
       text-decoration: none;
@@ -21,7 +25,7 @@
 
 #examples {
   background-color: #f8f9fa;
-  border: 1px solid gray;
+  border: 1px solid rgb(221, 221, 221);
   .sub-area {
     max-width: 1100px;
     margin: 0 auto;
@@ -33,9 +37,12 @@
 
 #why-we-are {
   .heading {
-    span {
+    strong {
       color: #ca4a00;
     }
+  }
+  .why-we-are-icons {
+    color: #ca4a00;
   }
 }
 

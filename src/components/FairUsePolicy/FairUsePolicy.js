@@ -6,7 +6,7 @@ const FairUsePolicy = () => {
     <main id="policy">
       <Container className="py-5 text-light">
         <Row>
-          <Col md={6}>
+          <Col md={6} xs={12}>
             <h2>Our Fair Use Policy</h2>
             <p>
               Understanding how to use your essay is key to gaining the most
@@ -14,7 +14,7 @@ const FairUsePolicy = () => {
             </p>
             <Button variant="warning">Our Fair Use Policy ></Button>
           </Col>
-          <Col md={6}>Video</Col>
+          <Col md={6} xs={12}>Video</Col>
         </Row>
       </Container>
     </main>

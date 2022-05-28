@@ -1,5 +1,10 @@
 import React from "react";
 import { Button, Col, Container, Row } from "react-bootstrap";
+import { BiLike } from "react-icons/bi";
+import { RiQuillPenLine } from "react-icons/ri";
+import { FiAtSign } from "react-icons/fi";
+import { FaFacebookF } from "react-icons/fa";
+import { BsTwitter, BsGoogle } from "react-icons/bs";
 
 const Footer = () => {
   return (
@@ -14,7 +19,8 @@ const Footer = () => {
 
         <Row className="py-5">
           <Col md={4} xs={12}>
-            <div className="bg-dark p-5 text-center">
+            <div className="bg-black p-5 text-center border-bottom">
+              <BiLike className="text-warning fs-1 mb-4" />
               <h3>Safe & Trusted</h3>
               <p>
                 Your UKEssays purchase is secure and we're rated 4.4/5 on
@@ -23,13 +29,15 @@ const Footer = () => {
             </div>
           </Col>
           <Col md={4} xs={12}>
-            <div className="bg-dark p-5 text-center">
+            <div className="bg-black p-5 text-center border-bottom">
+              <RiQuillPenLine className="text-success fs-1 mb-4" />
               <h3>Bespoke</h3>
               <p>All work is written to order. No plagiarism, guaranteed!</p>
             </div>
           </Col>
           <Col md={4} xs={12}>
-            <div className="bg-dark p-5 text-center">
+            <div className="bg-black p-5 text-center border-bottom">
+              <FiAtSign className="text-info fs-1 mb-4" />
               <h3>Contact us</h3>
               <p>
                 We're here to answer any questions you have about our services
@@ -40,10 +48,14 @@ const Footer = () => {
 
         <Row className="py-5 footer-links">
           <Col md={3} xs={12}>
-            <p>Part of All Answers Ltd</p>
-            <p>Facebook</p>
-            <p>Facebook</p>
-            <p>Facebook</p>
+            <div>
+              <img src="/assets/all-answers.webp" alt="logo" className="w-25" />
+              <span>Part of All Answers Ltd</span>
+            </div>
+            <FaFacebookF className="fs-1 my-3 me-3" />
+            <BsTwitter className="fs-1 my-3 me-3" />
+            <BsGoogle className="fs-1 my-3" /> <br />
+            <img src="/assets/trusted-site.svg" alt="logo" className="w-25" />
           </Col>
           <Col md={3} xs={12}>
             <b>SERVICES</b>
@@ -97,14 +109,26 @@ const Footer = () => {
             </p>
           </Col>
         </Row>
-        <p>
-        Copyright © 2003 - 2022 - UKEssays is a trading name of All Answers Ltd, a company registered in England and Wales. Company Registration No: 4964706. VAT Registration No: 842417633. Registered Data Controller No: Z1821391. Registered office: Venture House, Cross Street, Arnold, Nottingham, Nottinghamshire, NG5 7PJ.
+        <p className="text-secondary">
+          Copyright © 2003 - 2022 - UKEssays is a trading name of All Answers
+          Ltd, a company registered in England and Wales. Company Registration
+          No: 4964706. VAT Registration No: 842417633. Registered Data
+          Controller No: Z1821391. Registered office: Venture House, Cross
+          Street, Arnold, Nottingham, Nottinghamshire, NG5 7PJ.
         </p>
         <div className="bottom-links">
-          <a href="#">Privacy Policy</a>
-          <a href="#">Terms & Conditions</a>
-          <a href="#">Copyright Notice</a>
-          <a href="#">Cookies</a>
+          <a href="#" className="text-secondary">
+            Privacy Policy
+          </a>
+          <a href="#" className="text-secondary">
+            Terms & Conditions
+          </a>
+          <a href="#" className="text-secondary">
+            Copyright Notice
+          </a>
+          <a href="#" className="text-secondary">
+            Cookies
+          </a>
         </div>
       </Container>
     </footer>

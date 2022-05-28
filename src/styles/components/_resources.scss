@@ -1,7 +1,10 @@
-#services {
+#resources {
    margin: 20px 0;
    h5 {
      font-size: clamp(14px, 3vw, 18px);
      background-color: #071d37;
+     span {
+        color: #17a2b8;
+     }
    }
  }

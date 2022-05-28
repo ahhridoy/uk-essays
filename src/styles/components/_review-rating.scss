@@ -13,7 +13,13 @@
      .review-section {
        max-width: 500px;
        background-color: white;
-       padding: 20px;
+       padding: 40px;
+       border-radius: 5px;
      }
+   }
+   .number-of-reviews {
+     color: blue;
+     border-bottom: 1px dotted blue;
+     margin-left: 10px;
    }
  }
