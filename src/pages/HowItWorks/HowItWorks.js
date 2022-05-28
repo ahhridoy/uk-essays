@@ -10,6 +10,9 @@ import {
 } from "react-bootstrap";
 import ReviewRating from "../../components/ReviewRating/ReviewRating";
 import "../../styles/pages/_how-it-works.scss";
+import { MdDone } from "react-icons/md";
+import { AiOutlineFileDone } from "react-icons/ai";
+import { FiSearch } from "react-icons/fi";
 
 const HowItWorks = () => {
   return (
@@ -63,7 +66,7 @@ const HowItWorks = () => {
 
       <section id="how-ukessays-works">
         <Container>
-          <h2 className="text-center">How UKEssays works</h2>
+          <h2 className="text-center mb-3">How UKEssays works</h2>
           <p className="text-center mb-5">
             At UK Essays, we like to keep things simple and transparent. Every
             step of our process is clear and open and has been perfected over
@@ -74,7 +77,7 @@ const HowItWorks = () => {
           </p>
           <div className="description mb-4">
             <h5 className="text-start">
-              <span className="text-warning">1.</span>Tell us what you need
+              <span className="text-danger me-2">1.</span>Tell us what you need
             </h5>
             <p className="text-start">
               We can help with virtually any type of work you’re completing.
@@ -85,8 +88,8 @@ const HowItWorks = () => {
             </p>
 
             <h5 className="text-start">
-              <span className="text-warning">2.</span>We'll find you the perfect
-              writer
+              <span className="text-danger me-2">2.</span>We'll find you the
+              perfect writer
             </h5>
             <p className="text-start">
               An expert writer will be individually chosen based on your
@@ -97,7 +100,7 @@ const HowItWorks = () => {
             </p>
 
             <h5 className="text-start">
-              <span className="text-warning">3.</span>Download the work
+              <span className="text-danger me-2">3.</span>Download the work
             </h5>
             <p className="text-start">
               Our in-house academics ensure the work is at the highest quality,
@@ -117,9 +120,10 @@ const HowItWorks = () => {
 
       <section id="build-drive">
         <Container>
-          <h2 className="text-center my-4">Built to drive your success</h2>
+          <h2 className="text-center my-5">Built to drive your success</h2>
           <Row>
             <Col md={4} xs={12}>
+              <MdDone className="text-danger fs-1 mb-3" />
               <h5>Perfectly written work</h5>
               <p>
                 Every order placed is unique – just like you. That’s why you can
@@ -131,6 +135,7 @@ const HowItWorks = () => {
             </Col>
 
             <Col md={4} xs={12}>
+              <AiOutlineFileDone className="text-danger fs-1 mb-3" />
               <h5>Quality, verified</h5>
               <p>
                 Our in-house team of experts – the Quality Control team – review
@@ -141,6 +146,7 @@ const HowItWorks = () => {
             </Col>
 
             <Col md={4} xs={12}>
+              <FiSearch className="text-danger fs-1 mb-3" />
               <h5>In-depth plagiarism scan</h5>
               <p>
                 Every order we deliver comes with a complimentary plagiarism
@@ -174,7 +180,7 @@ const HowItWorks = () => {
                 Why not check out our guarantees for yourself and see exactly
                 how you’ll be totally covered.
               </p>
-              <Button variant="primary">Read About our guarantees</Button>
+              <Button variant="info">Read About our guarantees</Button>
             </Col>
             <Col md={4} xs={12}>
               <img src="/assets/how-guarantees.jpg" alt="" className="w-100" />
@@ -188,38 +194,38 @@ const HowItWorks = () => {
 
       <section id="why-choose">
         <Container>
-          <h2 className="text-center">Why choose UK Essays</h2>
+          <h2 className="text-center my-5">Why choose UK Essays</h2>
           <Row>
             <Col md={6} xs={12}>
-              <p>
+              <p> <MdDone className="text-success fs-4 me-2" />
                 We only use expert writers who are always qualified to the level
                 they work at – they will always hold at least the grade you
                 order at, if not much higher!
               </p>
-              <p>
+              <p> <MdDone className="text-success fs-4 me-2" />
                 Our writers follow your instructions to the letter, making sure
                 to include everything you require. We go out of our way to make
                 sure your instructions are 100% complete to ensure accuracy
                 every time.
               </p>
-              <p>
+              <p> <MdDone className="text-success fs-4 me-2" />
                 We perform a bespoke and rigorous quality check on every piece
                 of work our writers complete. Think marking, but even more
                 detailed. We check not only the content of the work, but the
                 spelling, grammar, and even sources.
               </p>
-              <p>
+              <p> <MdDone className="text-success fs-4 me-2" />
                 Our in-house experts ensure that every piece features a good
                 depth of analysis, is well signposted, and is easy to read and
                 understand. Getting the facts right is one thing, but the work
                 being reader friendly and understandable is just as important.
               </p>
-              <p>
+              <p> <MdDone className="text-success fs-4 me-2" />
                 We check that the work is correctly focused and that all
                 arguments made are well supported with relevant, current and
                 reliable sources from high quality journals.
               </p>
-              <p>
+              <p> <MdDone className="text-success fs-4 me-2" />
                 Every order is packed full of value and extras that others
                 charge for: from a detailed grammar check, free plagiarism scan
                 and a hand selected writer, you can relax knowing we’ll take
@@ -256,7 +262,7 @@ const HowItWorks = () => {
 
       <section id="popular-question">
         <Container>
-          <h2 className="text-center">Popular questions</h2>
+          <h2 className="text-center my-5">Popular questions</h2>
           <Accordion defaultActiveKey="0">
             <Accordion.Item eventKey="0">
               <Accordion.Header>
@@ -313,7 +319,7 @@ const HowItWorks = () => {
 
       <section id="place-order">
         <Container>
-          <h2 className="text-center text-light pt-5">Place an Order Today!</h2>
+          <h1 className="text-center text-light pt-5">Place an Order Today!</h1>
           <p className="text-light text-center">
             You'll love our service - our expert writers are ready to help you
             achieve success
