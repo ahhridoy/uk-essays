@@ -23,20 +23,21 @@
         margin-right: 10px;
       }
       .search-form {
-         display: flex;
+        display: flex;
       }
     }
+
     @media screen and (max-width: 768px) {
-       .logo-name {
-          .site-name {
-             display: none;
-          }
-       }
-       .router-links {
-         .search-form {
-            display: none;
-         }
-       }
-   }
+      .logo-name {
+        .site-name {
+          display: none;
+        }
+      }
+      .router-links {
+        .search-form {
+          display: none;
+        }
+      }
+    }
   }
 }

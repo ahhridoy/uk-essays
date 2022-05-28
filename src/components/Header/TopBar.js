@@ -1,7 +1,6 @@
 import React from "react";
 import { Button, Container, Form, FormControl, Navbar } from "react-bootstrap";
 import { Link } from "react-router-dom";
-
 import { AiOutlineHeart } from "react-icons/ai";
 import { HiOutlineQuestionMarkCircle } from "react-icons/hi";
 import { MdOutlineNotificationsNone } from "react-icons/md";
@@ -22,6 +21,7 @@ const TopBar = () => {
               <p className="sub-text">TRUSTED BY STUDENTS SINCE 2003</p>
             </div>
           </Link>
+
           <div className="router-links">
             <Link to="/offers">
               <span className="text-danger">
@@ -47,17 +47,19 @@ const TopBar = () => {
               </span>
               <p>Sign In</p>
             </Link>
-            <Form className="search-form">
-              <Button variant="warning">
-                <FiSearch />
-              </Button>
-              <FormControl
-                type="search"
-                placeholder="Search"
-                className="me-2"
-                aria-label="Search"
-              />
-            </Form>
+            <div className="mt-2">
+              <Form className="search-form">
+                <Button variant="warning">
+                  <FiSearch />
+                </Button>
+                <FormControl
+                  type="search"
+                  placeholder="Search"
+                  className="me-2"
+                  aria-label="Search"
+                />
+              </Form>
+            </div>
           </div>
         </Container>
       </Navbar>

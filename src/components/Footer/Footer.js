@@ -58,7 +58,9 @@ const Footer = () => {
             <img src="/assets/trusted-site.svg" alt="logo" className="w-25" />
           </Col>
           <Col md={3} xs={12}>
-            <b>SERVICES</b>
+            <p className="mb-2">
+              <strong>SERVICES</strong>
+            </p>
             <p>
               <a href="#">Essay Writing Service</a>
             </p>
@@ -73,7 +75,9 @@ const Footer = () => {
             </p>
           </Col>
           <Col md={3} xs={12}>
-            <b>USEFUL RESOURCES</b>
+            <p className="mb-2">
+              <strong>USEFUL RESOURCES</strong>
+            </p>
             <p>
               <a href="#">Essays</a>
             </p>
@@ -91,7 +95,9 @@ const Footer = () => {
             </p>
           </Col>
           <Col md={3} xs={12}>
-            <b>COMPANY</b>
+            <p className="mb-2">
+              <strong>COMPANY</strong>
+            </p>
             <p>
               <a href="#">About</a>
             </p>
