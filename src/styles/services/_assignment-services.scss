@@ -5,8 +5,18 @@
   .price {
     font-size: 80px;
     font-weight: 300;
+    .price-icon {
+      margin-right: -10px;
+      font-weight: 300;
+      font-size: 70px;
+    }
   }
-}
+  .assignment-reviewsio {
+    .assignment-reviewsio-logo {
+      width: 200px;
+    }
+  }
+} 
 
 #difference2 {
   background-color: black;
@@ -30,6 +40,7 @@
 
 #assignment-today {
   background-color: #ca4a00;
+  padding: 100px 0;
 }
 
 #related-service {

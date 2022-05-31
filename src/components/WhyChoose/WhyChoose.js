@@ -21,13 +21,13 @@ const WhyChoose = () => {
                 writing service is to show you our work – it speaks for itself!
                 We’ve produced some fantastic samples that show you exactly the
                 kind of work you’ll receive when ordering from us. Take a look
-                at our <a href="#">sample essays</a>, prepared at undergraduate and master's
-                level across a range of grades and subjects.
+                at our <a href="#">sample essays</a>, prepared at undergraduate
+                and master's level across a range of grades and subjects.
               </p>
             </div>
           </Col>
           <Col md={6} xs={12}>
-            <div className="text-box">
+            <div className="p-3 shadow rounded">
               <h4>Reasons to choose our service</h4>
               <p>
                 <MdDone className="text-success fs-4 me-2" />
