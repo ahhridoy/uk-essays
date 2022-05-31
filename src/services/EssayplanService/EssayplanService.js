@@ -6,6 +6,17 @@ import PhoneOrder from "../../components/PhoneOrder/PhoneOrder";
 import Press from "../../components/Press/Press";
 import ReviewsComponent from "../../components/ReviewsComponent/ReviewsComponent";
 import WhyChoose from "../../components/WhyChoose/WhyChoose";
+import {
+  BsPencil,
+  BsCurrencyPound,
+  BsWhatsapp,
+  BsFillChatLeftFill,
+  BsStarHalf,
+} from "react-icons/bs";
+import { MdDownloadDone, MdOutlineWatchLater, MdDone } from "react-icons/md";
+import { AiOutlineFileDone, AiFillStar, AiOutlineStar } from "react-icons/ai";
+import { BiPhoneCall, BiLockAlt } from "react-icons/bi";
+import { FiBookOpen, FiUserCheck } from "react-icons/fi";
 
 const EssayplanService = () => {
   return (
@@ -46,50 +57,80 @@ const EssayplanService = () => {
             <Col md={4} xs={12}>
               <div className="bg-light p-4 text-center rounded">
                 <i>Prices from</i>
-                <h1 className="price">124</h1>
+                <h1 className="price">
+                  <BsCurrencyPound className="price-icon" /> 42
+                </h1>
                 <p>Undergraduate 2:2 • 1000 words • 7 day delivery</p>
                 <img src="/assets/trusted-site.svg" alt="" /> <br />
                 <Button variant="success" className="w-100 my-2">
-                  Order an essay
+                  <strong>Order</strong> an essay
                 </Button>
                 <p>Delivered on-time or your money back</p>
                 <Button variant="primary" className="w-100 my-2">
-                  Request a call back
+                  Request a <strong>call back </strong> <BiPhoneCall />
                 </Button>
                 <br />
                 <Button variant="success" className="w-100 my-2">
-                  Message us on WhatsApp
+                  Message us on <strong>WhatsApp </strong> <BsWhatsapp />
                 </Button>
                 <br />
                 <Button variant="primary" className="w-100 my-2">
-                  Start a live chat
+                  Start a <strong>live chat </strong> <BsFillChatLeftFill />
                 </Button>
+              </div>
+              <div className="essayplan-reviewsio text-center mt-3">
+                <img
+                  src="/assets/reviewsio-logo-white.webp"
+                  alt="logo"
+                  className="essayplan-reviewsio-logo"
+                />{" "}
+                <br />
+                <span>
+                  <AiFillStar className="text-warning fs-4" />
+                  <AiFillStar className="text-warning fs-4" />
+                  <AiFillStar className="text-warning fs-4" />
+                  <AiFillStar className="text-warning fs-4" />
+                  <BsStarHalf className="text-warning fs-5" />
+                  <span className="text-warning ms-2 fs-5">(10 Reviews)</span>
+                </span>
               </div>
             </Col>
           </Row>
+
           <Row className="mt-5">
             <Col md={3} xs={6}>
-              <div className="text-light d-flex">
-                <span>icon</span>
-                <p>Written to Standard</p>
+              <div className="text-light">
+                <p>
+                  {" "}
+                  <BsPencil className="me-2 text-danger" /> Written to Standard
+                </p>
               </div>
             </Col>
             <Col md={3} xs={6}>
               <div className="text-light d-flex">
-                <span>icon</span>
-                <p>Plagiarism-free</p>
+                <p>
+                  {" "}
+                  <MdDownloadDone className="me-2 text-danger" />{" "}
+                  Plagiarism-free
+                </p>
               </div>
             </Col>
             <Col md={3} xs={6}>
               <div className="text-light d-flex">
-                <span>icon</span>
-                <p>Always on Time</p>
+                <p>
+                  {" "}
+                  <MdOutlineWatchLater className="me-2 text-danger" /> Always on
+                  Time
+                </p>
               </div>
             </Col>
             <Col md={3} xs={6}>
               <div className="text-light d-flex">
-                <span>icon</span>
-                <p>Unrivalled Quality</p>
+                <p>
+                  {" "}
+                  <AiOutlineFileDone className="me-2 text-danger" /> Unrivalled
+                  Quality
+                </p>
               </div>
             </Col>
           </Row>
@@ -115,33 +156,55 @@ const EssayplanService = () => {
             follow these to develop your ideas and arguments.
           </p>
           <div>
-            <div className="my-4">
-              <h3>Read through the plan</h3>
-              <p>
-                Start by reading through the plan a couple of times, making sure
-                you locate and read the references used to enhance your
-                knowledge and background reading. You should then develop the
-                main points and think critically about the arguments the writer
-                has given you.
-              </p>
+            <div className="my-4 d-flex">
+              <div className="me-4">
+                <MdDone className="fs-3 text-primary" />
+              </div>
+              <div>
+                <h3>
+                  <strong>Read</strong> through the plan
+                </h3>
+                <p>
+                  Start by reading through the plan a couple of times, making
+                  sure you locate and read the references used to enhance your
+                  knowledge and background reading. You should then develop the
+                  main points and think critically about the arguments the
+                  writer has given you.
+                </p>
+              </div>
             </div>
-            <div className="my-4">
-              <h3>Write your own work following the guidance</h3>
-              <p>
-                The essay plan will give you a perfect outline for how to
-                proceed with writing your own work, and the plan that we give
-                you can be used as a structural guide for your future essays,
-                too.
-              </p>
+            <div className="my-4 d-flex">
+              <div className="me-4">
+                <FiBookOpen className="fs-3 text-primary" />
+              </div>
+              <div>
+                <h3>
+                  <strong>Write your own work</strong> following the guidance
+                </h3>
+                <p>
+                  The essay plan will give you a perfect outline for how to
+                  proceed with writing your own work, and the plan that we give
+                  you can be used as a structural guide for your future essays,
+                  too.
+                </p>
+              </div>
             </div>
-            <div className="my-4">
-              <h3>Hand in your completed essay</h3>
-              <p>
-                Once you have finished writing your full piece of work, you may
-                want to get it checked over to make sure it meets the standard
-                it needs to. To help you with this, we also offer a marking
-                service to guide you further to the grade you want.
-              </p>
+            <div className="my-4 d-flex">
+              <div className="me-4">
+                <BsPencil className="fs-3 text-primary" />
+              </div>
+              <div>
+                <h3>
+                  <strong>Hand in</strong> your completed essay
+                </h3>
+                <p>
+                  Once you have finished writing your full piece of work, you
+                  may want to get it checked over to make sure it meets the
+                  standard it needs to. To help you with this, we also offer a{" "}
+                  <a href="#">marking service</a> to guide you further to the
+                  grade you want.
+                </p>
+              </div>
             </div>
           </div>
           <p className="text-center">
@@ -160,68 +223,99 @@ const EssayplanService = () => {
           </p>
           <Row>
             <Col md={6} xs={12}>
-              <h4>Expertly Qualified Writers</h4>
-              <p>
-                Each essay plan we produce is tailored to your needs, and we
-                only use the highest quality writers. Our writers come from a
-                wide range of professional and academic backgrounds, but rest
-                assured that each one is tested thoroughly before beginning work
-                with us. Each writer must have English as their native language,
-                have professional writing experience and have passed our
-                rigorous entry tests and trial period. We're confident that
-                they'll do the best job, and if you have any problems with your
-                work, then our writers will be happy to look it over for you and
-                make the necessary amendments.
-              </p>
+              <div className="d-flex">
+                <div className="me-3">
+                  <AiOutlineFileDone className="fs-3 text-danger" />
+                </div>
+                <div>
+                  <h4>Expert Qualified Writers</h4>
+                  <p>
+                    Each essay plan we produce is tailored to your needs, and we
+                    only use the highest quality writers. Our writers come from
+                    a wide range of professional and academic backgrounds, but
+                    rest assured that each one is tested thoroughly before
+                    beginning work with us. Each writer must have English as
+                    their native language, have professional writing experience
+                    and have passed our rigorous entry tests and trial period.
+                    We're confident that they'll do the best job, and if you
+                    have any problems with your work, then our writers will be
+                    happy to look it over for you and make the necessary
+                    amendments.
+                  </p>
+                </div>
+              </div>
             </Col>
             <Col md={6} xs={12}>
-              <h4>Uncompromising Quality</h4>
-              <p>
-                Once your essay plan has been created, it goes through an
-                in-depth <a href="#">quality check</a> by our Quality Control
-                and After Care teams. Our in-house team read through each piece
-                of work to make sure that it follows your requirements and will
-                suit your needs. We recognise the need to get things right,
-                first time and every time, and we work hard to deliver a great
-                service, taking the time to check each order against your
-                instructions. With each essay plan, we will also send you a
-                unique quality report – written just for you - and a plagiarism
-                report so you can verify that the work our writer has provided
-                is 100% original and has been tailored to your assignment and
-                grade requirements.
-              </p>
+              <div className="d-flex">
+                <div className="me-3">
+                  <AiOutlineStar className="fs-3 text-danger" />
+                </div>
+                <div>
+                  <h4>Uncompromising Quality</h4>
+                  <p>
+                    Once your essay plan has been created, it goes through an
+                    in-depth <a href="#">quality check</a> by our Quality
+                    Control and After Care teams. Our in-house team read through
+                    each piece of work to make sure that it follows your
+                    requirements and will suit your needs. We recognise the need
+                    to get things right, first time and every time, and we work
+                    hard to deliver a great service, taking the time to check
+                    each order against your instructions. With each essay plan,
+                    we will also send you a unique quality report – written just
+                    for you - and a plagiarism report so you can verify that the
+                    work our writer has provided is 100% original and has been
+                    tailored to your assignment and grade requirements.
+                  </p>
+                </div>
+              </div>
             </Col>
             <Col md={6} xs={12}>
-              <h4>Outstanding customer support</h4>
-              <p>
-                We have both a super friendly Customer Experience team, who aim
-                to respond to any questions or issues as quickly as possible,
-                and a dedicated live chat support team, who can answer any
-                questions you might have before you place your order. Our staff
-                are professional, welcoming and understanding of your needs – we
-                recognise the importance of great customer care, and we all know
-                from experience just how stressful university can be! We are
-                constantly striving to be the best, so we ask for feedback on
-                every piece of work you receive, and we continue to listen to
-                your feedback and make changes to create a better service for
-                you!
-              </p>
+              <div className="d-flex">
+                <div className="me-3">
+                  <FiUserCheck className="fs-3 text-danger" />
+                </div>
+                <div>
+                  <h4>Outstanding Customer Support</h4>
+                  <p>
+                    We have both a super friendly Customer Experience team, who
+                    aim to respond to any questions or issues as quickly as
+                    possible, and a dedicated live chat support team, who can
+                    answer any questions you might have before you place your
+                    order. Our staff are professional, welcoming and
+                    understanding of your needs – we recognise the importance of
+                    great customer care, and we all know from experience just
+                    how stressful university can be! We are constantly striving
+                    to be the best, so we ask for feedback on every piece of
+                    work you receive, and we continue to listen to your feedback
+                    and make changes to create a better service for you!
+                  </p>
+                </div>
+              </div>
             </Col>
             <Col md={6} xs={12}>
-              <h4>Safe & Trusted</h4>
-              <p>
-                Not only do we work to ensure you have the best essay plan
-                possible; we also work hard to make sure that you don't have to
-                worry about your privacy and security. We have an in-house team
-                dedicated to monitoring Data Protection and Privacy. We will
-                never sell your data, and we have a variety of security measures
-                in place to protect any data you send to us. <br /> <br />
-                Your data is encrypted with the best software, and we use Amazon
-                Web Services (AWS) as our cloud computing provider. AWS is a
-                gold standard information security provider, so you can be sure
-                that your data is safe. Our storage and usage of your data is
-                laid out clearly and transparently in our privacy policy.
-              </p>
+              <div className="d-flex">
+                <div className="me-3">
+                  <BiLockAlt className="fs-3 text-danger" />
+                </div>
+                <div>
+                  <h4>Safe & Trusted</h4>
+                  <p>
+                    Not only do we work to ensure you have the best essay plan
+                    possible; we also work hard to make sure that you don't have
+                    to worry about your privacy and security. We have an
+                    in-house team dedicated to monitoring Data Protection and
+                    Privacy. We will never sell your data, and we have a variety
+                    of security measures in place to protect any data you send
+                    to us. <br /> <br />
+                    Your data is encrypted with the best software, and we use
+                    Amazon Web Services (AWS) as our cloud computing provider.
+                    AWS is a gold standard information security provider, so you
+                    can be sure that your data is safe. Our storage and usage of
+                    your data is laid out clearly and transparently in our
+                    privacy policy.
+                  </p>
+                </div>
+              </div>
             </Col>
           </Row>
         </Container>

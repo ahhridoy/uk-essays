@@ -129,6 +129,7 @@ const EssayService = () => {
               </div>
             </Col>
           </Row>
+          
           <Row className="mt-5">
             <Col md={3} xs={6}>
               <div className="text-light">
@@ -227,7 +228,7 @@ const EssayService = () => {
                 <MdDone className="fs-3 text-primary" />
               </div>
               <div>
-                <h3>Read through the work</h3>
+                <h3><strong>Read</strong> through the work</h3>
                 <p>
                   Once you've downloaded the essay, the next step is to make
                   sure you gain a full understanding of it.
@@ -239,7 +240,7 @@ const EssayService = () => {
                 <FiBookOpen className="fs-3 text-primary" />
               </div>
               <div>
-                <h3>Read through the related literature</h3>
+                <h3><strong>Read</strong> through the related literature</h3>
                 <p>
                   We strongly suggest reading the references used in the paper,
                   too, to deepen your knowledge of the topic.
@@ -251,7 +252,7 @@ const EssayService = () => {
                 <BsPencil className="fs-3 text-primary" />
               </div>
               <div>
-                <h3>Write your own essay</h3>
+                <h3><strong>Write</strong> your own essay</h3>
                 <p>
                   <b>You should re-write the paper,</b> so it is in your own
                   words, and so that you gain the valuable information it

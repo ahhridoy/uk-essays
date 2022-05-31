@@ -1,21 +1,37 @@
 #reflective-service-hero {
   margin-top: 140px;
-  padding: 50px 0;
+  padding-top: 50px;
+  padding-bottom: 10px;
   background-color: #071d37;
   .price {
     font-size: 80px;
     font-weight: 300;
+    .price-icon {
+      margin-right: -30px;
+      font-weight: 300;
+      font-size: 70px;
+    }
+  }
+  .reflective-reviewsio {
+    .reflective-reviewsio-logo {
+      width: 200px;
+    }
   }
 }
 
 #reflective-essay-today {
   background-color: #ca4a00;
+  padding: 100px 0;
 }
 
-#include-your-order {
+#how-service-work {
   margin: 50px 0;
 }
 
 #frequently-questions {
   margin: 50px 0;
+  a {
+    text-decoration: none;
+    border-bottom: 1px dotted;
+  }
 }

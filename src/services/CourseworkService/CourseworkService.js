@@ -7,9 +7,17 @@ import PhoneOrder from "../../components/PhoneOrder/PhoneOrder";
 import Press from "../../components/Press/Press";
 import ReviewsComponent from "../../components/ReviewsComponent/ReviewsComponent";
 import WhyChoose from "../../components/WhyChoose/WhyChoose";
-import { BsPencil } from "react-icons/bs";
-import { MdDownloadDone, MdOutlineWatchLater } from "react-icons/md";
-import { AiOutlineFileDone } from "react-icons/ai";
+import {
+  BsPencil,
+  BsCurrencyPound,
+  BsWhatsapp,
+  BsFillChatLeftFill,
+  BsStarHalf,
+} from "react-icons/bs";
+import { MdDownloadDone, MdOutlineWatchLater, MdDone } from "react-icons/md";
+import { AiOutlineFileDone, AiFillStar, AiOutlineStar } from "react-icons/ai";
+import { BiPhoneCall, BiLockAlt } from "react-icons/bi";
+import { FiBookOpen, FiUserCheck } from "react-icons/fi";
 
 const CourseworkService = () => {
   return (
@@ -51,24 +59,43 @@ const CourseworkService = () => {
             <Col md={4} xs={12}>
               <div className="bg-light p-4 text-center rounded">
                 <i>Prices from</i>
-                <h1 className="price">124</h1>
+                <h1 className="price">
+                  {" "}
+                  <BsCurrencyPound className="price-icon" /> 124
+                </h1>
                 <p>Undergraduate 2:2 • 1000 words • 7 day delivery</p>
                 <img src="/assets/trusted-site.svg" alt="" /> <br />
                 <Button variant="success" className="w-100 my-2">
-                  Order an essay
+                  <strong>Order</strong> an essay
                 </Button>
                 <p>Delivered on-time or your money back</p>
                 <Button variant="primary" className="w-100 my-2">
-                  Request a call back
+                  Request a <strong>call back </strong> <BiPhoneCall />
                 </Button>
                 <br />
                 <Button variant="success" className="w-100 my-2">
-                  Message us on WhatsApp
+                  Message us on <strong>WhatsApp </strong> <BsWhatsapp />
                 </Button>
                 <br />
                 <Button variant="primary" className="w-100 my-2">
-                  Start a live chat
+                  Start a <strong>live chat </strong> <BsFillChatLeftFill />
                 </Button>
+              </div>
+              <div className="coursework-reviewsio text-center mt-3">
+                <img
+                  src="/assets/reviewsio-logo-white.webp"
+                  alt="logo"
+                  className="coursework-reviewsio-logo"
+                />{" "}
+                <br />
+                <span>
+                  <AiFillStar className="text-warning fs-4" />
+                  <AiFillStar className="text-warning fs-4" />
+                  <AiFillStar className="text-warning fs-4" />
+                  <AiFillStar className="text-warning fs-4" />
+                  <BsStarHalf className="text-warning fs-5" />
+                  <span className="text-warning ms-2 fs-5">(15 Reviews)</span>
+                </span>
               </div>
             </Col>
           </Row>
@@ -131,44 +158,65 @@ const CourseworkService = () => {
             requirements.
           </p>
           <div>
-            <div className="my-4">
-              <h3>Read through the work</h3>
-              <p>
-                You should do this a few times so that you understand the most
-                important parts of the coursework. Highlight key arguments and
-                theories and make notes of any ideas that you might want to
-                discuss, or any opinions that you might have developed from
-                reading the work. <br /> <br />
-                Be sure that you understand the content – if there's anything
-                that confused you, you can always get in touch with our
-                Aftercare Team for clarification.
-              </p>
+            <div className="my-4 d-flex">
+              <div className="me-4">
+                <MdDone className="fs-3 text-primary" />
+              </div>
+              <div>
+                <h3>
+                  <strong>Read</strong> through the work
+                </h3>
+                <p>
+                  You should do this a few times so that you understand the most
+                  important parts of the coursework. Highlight key arguments and
+                  theories and make notes of any ideas that you might want to
+                  discuss, or any opinions that you might have developed from
+                  reading the work. <br /> <br />
+                  Be sure that you understand the content – if there's anything
+                  that confused you, you can always get in touch with our
+                  Aftercare Team for clarification.
+                </p>
+              </div>
             </div>
-            <div className="my-4">
-              <h3>Read through the literature</h3>
-              <p>
-                Before re-writing the coursework, take a look at the literature
-                that our writer has used and make your own notes on these
-                sources!
-              </p>
+            <div className="my-4 d-flex">
+              <div className="me-4">
+                <FiBookOpen className="fs-3 text-primary" />
+              </div>
+              <div>
+                <h3>
+                  <strong>Read</strong> through the literature
+                </h3>
+                <p>
+                  Before re-writing the coursework, take a look at the
+                  literature that our writer has used and make your own notes on
+                  these sources!
+                </p>
+              </div>
             </div>
-            <div className="my-4">
-              <h3>Write your own coursework</h3>
-              <p>
-                Use your notes, and the new knowledge that you have gained, to
-                create your own coursework; when you're finished, you can
-                compare your work to our writer's model answer to make sure that
-                nothing has been copied and that you have cited all your
-                references properly. <br /> <br />
-                Once you have finished writing your full piece of work, you may
-                want to get it checked over to make sure it meets the standard
-                it needs to. To help you with this, we also offer a marking
-                service to guide you further to the grade you want. <br />{" "}
-                <br />
-                For more information on how to use the cousework as a model for
-                your own piece of work, please refer to our{" "}
-                <a href="#">Fair Use Policy</a>.
-              </p>
+            <div className="my-4 d-flex">
+              <div className="me-4">
+                <BsPencil className="fs-3 text-primary" />
+              </div>
+              <div>
+                <h3>
+                  <strong>Write</strong> your own essay
+                </h3>
+                <p>
+                  Use your notes, and the new knowledge that you have gained, to
+                  create your own coursework; when you're finished, you can
+                  compare your work to our writer's model answer to make sure
+                  that nothing has been copied and that you have cited all your
+                  references properly. <br /> <br />
+                  Once you have finished writing your full piece of work, you
+                  may want to get it checked over to make sure it meets the
+                  standard it needs to. To help you with this, we also offer a
+                  marking service to guide you further to the grade you want.{" "}
+                  <br /> <br />
+                  For more information on how to use the cousework as a model
+                  for your own piece of work, please refer to our{" "}
+                  <a href="#">Fair Use Policy.</a>
+                </p>
+              </div>
             </div>
           </div>
         </Container>
@@ -183,56 +231,85 @@ const CourseworkService = () => {
           </p>
           <Row>
             <Col md={6} xs={12}>
-              <h4>Expert qualified writers</h4>
-              <p>
-                The writer that we assign to you is always qualified to write at
-                the grade that you order. <br /> <br />
-                We have a rigorous process to validate a writer's quality before
-                they are allowed to help you: we check their identity and their
-                qualifications carefully, and they must pass a 'test' essay and
-                a probationary period before they're considered to help our
-                customers. We expect the best from our writers so that you can
-                get the best from us!
-              </p>
+              <div className="d-flex">
+                <div className="me-3">
+                  <AiOutlineFileDone className="fs-3 text-danger" />
+                </div>
+                <div>
+                  <h4>Expert qualified writers</h4>
+                  <p>
+                    The writer that we assign to you is <strong>always</strong>{" "}
+                    qualified to write at the grade that you order. <br />{" "}
+                    <br />
+                    We have a rigorous process to validate a writer's quality
+                    before they are allowed to help you: we check their identity
+                    and their qualifications carefully, and they must pass a
+                    'test' essay and a probationary period before they're
+                    considered to help our customers. We expect the best from
+                    our writers so that you can get the best from us!
+                  </p>
+                </div>
+              </div>
             </Col>
             <Col md={6} xs={12}>
-              <h4>Uncompromising quality</h4>
-              <p>
-                We're honest with you throughout the order process, and we're
-                always transparent with our pricing. Every piece of work has its
-                own unique price, so you aren't paying for something that you
-                aren't going to get! <br /> <br />
-                Our prices reflect our quality of service you will receive. We
-                only hire the best writers, and each one is tested regularly to
-                make sure they continually produce the best quality essays,
-                dissertations and reports. Our writers must have at least an
-                undergraduate 2:1 qualification, but many of them have master's
-                level or even PhD qualifications.
-              </p>
+              <div className="d-flex">
+                <div className="me-3">
+                  <AiOutlineStar className="fs-3 text-danger" />
+                </div>
+                <div>
+                  <h4>Uncompromising quality</h4>
+                  <p>
+                    We're honest with you throughout the order process, and
+                    we're always transparent with our pricing. Every piece of
+                    work has its own unique price, so you aren't paying for
+                    something that you aren't going to get! <br /> <br />
+                    Our prices reflect our quality of service you will receive.
+                    We only hire the best writers, and each one is tested
+                    regularly to make sure they continually produce the best
+                    quality essays, dissertations and reports. Our writers must
+                    have at least an undergraduate 2:1 qualification, but many
+                    of them have master's level or even PhD qualifications.
+                  </p>
+                </div>
+              </div>
             </Col>
             <Col md={6} xs={12}>
-              <h4>Outstanding customer support</h4>
-              <p>
-                We can help you with your coursework, no matter what grade you
-                need, how long it is, or what the subject is. We want you to
-                succeed: our team of professional writers come from every
-                background, and our Quality Team will make sure that the work
-                fits your exact instructions. We'll make sure that we put you
-                first throughout every stage of your order, even offering an
-                Aftercare service!
-              </p>
+              <div className="d-flex">
+                <div className="me-3">
+                  <FiUserCheck className="fs-3 text-danger" />
+                </div>
+                <div>
+                  <h4>Outstanding customer support</h4>
+                  <p>
+                    We can help you with your coursework, no matter what grade
+                    you need, how long it is, or what the subject is. We want
+                    you to succeed: our team of professional writers come from
+                    every background, and our Quality Team will make sure that
+                    the work fits your exact instructions. We'll make sure that
+                    we put you first throughout every stage of your order, even
+                    offering an Aftercare service!
+                  </p>
+                </div>
+              </div>
             </Col>
             <Col md={6} xs={12}>
-              <h4>Safe & Trusted</h4>
-              <p>
-                You can have confidence that we're a secure service which will
-                put your needs first. We take your privacy seriously, and you
-                can read our <a href="#">Privacy Policy here</a>, which is
-                constantly updated. We're in line with all General Data
-                Protection Regulations, and you can always ask our in-house GDPR
-                officers if you have any questions. With us, your details are
-                completely confidential.
-              </p>
+              <div className="d-flex">
+                <div className="me-3">
+                  <BiLockAlt className="fs-3 text-danger" />
+                </div>
+                <div>
+                  <h4>Safe & Trusted</h4>
+                  <p>
+                    You can have confidence that we're a secure service which
+                    will put your needs first. We take your privacy seriously,
+                    and you can read our <a href="#">Privacy Policy here</a>,
+                    which is constantly updated. We're in line with all General
+                    Data Protection Regulations, and you can always ask our
+                    in-house GDPR officers if you have any questions. With us,
+                    your details are completely confidential.
+                  </p>
+                </div>
+              </div>
             </Col>
           </Row>
         </Container>

@@ -1,15 +1,26 @@
 #coursework-service-hero {
   margin-top: 140px;
-  padding: 50px 0;
+  padding-top: 50px;
+  padding-bottom: 10px;
   background-color: #071d37;
   .price {
     font-size: 80px;
     font-weight: 300;
+    .price-icon {
+      margin-right: -30px;
+      font-weight: 300;
+      font-size: 70px;
+    }
+  }
+  .coursework-reviewsio {
+    .coursework-reviewsio-logo {
+      width: 200px;
+    }
   }
 }
 
 #coursework-phoneorder {
-   background-color: #dee2e6;
+  background-color: #dee2e6;
 }
 
 #how-to-use {
@@ -19,8 +30,13 @@
 #coursework-why-love {
   padding: 50px 0;
   background-color: #dee2e6;
+  a {
+    text-decoration: none;
+    color: #ca4a00;
+    border-bottom: 1px dotted;
+  }
 }
 
 #coursework-askedquestion {
-   background-color: #dee2e6;
+  background-color: #dee2e6;
 }
