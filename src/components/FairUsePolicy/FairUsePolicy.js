@@ -8,11 +8,10 @@ const FairUsePolicy = () => {
         <Row>
           <Col md={6} xs={12}>
             <h2>Our Fair Use Policy</h2>
-            <p>
-              Understanding how to use your essay is key to gaining the most
-              from your experience with us. Watch now to learn how:
+            <p className="fs-5">
+            Our Fair Use Policy outlines the way in which the <br /> work we provide should be used, and gives you the <br /> necessary guidance to get the most out of your <br /> model essay.
             </p>
-            <Button variant="warning">Our Fair Use Policy ></Button>
+            <Button variant="warning">Read Our <strong>Fair Use Policy</strong> ></Button>
           </Col>
           <Col md={6} xs={12}>Video</Col>
         </Row>

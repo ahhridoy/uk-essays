@@ -7,6 +7,9 @@ import PhoneOrder from "../../components/PhoneOrder/PhoneOrder";
 import Press from "../../components/Press/Press";
 import ReviewsComponent from "../../components/ReviewsComponent/ReviewsComponent";
 import WhyChoose from "../../components/WhyChoose/WhyChoose";
+import { BsPencil } from "react-icons/bs";
+import { MdDownloadDone, MdOutlineWatchLater } from "react-icons/md";
+import { AiOutlineFileDone } from "react-icons/ai";
 
 const CourseworkService = () => {
   return (
@@ -71,27 +74,38 @@ const CourseworkService = () => {
           </Row>
           <Row className="mt-5">
             <Col md={3} xs={6}>
-              <div className="text-light d-flex">
-                <span>icon</span>
-                <p>Written to Standard</p>
+              <div className="text-light">
+                <p>
+                  {" "}
+                  <BsPencil className="me-2 text-danger" /> Written to Standard
+                </p>
               </div>
             </Col>
             <Col md={3} xs={6}>
               <div className="text-light d-flex">
-                <span>icon</span>
-                <p>Plagiarism-free</p>
+                <p>
+                  {" "}
+                  <MdDownloadDone className="me-2 text-danger" />{" "}
+                  Plagiarism-free
+                </p>
               </div>
             </Col>
             <Col md={3} xs={6}>
               <div className="text-light d-flex">
-                <span>icon</span>
-                <p>Always on Time</p>
+                <p>
+                  {" "}
+                  <MdOutlineWatchLater className="me-2 text-danger" /> Always on
+                  Time
+                </p>
               </div>
             </Col>
             <Col md={3} xs={6}>
               <div className="text-light d-flex">
-                <span>icon</span>
-                <p>Unrivalled Quality</p>
+                <p>
+                  {" "}
+                  <AiOutlineFileDone className="me-2 text-danger" /> Unrivalled
+                  Quality
+                </p>
               </div>
             </Col>
           </Row>

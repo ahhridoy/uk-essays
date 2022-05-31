@@ -1,12 +1,5 @@
 import React from "react";
-import {
-  Button,
-  Col,
-  Container,
-  FormControl,
-  InputGroup,
-  Row,
-} from "react-bootstrap";
+import { Button, Col, Container, Row } from "react-bootstrap";
 import AskedQuestion from "../../components/AskedQuestion/AskedQuestion";
 import EssayToday from "../../components/EssayToday/EssayToday";
 import FairUsePolicy from "../../components/FairUsePolicy/FairUsePolicy";
@@ -15,6 +8,26 @@ import Press from "../../components/Press/Press";
 import ReviewsComponent from "../../components/ReviewsComponent/ReviewsComponent";
 import WhyChoose from "../../components/WhyChoose/WhyChoose";
 import WhyLove from "../../components/WhyLove/WhyLove";
+import { FaFacebookF } from "react-icons/fa";
+import {
+  AiOutlineReddit,
+  AiFillLinkedin,
+  AiOutlineWhatsApp,
+  AiFillStar,
+} from "react-icons/ai";
+import {
+  BsTwitter,
+  BsPencil,
+  BsStarHalf,
+  BsWhatsapp,
+  BsFillChatLeftFill,
+  BsCurrencyPound,
+} from "react-icons/bs";
+import { MdDownloadDone, MdOutlineWatchLater, MdDone } from "react-icons/md";
+import { AiOutlineFileDone, AiFillHeart } from "react-icons/ai";
+import { FcHighBattery } from "react-icons/fc";
+import { BiLockAlt, BiPhoneCall } from "react-icons/bi";
+import { FiBookOpen } from "react-icons/fi";
 
 const EssayService = () => {
   return (
@@ -25,13 +38,23 @@ const EssayService = () => {
             <Col md={8} xs={12}>
               <div className="text-light">
                 <h2 className="my-2">Essay Writing Service</h2>
-                <div className="text-start">
+                <div className="text-light my-3">
                   <span>Share this: </span>
-                  <span>Facebook </span>
-                  <span>Twitter </span>
-                  <span>Reddit </span>
-                  <span>Linkedin </span>
-                  <span>Whatsapp </span>
+                  <span className="bg-primary p-1 text-light me-2">
+                    Facebook <FaFacebookF />{" "}
+                  </span>
+                  <span className="bg-info p-1 text-light me-2">
+                    Twitter <BsTwitter />{" "}
+                  </span>
+                  <span className="bg-danger p-1 text-light me-2">
+                    Reddit <AiOutlineReddit />{" "}
+                  </span>
+                  <span className="bg-info p-1 text-light me-2">
+                    Linkedin <AiFillLinkedin />{" "}
+                  </span>
+                  <span className="bg-success p-1 text-light me-2">
+                    WhatsApp <AiOutlineWhatsApp />{" "}
+                  </span>
                 </div>
                 <h4 className="text-success my-2">
                   Get Essay Help from the Academic Experts
@@ -66,50 +89,80 @@ const EssayService = () => {
             <Col md={4} xs={12}>
               <div className="bg-light p-4 text-center rounded">
                 <i>Prices from</i>
-                <h1 className="price">124</h1>
+                <h1 className="price">
+                  {" "}
+                  <BsCurrencyPound className="price-icon" /> 124
+                </h1>
                 <p>Undergraduate 2:2 • 1000 words • 7 day delivery</p>
                 <img src="/assets/trusted-site.svg" alt="" /> <br />
                 <Button variant="success" className="w-100 my-2">
-                  Order an essay
+                  <strong>Order</strong> an essay
                 </Button>
                 <p>Delivered on-time or your money back</p>
                 <Button variant="primary" className="w-100 my-2">
-                  Request a call back
+                  Request a <strong>call back </strong> <BiPhoneCall />
                 </Button>
                 <br />
                 <Button variant="success" className="w-100 my-2">
-                  Message us on WhatsApp
+                  Message us on <strong>WhatsApp </strong> <BsWhatsapp />
                 </Button>
                 <br />
                 <Button variant="primary" className="w-100 my-2">
-                  Start a live chat
+                  Start a <strong>live chat </strong> <BsFillChatLeftFill />
                 </Button>
+              </div>
+              <div className="essay-reviewsio text-center mt-3">
+                <img
+                  src="/assets/reviewsio-logo-white.webp"
+                  alt="logo"
+                  className="essay-reviewsio-logo"
+                />{" "}
+                <br />
+                <span>
+                  <AiFillStar className="text-warning fs-4" />
+                  <AiFillStar className="text-warning fs-4" />
+                  <AiFillStar className="text-warning fs-4" />
+                  <AiFillStar className="text-warning fs-4" />
+                  <BsStarHalf className="text-warning fs-5" />
+                  <span className="text-warning ms-2 fs-5">(307 Reviews)</span>
+                </span>
               </div>
             </Col>
           </Row>
           <Row className="mt-5">
             <Col md={3} xs={6}>
-              <div className="text-light d-flex">
-                <span>icon</span>
-                <p>Written to Standard</p>
+              <div className="text-light">
+                <p>
+                  {" "}
+                  <BsPencil className="me-2 text-danger" /> Written to Standard
+                </p>
               </div>
             </Col>
             <Col md={3} xs={6}>
               <div className="text-light d-flex">
-                <span>icon</span>
-                <p>Plagiarism-free</p>
+                <p>
+                  {" "}
+                  <MdDownloadDone className="me-2 text-danger" />{" "}
+                  Plagiarism-free
+                </p>
               </div>
             </Col>
             <Col md={3} xs={6}>
               <div className="text-light d-flex">
-                <span>icon</span>
-                <p>Always on Time</p>
+                <p>
+                  {" "}
+                  <MdOutlineWatchLater className="me-2 text-danger" /> Always on
+                  Time
+                </p>
               </div>
             </Col>
             <Col md={3} xs={6}>
               <div className="text-light d-flex">
-                <span>icon</span>
-                <p>Unrivalled Quality</p>
+                <p>
+                  {" "}
+                  <AiOutlineFileDone className="me-2 text-danger" /> Unrivalled
+                  Quality
+                </p>
               </div>
             </Col>
           </Row>
@@ -133,10 +186,22 @@ const EssayService = () => {
           <h2 className="text-center mb-4">The UKEssays Difference</h2>
           <div className="text-box">
             <div>
-              <p>Academic Level</p>
-              <p>Originality</p>
-              <p>Security</p>
-              <p>Support</p>
+              <p>
+                {" "}
+                <FcHighBattery className="fs-5" /> Academic Level
+              </p>
+              <p>
+                {" "}
+                <MdDone className="text-success fs-4" /> Originality
+              </p>
+              <p>
+                {" "}
+                <BiLockAlt className="text-warning fs-4" /> Security
+              </p>
+              <p>
+                {" "}
+                <AiFillHeart className="text-danger fs-4" /> Support
+              </p>
             </div>
             <div>
               <p>Degree Qualified Writers</p>
@@ -157,28 +222,44 @@ const EssayService = () => {
             through!
           </p>
           <div>
-            <div className="my-4">
-              <h3>Read through the work</h3>
-              <p>
-                Once you've downloaded the essay, the next step is to make sure
-                you gain a full understanding of it.
-              </p>
+            <div className="my-4 d-flex">
+              <div className="me-4">
+                <MdDone className="fs-3 text-primary" />
+              </div>
+              <div>
+                <h3>Read through the work</h3>
+                <p>
+                  Once you've downloaded the essay, the next step is to make
+                  sure you gain a full understanding of it.
+                </p>
+              </div>
             </div>
-            <div className="my-4">
-              <h3>Read through the related literature</h3>
-              <p>
-                We strongly suggest reading the references used in the paper,
-                too, to deepen your knowledge of the topic.
-              </p>
+            <div className="my-4 d-flex">
+              <div className="me-4">
+                <FiBookOpen className="fs-3 text-primary" />
+              </div>
+              <div>
+                <h3>Read through the related literature</h3>
+                <p>
+                  We strongly suggest reading the references used in the paper,
+                  too, to deepen your knowledge of the topic.
+                </p>
+              </div>
             </div>
-            <div className="my-4">
-              <h3>Write your own essay</h3>
-              <p>
-                <b>You should re-write the paper,</b> so it is in your own
-                words, and so that you gain the valuable information it
-                contains. You'll improve your own essay writing skills, learning
-                how to structure a conclusive answer and discuss it in detail.
-              </p>
+            <div className="my-4 d-flex">
+              <div className="me-4">
+                <BsPencil className="fs-3 text-primary" />
+              </div>
+              <div>
+                <h3>Write your own essay</h3>
+                <p>
+                  <b>You should re-write the paper,</b> so it is in your own
+                  words, and so that you gain the valuable information it
+                  contains. You'll improve your own essay writing skills,
+                  learning how to structure a conclusive answer and discuss it
+                  in detail.
+                </p>
+              </div>
             </div>
           </div>
           <p className="text-center">
@@ -224,7 +305,7 @@ const EssayService = () => {
           </p>
           <p className="text-center mb-5">
             If you are looking for a reflective piece of work, then take a look
-            at our <a href="#">specialist Reflective Essay Writing Service.</a>
+            at our specialist <a href="#">Reflective Essay Writing Service.</a>
           </p>
           <Row>
             <Col md={4} xs={12}>
@@ -248,6 +329,9 @@ const EssayService = () => {
               </div>
             </Col>
           </Row>
+          <p className="text-center mt-5">
+            View our <a href="#">full service portfolio</a>
+          </p>
         </Container>
       </section>
 

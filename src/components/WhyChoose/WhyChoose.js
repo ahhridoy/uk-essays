@@ -1,5 +1,6 @@
 import React from "react";
 import { Col, Container, Row } from "react-bootstrap";
+import { MdDone } from "react-icons/md";
 
 const WhyChoose = () => {
   return (
@@ -20,7 +21,7 @@ const WhyChoose = () => {
                 writing service is to show you our work – it speaks for itself!
                 We’ve produced some fantastic samples that show you exactly the
                 kind of work you’ll receive when ordering from us. Take a look
-                at our sample essays, prepared at undergraduate and master's
+                at our <a href="#">sample essays</a>, prepared at undergraduate and master's
                 level across a range of grades and subjects.
               </p>
             </div>
@@ -29,12 +30,13 @@ const WhyChoose = () => {
             <div className="text-box">
               <h4>Reasons to choose our service</h4>
               <p>
-                {" "}
+                <MdDone className="text-success fs-4 me-2" />
                 We only allow our <b>qualified academic writers</b> with
                 matching qualifications to take on your work.
               </p>
               <hr />
               <p>
+                <MdDone className="text-success fs-4 me-2" />
                 Your order will go through <b>rigorous quality controls</b> and
                 is checked against your instructions and academic standards by
                 qualified professionals, we'll even give you a quality report to
@@ -42,6 +44,7 @@ const WhyChoose = () => {
               </p>
               <hr />
               <p>
+                <MdDone className="text-success fs-4 me-2" />
                 Your order will come with a{" "}
                 <b>comprehensive plagiarism report</b> which is compiled with
                 our state-of-the-art plagiarism software, ensuring the work that
@@ -49,6 +52,7 @@ const WhyChoose = () => {
               </p>
               <hr />
               <p>
+                <MdDone className="text-success fs-4 me-2" />
                 You get a <b>7 day amendment period</b>, so if you're not happy
                 with the work, let us know and our customer support teams will
                 resolve any concerns.
