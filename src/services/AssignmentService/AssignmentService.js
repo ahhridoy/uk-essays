@@ -109,7 +109,7 @@ const AssignmentService = () => {
         </Container>
       </section>
 
-      <section id="difference2">
+      <section id="assignment-difference">
         <Container>
           <Row>
             <h2 className="text-center text-light mb-4">
@@ -142,16 +142,146 @@ const AssignmentService = () => {
         </Container>
       </section>
 
-      <section>
-        <WhyChoose />
+      <section id="assignment-why-choose">
+        <Container>
+          <Row>
+            <Col md={6} xs={12}>
+              <div>
+                <h2>Why choose our assignment writing service?</h2>
+                <p>
+                  We know how tough writing an assignment can be. Maybe you're
+                  trying to break into a new grade boundary; maybe you can't
+                  figure out how to structure your work; or maybe it's just that
+                  you have to talk about a topic that you're really struggling
+                  to understand! <br /> <br />
+                  When you order with us, you're working with some of the most
+                  experienced experts in modern academia. We have a huge team of
+                  professional writers who undergo rigorous tests before they
+                  start working for us. We have writers in every subject, and
+                  many hold several degrees. <br /> <br />
+                  We only begin your assignment order when we're sure we have
+                  someone who is well-versed in your subject area and qualified
+                  to write to the grade you need.
+                </p>
+              </div>
+            </Col>
+            <Col md={6} xs={12}>
+              <div className="p-3 shadow rounded">
+                <h4>Reasons to choose our service</h4>
+                <p>
+                  <MdDone className="text-success fs-4 me-2" />
+                  We only allow our <b>qualified academic writers</b> with
+                  matching qualifications to take on your work.
+                </p>
+                <hr />
+                <p>
+                  <MdDone className="text-success fs-4 me-2" />
+                  Your order will go through <b>
+                    rigorous quality controls
+                  </b>{" "}
+                  and is checked against your instructions and academic
+                  standards by qualified professionals, we'll even give you a
+                  quality report to show our findings.
+                </p>
+                <hr />
+                <p>
+                  <MdDone className="text-success fs-4 me-2" />
+                  Your order will come with a{" "}
+                  <strong>comprehensive plagiarism report</strong> which is
+                  compiled with our state-of-the-art plagiarism software,
+                  ensuring the work that is produced is not plagiarised.
+                </p>
+                <hr />
+                <p>
+                  <MdDone className="text-success fs-4 me-2" />
+                  You get a <strong>7 day amendment period</strong>, so if
+                  you're not happy with the work, let us know and our customer
+                  support teams will resolve any concerns.
+                </p>
+              </div>
+            </Col>
+          </Row>
+        </Container>
       </section>
 
       <section>
         <EssayToday />
       </section>
 
-      <section id="phone-order2">
-        <PhoneOrder />
+      <section id="assignment-phone-order">
+        <Container>
+          <Row>
+            <Col md={6} xs={12}>
+              <img
+                src="/assets/phone-order.png"
+                alt="phone-icon"
+                className="w-100"
+              />
+            </Col>
+            <Col md={6} xs={12}>
+              <h2 className="my-3">
+                Our order process is simple Three easy steps!
+              </h2>
+              <div>
+                <div className="text-box">
+                  <div className="first-option">
+                    <p>1</p>
+                  </div>
+                  <div>
+                    <h4>Start your assignment order</h4>
+                    <p>
+                      To get started, head to our <a href="#">order form</a>,
+                      here you can calculate a price based on your specific
+                      requirements. Next, we ask to know the basics, such as the
+                      word count of the paper, when you need the order by, and
+                      the subject area you study.
+                    </p>
+                  </div>
+                </div>
+                <div className="text-box">
+                  <div className="second-option">
+                    <p>2</p>
+                  </div>
+                  <div>
+                    <h4>Tell us all your requirements</h4>
+                    <p>
+                      Next, we'll ask for a little more detail. It helps us to
+                      have as much information as possible because it will help
+                      us to choose the writer who will suit your order best!
+                      We'll send you a confirmation of your order, and you can
+                      add extra details whenever you like before work gets
+                      started. Don't worry: our team will get in touch with you
+                      to confirm the specifics before we send your order out to
+                      make sure nothing has been missed!
+                    </p>
+                  </div>
+                </div>
+                <div className="text-box">
+                  <div className="third-option">
+                    <p>3</p>
+                  </div>
+                  <div>
+                    <h4>An academic expert will start your order</h4>
+                    <p>
+                      You can pay at any time, but it's best to pay as soon as
+                      possible to enable us to find you a writer. Once you've
+                      paid a minimum of 50% of your order cost, your order is
+                      ready to go! <br /> <br />
+                      <strong>
+                        We never re-use or re-sell any assignments
+                      </strong>{" "}
+                      we have created, so you can be assured that the work you
+                      receive will be 100% original.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </Col>
+          </Row>
+          <div className="text-center mt-4">
+            <Button variant="danger">Order an essay today!</Button>
+          </div>
+        </Container>
       </section>
 
       <section id="how-to-use">

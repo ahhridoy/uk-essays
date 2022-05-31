@@ -19,6 +19,59 @@
   }
 }
 
+#why-choose {
+  margin: 50px 0;
+  a {
+    text-decoration: none;
+    border-bottom: 1px dotted;
+  }
+}
+
+#phone-order {
+  padding: 50px 0;
+  .text-box {
+    margin-top: 30px;
+    display: flex;
+    a {
+      text-decoration: none;
+      border-bottom: 1px dotted;
+    }
+    .first-option {
+      margin-right: 20px;
+      p {
+        font-size: 20px;
+        font-weight: 600;
+        color: orangered;
+        border: 1px solid orangered;
+        border-radius: 100%;
+        padding: 10px 20px;
+      }
+    }
+    .second-option {
+      margin-right: 20px;
+      p {
+        font-size: 20px;
+        font-weight: 600;
+        color: rgb(0, 89, 255);
+        border: 1px solid rgb(0, 89, 255);
+        border-radius: 100%;
+        padding: 10px 20px;
+      }
+    }
+    .third-option {
+      margin-right: 20px;
+      p {
+        font-size: 20px;
+        font-weight: 600;
+        color: rgb(0, 175, 9);
+        border: 1px solid rgb(0, 175, 9);
+        border-radius: 100%;
+        padding: 10px 20px;
+      }
+    }
+  }
+}
+
 #difference {
   margin: 50px 0;
   color: white;
