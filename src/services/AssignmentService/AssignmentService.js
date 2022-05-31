@@ -7,7 +7,6 @@ import FairUsePolicy from "../../components/FairUsePolicy/FairUsePolicy";
 import PhoneOrder from "../../components/PhoneOrder/PhoneOrder";
 import Press from "../../components/Press/Press";
 import ReviewsComponent from "../../components/ReviewsComponent/ReviewsComponent";
-import WhyChoose from "../../components/WhyChoose/WhyChoose";
 import { AiFillStar, AiFillHeart } from "react-icons/ai";
 import {
   BsStarHalf,
@@ -279,7 +278,9 @@ const AssignmentService = () => {
             </Col>
           </Row>
           <div className="text-center mt-4">
-            <Button variant="danger">Order an essay today!</Button>
+            <Button variant="danger">
+              <strong>Order</strong> an assignment today!
+            </Button>
           </div>
         </Container>
       </section>

@@ -22,8 +22,7 @@ import {
 } from "react-icons/bs";
 import { MdDownloadDone, MdOutlineWatchLater, MdDone } from "react-icons/md";
 import { AiOutlineFileDone, AiOutlineQuestionCircle } from "react-icons/ai";
-import { FcHighBattery } from "react-icons/fc";
-import { BiLockAlt, BiPhoneCall } from "react-icons/bi";
+import { BiPhoneCall } from "react-icons/bi";
 import { FiBookOpen } from "react-icons/fi";
 
 const ReflectiveService = () => {
@@ -176,8 +175,71 @@ const ReflectiveService = () => {
         </Container>
       </section>
 
-      <section>
-        <WhyChoose />
+      <section id="reflective-why-choose">
+        <Container>
+          <Row>
+            <Col md={6} xs={12}>
+              <div>
+                <h2>Why choose our reflective practice writing service?</h2>
+                <p>
+                  The best way to use our reflective essay writing service is to
+                  use your order to develop the skills and knowledge that you
+                  will need to create your own assessment. <br /> <br />
+                  After your work has been written and checked over by our
+                  Quality Control Team, it’s time for you to begin writing your
+                  own reflective piece, using your order to help you. We’ve
+                  given you everything you need to describe your experiences,
+                  apply your chosen reflective cycle and critically evaluate
+                  your skills. <br /> <br />
+                  Our service works best if you read through the work we have
+                  sent you a few times, making notes as you go about the style
+                  and structure of your order, the types of sources that have
+                  been cited, and any thoughts you might have about how you can
+                  learn from your experiences in the same way. These notes can
+                  then be used to write your work, and if you’re struggling to
+                  write your Reflection, our Aftercare Team are always on hand
+                  to help.
+                </p>
+              </div>
+            </Col>
+            <Col md={6} xs={12}>
+              <div className="p-3 shadow rounded">
+                <h4>Reasons to choose our service</h4>
+                <p>
+                  <MdDone className="text-success fs-4 me-2" />
+                  We only allow our <strong>
+                    qualified academic writers
+                  </strong>{" "}
+                  with matching qualifications to take on your work.
+                </p>
+                <hr />
+                <p>
+                  <MdDone className="text-success fs-4 me-2" />
+                  Your order will go through{" "}
+                  <strong>rigorous quality controls</strong> and is checked
+                  against your instructions and academic standards by qualified
+                  professionals, we'll even give you a quality report to show
+                  our findings.
+                </p>
+                <hr />
+                <p>
+                  <MdDone className="text-success fs-4 me-2" />
+                  Your order will come with a{" "}
+                  <strong>comprehensive plagiarism report</strong> which is
+                  compiled with our state-of-the-art plagiarism software,
+                  ensuring the work that is produced is not plagiarised.
+                </p>
+                <hr />
+                <p>
+                  <MdDone className="text-success fs-4 me-2" />
+                  You get a <strong>7 day amendment period</strong>, so if
+                  you're not happy with the work, let us know and our customer
+                  support teams will resolve any concerns.
+                </p>
+              </div>
+            </Col>
+          </Row>
+        </Container>
       </section>
 
       <section id="reflective-essay-today">
@@ -194,8 +256,86 @@ const ReflectiveService = () => {
         </Container>
       </section>
 
-      <section>
-        <PhoneOrder />
+      <section id="reflective-phone-order">
+        <Container>
+          <Row>
+            <Col md={6} xs={12}>
+              <img
+                src="/assets/phone-order.png"
+                alt="phone-icon"
+                className="w-100"
+              />
+            </Col>
+            <Col md={6} xs={12}>
+              <h2 className="my-3">
+                Our order process is simple Three easy steps!
+              </h2>
+              <div>
+                <div className="text-box">
+                  <div className="first-option">
+                    <p>1</p>
+                  </div>
+                  <div>
+                    <h4>Start your Reflective Practice order</h4>
+                    <p>
+                      In the first section of our order form, we ask for a few
+                      details: the grade you want, the length of the work, when
+                      you want it delivered, and the subject you are studying.
+                      Be sure to give yourself enough time to re-write your own
+                      reflective practice essay! We also ask for a few details
+                      so that we can contact you. Your data is stored securely
+                      and is never sold on to anyone. You can read about how
+                      this information is used in our Privacy Policy, which is
+                      in-line with the Data Protection Act 2018 and the European
+                      General Data Protection Regulations (GDPR).
+                    </p>
+                  </div>
+                </div>
+                <div className="text-box">
+                  <div className="second-option">
+                    <p>2</p>
+                  </div>
+                  <div>
+                    <h4>Tell us all your requirements</h4>
+                    <p>
+                      Next, we want to know more about the specifics of your
+                      order. It’s important that you put as much detail as you
+                      can here so that your writer knows exactly what you expect
+                      from them. We will need to know the requirements for the
+                      reflection, what experience it’s based on, and whether you
+                      have a specific reflective cycle that you need to use. If
+                      you’re struggling to fill in the details, don’t worry –
+                      our Customer Support Team are happy to help you, and we
+                      even have a Live Chat Support Team on hand throughout the
+                      day!
+                    </p>
+                  </div>
+                </div>
+                <div className="text-box">
+                  <div className="third-option">
+                    <p>3</p>
+                  </div>
+                  <div>
+                    <h4>An academic expert will start your order</h4>
+                    <p>
+                      After these details have been gathered, a confirmation
+                      email will be sent to you and our Customer Support Team
+                      will get in touch to confirm the details of your order.
+                      The sooner you make a payment, the sooner we will be able
+                      to find you a writer. You can pay by credit/debit card,
+                      make a bank transfer, or use WeChat Pay or Alipay.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </Col>
+          </Row>
+          <div className="text-center mt-4">
+            <Button variant="danger">
+              <strong>Place an Order</strong> today!
+            </Button>
+          </div>
+        </Container>
       </section>
 
       <section id="how-to-use">

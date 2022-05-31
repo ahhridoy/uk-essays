@@ -137,15 +137,138 @@ const EssayplanService = () => {
         </Container>
       </section>
 
-      <section>
-        <WhyChoose />
+      <section id="essayplan-why-choose">
+        <Container>
+          <Row>
+            <Col md={6} xs={12}>
+              <div>
+                <h2>Why choose an Essay Plan?</h2>
+                <p>
+                  Our essay plan writing service is great value for money: you
+                  can order just 1/3rd of the overall word count of your full
+                  piece of work. You'll find the depth and quality of our work
+                  provided by our professional writers is of the same excellence
+                  that you would get with a full model answer! <br /> <br />
+                  Still not sure if an essay plan is for you? Take a look at
+                  some <a href="#">sample essay</a> plans we have written, as
+                  created by our writers, or discover more about the service,
+                  how to use your essay plan, and why you can always trust UK
+                  Essays to create a fantastic piece of work.
+                </p>
+              </div>
+            </Col>
+            <Col md={6} xs={12}>
+              <div className="p-3 shadow rounded">
+                <h4>Reasons to choose our service</h4>
+                <p>
+                  <MdDone className="text-success fs-4 me-2" />
+                  We only allow our <strong>
+                    qualified academic writers
+                  </strong>{" "}
+                  with matching qualifications to take on your work.
+                </p>
+                <hr />
+                <p>
+                  <MdDone className="text-success fs-4 me-2" />
+                  Your order will go through{" "}
+                  <strong>rigorous quality controls</strong> and is checked
+                  against your instructions and academic standards by qualified
+                  professionals, we'll even give you a quality report to show
+                  our findings.
+                </p>
+                <hr />
+                <p>
+                  <MdDone className="text-success fs-4 me-2" />
+                  Your order will come with a{" "}
+                  <strong>comprehensive plagiarism report</strong> which is
+                  compiled with our state-of-the-art plagiarism software,
+                  ensuring the work that is produced is not plagiarised.
+                </p>
+                <hr />
+                <p>
+                  <MdDone className="text-success fs-4 me-2" />
+                  You get a <strong>7 day amendment period</strong>, so if
+                  you're not happy with the work, let us know and our customer
+                  support teams will resolve any concerns.
+                </p>
+              </div>
+            </Col>
+          </Row>
+        </Container>
       </section>
 
-      <section>
-        <PhoneOrder />
+      <section id="essayplan-phone-order">
+        <Container>
+          <Row>
+            <Col md={6} xs={12}>
+              <img
+                src="/assets/phone-order.png"
+                alt="phone-icon"
+                className="w-100"
+              />
+            </Col>
+            <Col md={6} xs={12}>
+              <h2 className="my-3">
+                Our order process is simple Three easy steps!
+              </h2>
+              <div>
+                <div className="text-box">
+                  <div className="first-option">
+                    <p>1</p>
+                  </div>
+                  <div>
+                    <h4>Start your UK Essays order</h4>
+                    <p>
+                      To get started, <a href="#">head to our order form</a>.
+                      Next, select your grade, delivery time and subject area.
+                      For the length of the essay plan, you should choose one
+                      third of the word count of the overall work: for example,
+                      if you are writing a 3000-word essay, you only need to
+                      order a 1000-word plan.
+                    </p>
+                  </div>
+                </div>
+                <div className="text-box">
+                  <div className="second-option">
+                    <p>2</p>
+                  </div>
+                  <div>
+                    <h4>Tell us all your requirements</h4>
+                    <p>
+                      All you need to do now is enter a few details about what
+                      you want to be included in your essay outline. The more
+                      details you can give us, the better your outline (and
+                      therefore your finished essay) will be. We'll need to know
+                      the details for the full piece of work that the essay plan
+                      is intended for, so be sure to mention any specific
+                      requirements here!
+                    </p>
+                  </div>
+                </div>
+                <div className="text-box">
+                  <div className="third-option">
+                    <p>3</p>
+                  </div>
+                  <div>
+                    <h4>An academic expert will start your order</h4>
+                    <p>
+                      Once these details have been entered, our Customer
+                      Experience team will check over the details and confirm
+                      them with you. You can pay at any time, but the sooner you
+                      make your payment, the better, as we'll be able to find a
+                      writer and start your order much faster. Our payment
+                      system is fully secure, and you can pay by credit/debit
+                      card, WeChat Pay, Alipay or make a bank transfer.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </Col>
+          </Row>
+        </Container>
       </section>
 
-      <section id="essaplan-how-to-use">
+      <section id="essayplan-how-to-use">
         <Container>
           <h2>How to use your essay plan</h2>
           <p className="mb-5">

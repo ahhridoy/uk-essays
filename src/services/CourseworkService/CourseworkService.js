@@ -139,12 +139,139 @@ const CourseworkService = () => {
         </Container>
       </section>
 
-      <section>
-        <WhyChoose />
+      <section id="coursework-why-choose">
+        <Container>
+          <Row>
+            <Col md={6} xs={12}>
+              <div>
+                <h2>Why choose our coursework writing service?</h2>
+                <p>
+                  Writing a piece of coursework can be difficult, but we're here
+                  to help! We understand how tough it can be to turn all your
+                  reading into a structured piece of work, but our coursework
+                  service will help you get the grade you need - on time, every
+                  time.
+                  <br /> <br />
+                  If you've done an experiment and need help writing up the
+                  results, that's no problem! If you're writing a piece of
+                  coursework on a project that you've worked on, we can help
+                  with this, too! Nothing is too big or small for our
+                  experienced coursework writers.
+                </p>
+              </div>
+            </Col>
+            <Col md={6} xs={12}>
+              <div className="p-3 shadow rounded">
+                <h4>Reasons to choose our service</h4>
+                <p>
+                  <MdDone className="text-success fs-4 me-2" />
+                  We only allow our <strong>
+                    qualified academic writers
+                  </strong>{" "}
+                  with matching qualifications to take on your work.
+                </p>
+                <hr />
+                <p>
+                  <MdDone className="text-success fs-4 me-2" />
+                  Your order will go through{" "}
+                  <strong>rigorous quality controls</strong> and is checked
+                  against your instructions and academic standards by qualified
+                  professionals, we'll even give you a quality report to show
+                  our findings.
+                </p>
+                <hr />
+                <p>
+                  <MdDone className="text-success fs-4 me-2" />
+                  Your order will come with a{" "}
+                  <strong>comprehensive plagiarism report</strong> which is
+                  compiled with our state-of-the-art plagiarism software,
+                  ensuring the work that is produced is not plagiarised.
+                </p>
+                <hr />
+                <p>
+                  <MdDone className="text-success fs-4 me-2" />
+                  You get a <strong>7 day amendment period</strong>, so if
+                  you're not happy with the work, let us know and our customer
+                  support teams will resolve any concerns.
+                </p>
+              </div>
+            </Col>
+          </Row>
+        </Container>
       </section>
 
-      <section id="coursework-phoneorder">
-        <PhoneOrder />
+      <section id="coursework-phone-order">
+        <Container>
+          <Row>
+            <Col md={6} xs={12}>
+              <img
+                src="/assets/phone-order.png"
+                alt="phone-icon"
+                className="w-100"
+              />
+            </Col>
+            <Col md={6} xs={12}>
+              <h2 className="my-3">
+                Our order process is simple Three easy steps!
+              </h2>
+              <div>
+                <div className="text-box">
+                  <div className="first-option">
+                    <p>1</p>
+                  </div>
+                  <div>
+                    <h4>Start your UK Essays order</h4>
+                    <p>
+                      In the first part, we ask you about your order. This
+                      includes the grade you want, the word count, and when you
+                      need your coursework for, so make sure you give yourself
+                      some extra time to re-write the work!
+                    </p>
+                  </div>
+                </div>
+                <div className="text-box">
+                  <div className="second-option">
+                    <p>2</p>
+                  </div>
+                  <div>
+                    <h4>Tell us all your requirements</h4>
+                    <p>
+                      Next, we ask for a few more details about your work. It's
+                      important that you give us as much information as
+                      possible, because this will help us to find the best
+                      writer for you, and get your work started as soon as
+                      possible! We ask you to send us any files that are
+                      relevant and any information about the topic.
+                    </p>
+                  </div>
+                </div>
+                <div className="text-box">
+                  <div className="third-option">
+                    <p>3</p>
+                  </div>
+                  <div>
+                    <h4>An academic expert will start your order</h4>
+                    <p>
+                      Once you have entered all the information, our Customer
+                      Experience Team will confirm your order with you and check
+                      over the order details. You can pay now or later, but it's
+                      better to pay quickly because this allows us to find a
+                      writer and begin your order much faster. You can pay by
+                      credit/debit card, Alipay, WeChat Pay or by bank transfer.
+                      Our payment system is fully secure, and you will always
+                      receive a payment confirmation from us by email.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </Col>
+          </Row>
+          <div className="text-center mt-4">
+            <Button variant="danger">
+              <strong>Order</strong> an coursework today!
+            </Button>
+          </div>
+        </Container>
       </section>
 
       <section id="how-to-use">

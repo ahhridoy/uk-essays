@@ -31,31 +31,34 @@ const WhyChoose = () => {
               <h4>Reasons to choose our service</h4>
               <p>
                 <MdDone className="text-success fs-4 me-2" />
-                We only allow our <b>qualified academic writers</b> with
-                matching qualifications to take on your work.
+                We only allow our <strong>
+                  qualified academic writers
+                </strong>{" "}
+                with matching qualifications to take on your work.
               </p>
               <hr />
               <p>
                 <MdDone className="text-success fs-4 me-2" />
-                Your order will go through <b>rigorous quality controls</b> and
-                is checked against your instructions and academic standards by
-                qualified professionals, we'll even give you a quality report to
-                show our findings.
+                Your order will go through{" "}
+                <strong>rigorous quality controls</strong> and is checked
+                against your instructions and academic standards by qualified
+                professionals, we'll even give you a quality report to show our
+                findings.
               </p>
               <hr />
               <p>
                 <MdDone className="text-success fs-4 me-2" />
                 Your order will come with a{" "}
-                <b>comprehensive plagiarism report</b> which is compiled with
-                our state-of-the-art plagiarism software, ensuring the work that
-                is produced is not plagiarised.
+                <strong>comprehensive plagiarism report</strong> which is
+                compiled with our state-of-the-art plagiarism software, ensuring
+                the work that is produced is not plagiarised.
               </p>
               <hr />
               <p>
                 <MdDone className="text-success fs-4 me-2" />
-                You get a <b>7 day amendment period</b>, so if you're not happy
-                with the work, let us know and our customer support teams will
-                resolve any concerns.
+                You get a <strong>7 day amendment period</strong>, so if you're
+                not happy with the work, let us know and our customer support
+                teams will resolve any concerns.
               </p>
             </div>
           </Col>

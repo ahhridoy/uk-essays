@@ -1,19 +1,81 @@
 #research-service-hero {
   margin-top: 140px;
-  padding: 50px 0;
+  padding-top: 50px;
+  padding-bottom: 10px;
   background-color: #071d37;
   .price {
     font-size: 80px;
     font-weight: 300;
+    .price-icon {
+      margin-right: -30px;
+      font-weight: 300;
+      font-size: 70px;
+    }
+  }
+  .research-reviewsio {
+    .research-reviewsio-logo {
+      width: 200px;
+    }
+  }
+}
+
+#research-phone-order {
+  margin: 50px 0;
+  .text-box {
+    margin-top: 30px;
+    display: flex;
+    a {
+      text-decoration: none;
+      color: orangered;
+      border-bottom: 1px dotted;
+    }
+    .first-option {
+      margin-right: 20px;
+      p {
+        font-size: 20px;
+        font-weight: 600;
+        color: orangered;
+        border: 1px solid orangered;
+        border-radius: 100%;
+        padding: 10px 20px;
+      }
+    }
+    .second-option {
+      margin-right: 20px;
+      p {
+        font-size: 20px;
+        font-weight: 600;
+        color: rgb(0, 89, 255);
+        border: 1px solid rgb(0, 89, 255);
+        border-radius: 100%;
+        padding: 10px 20px;
+      }
+    }
+    .third-option {
+      margin-right: 20px;
+      p {
+        font-size: 20px;
+        font-weight: 600;
+        color: rgb(0, 175, 9);
+        border: 1px solid rgb(0, 175, 9);
+        border-radius: 100%;
+        padding: 10px 20px;
+      }
+    }
   }
 }
 
 #research-paper {
   padding: 50px 0;
+  background-color: #eeeeee;
   border: 1px solid rgb(216, 216, 216);
 }
 
 #research-why-choose {
   padding: 50px 0;
   border: 1px solid rgb(216, 216, 216);
+  a {
+    text-decoration: none;
+    border-bottom: 1px dotted;
+  }
 }

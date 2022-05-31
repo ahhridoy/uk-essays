@@ -19,7 +19,7 @@
   }
 }
 
-#why-choose {
+#essay-why-choose {
   margin: 50px 0;
   a {
     text-decoration: none;
@@ -27,13 +27,14 @@
   }
 }
 
-#phone-order {
+#essay-phone-order {
   padding: 50px 0;
   .text-box {
     margin-top: 30px;
     display: flex;
     a {
       text-decoration: none;
+      color: orangered;
       border-bottom: 1px dotted;
     }
     .first-option {

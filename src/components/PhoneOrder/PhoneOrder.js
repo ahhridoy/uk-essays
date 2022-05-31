@@ -4,7 +4,7 @@ import { Button, Col, Container, Row } from "react-bootstrap";
 const PhoneOrder = () => {
   return (
     <main id="phone-order">
-      <Container>
+      <Container> 
         <Row>
           <Col md={6} xs={12}>
             <img
@@ -47,7 +47,7 @@ const PhoneOrder = () => {
                     – to create a fully referenced essay with the detailed
                     aspects you require, from a rich, detailed discussion to a
                     well-structured argument.{" "}
-                    <b>We never re-use or re-sell any essay we have created.</b>
+                    <strong>We never re-use or re-sell any essay we have created.</strong>
                   </p>
                 </div>
               </div>
