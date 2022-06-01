@@ -4,7 +4,7 @@ import { MdDone } from "react-icons/md";
 
 const WhyChoose = () => {
   return (
-    <main id="why-choose">
+    <section id="why-choose">
       <Container>
         <Row>
           <Col md={6} xs={12}>
@@ -64,7 +64,7 @@ const WhyChoose = () => {
           </Col>
         </Row>
       </Container>
-    </main>
+    </section>
   );
 };
 

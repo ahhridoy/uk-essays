@@ -1,9 +1,9 @@
-#reflective-service-hero {
+#dissertation-service-hero {
   margin-top: 140px;
   padding-top: 50px;
   padding-bottom: 10px;
   background-color: #071d37;
-  .price { 
+  .price {
     font-size: 80px;
     font-weight: 300;
     .price-icon {
@@ -12,34 +12,29 @@
       font-size: 70px;
     }
   }
-  .reflective-reviewsio {
-    .reflective-reviewsio-logo {
+  .dissertation-reviewsio {
+    .dissertation-reviewsio-logo {
       width: 200px;
     }
   }
 }
 
-#reflective-why-choose {
-  margin: 50px 0;
+#dissertation-why-choose {
+   margin: 50px 0;
   a {
     text-decoration: none;
     border-bottom: 1px dotted;
   }
 }
 
-#reflective-essay-today {
-  background-color: #ca4a00;
-  padding: 100px 0;
-}
-
-#reflective-phone-order {
-  padding: 50px 0;
+#dissertation-phone-order {
+   padding: 50px 0;
+   background-color: #f8f9fa;
   .text-box {
     margin-top: 30px;
     display: flex;
     a {
       text-decoration: none;
-      color: orangered;
       border-bottom: 1px dotted;
     }
     .first-option {
@@ -78,14 +73,8 @@
   }
 }
 
-#how-service-work {
-  margin: 50px 0;
-}
-
-#frequently-questions {
-  margin: 50px 0;
-  a {
-    text-decoration: none;
-    border-bottom: 1px dotted;
-  }
+#full-dissertation {
+   padding: 50px 0;
+   background-color: #f8f9fa;
+   border-top: 1px solid rgb(212, 212, 212);
 }

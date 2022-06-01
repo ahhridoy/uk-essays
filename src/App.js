@@ -20,6 +20,7 @@ import AssignmentService from "./services/AssignmentService/AssignmentService";
 import CasestudyService from "./services/CasestudyService/CasestudyService";
 import CourseworkService from "./services/CourseworkService/CourseworkService";
 import CVWritingService from "./services/CVWritingService/CVWritingService";
+import DissertationServices from "./services/DissertationService/DissertationServices";
 import EditingService from "./services/EditingService/EditingService";
 import EssayplanService from "./services/EssayplanService/EssayplanService";
 import EssayService from "./services/EssayService/EssayService";
@@ -52,6 +53,7 @@ function App() {
           <Route path="/essayplan-service" element={<EssayplanService />} />
           <Route path="/reflective-service" element={<ReflectiveService />} />
           <Route path="/research-service" element={<ResearchService />} />
+          <Route path="/dissertation-service" element={<DissertationServices />} />
           <Route path="/report-service" element={<ReportService />} />
           <Route path="/case-study-service" element={<CasestudyService />} />
           <Route path="/powerpoint-service" element={<PowerpointService />} />

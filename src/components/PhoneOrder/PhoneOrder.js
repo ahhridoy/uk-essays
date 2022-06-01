@@ -3,7 +3,7 @@ import { Button, Col, Container, Row } from "react-bootstrap";
 
 const PhoneOrder = () => {
   return (
-    <main id="phone-order">
+    <section id="phone-order">
       <Container> 
         <Row>
           <Col md={6} xs={12}>
@@ -74,7 +74,7 @@ const PhoneOrder = () => {
           <Button variant="danger">Order an essay today!</Button>
         </div>
       </Container>
-    </main>
+    </section>
   );
 };
 
