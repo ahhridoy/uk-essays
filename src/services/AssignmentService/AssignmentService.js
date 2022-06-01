@@ -4,7 +4,6 @@ import AboutCompany from "../../components/AboutCompany/AboutCompany";
 import AskedQuestion from "../../components/AskedQuestion/AskedQuestion";
 import EssayToday from "../../components/EssayToday/EssayToday";
 import FairUsePolicy from "../../components/FairUsePolicy/FairUsePolicy";
-import PhoneOrder from "../../components/PhoneOrder/PhoneOrder";
 import Press from "../../components/Press/Press";
 import ReviewsComponent from "../../components/ReviewsComponent/ReviewsComponent";
 import { AiFillStar, AiFillHeart } from "react-icons/ai";

@@ -6,7 +6,6 @@ import FairUsePolicy from "../../components/FairUsePolicy/FairUsePolicy";
 import PhoneOrder from "../../components/PhoneOrder/PhoneOrder";
 import Press from "../../components/Press/Press";
 import ReviewsComponent from "../../components/ReviewsComponent/ReviewsComponent";
-import WhyChoose from "../../components/WhyChoose/WhyChoose";
 import WhyLove from "../../components/WhyLove/WhyLove";
 import { FaFacebookF } from "react-icons/fa";
 import {
@@ -37,7 +36,7 @@ const EssayService = () => {
           <Row>
             <Col md={8} xs={12}>
               <div className="text-light">
-                <h2 className="my-2">Essay Writing Service</h2>
+                <h2 className="my-2">Essay Writing Service</h2> 
                 <div className="text-light my-3">
                   <span>Share this: </span>
                   <span className="bg-primary p-1 text-light me-2">
