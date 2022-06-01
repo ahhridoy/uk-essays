@@ -487,16 +487,16 @@ const MarkingService = () => {
                   <p>
                     We don't offer an editing service because we don't allow
                     customers to directly submit work that we produce – you can
-                    read more about this in our <a href="#">Fair Use Policy</a>. It's important
-                    to us that customers use our services to further their own
-                    knowledge and use our work as a guide to help them: we do
-                    not condone plagiarism. <br /> <br />
-                    We do offer an <a href="#">Essay Writing Service</a>, where a writer can
-                    either create a model answer from scratch for you, or can
-                    read through your completed work and any feedback that you
-                    have received to do a complete re-write of your work. You
-                    can then use this as a guide to create your own piece of
-                    work.
+                    read more about this in our <a href="#">Fair Use Policy</a>.
+                    It's important to us that customers use our services to
+                    further their own knowledge and use our work as a guide to
+                    help them: we do not condone plagiarism. <br /> <br />
+                    We do offer an <a href="#">Essay Writing Service</a>, where
+                    a writer can either create a model answer from scratch for
+                    you, or can read through your completed work and any
+                    feedback that you have received to do a complete re-write of
+                    your work. You can then use this as a guide to create your
+                    own piece of work.
                   </p>
                 </div>
               </div>
