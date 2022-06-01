@@ -2,6 +2,21 @@ import React from "react";
 import { Button, Col, Container, Row } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import Press from "../../components/Press/Press";
+import {
+  BsStarHalf,
+  BsCurrencyPound,
+  BsWhatsapp,
+  BsFillChatLeftFill,
+  BsPencil,
+} from "react-icons/bs";
+import { MdDownloadDone, MdDone, MdOutlineWatchLater } from "react-icons/md";
+import {
+  AiFillStar,
+  AiOutlineFileDone,
+  AiOutlineStar,
+  AiOutlineQuestionCircle,
+  AiFillHeart,
+} from "react-icons/ai";
 
 const EditingService = () => {
   return (
@@ -34,7 +49,12 @@ const EditingService = () => {
                   <Button variant="success" className="mx-3">
                     Order Now
                   </Button>
-                  <Link to="/check-prices">Check Prices</Link>
+                  <Link
+                    to="/check-prices"
+                    className="text-decoration-none text-light fs-5"
+                  >
+                    Check Prices
+                  </Link>
                 </div>
               </div>
             </Col>
@@ -43,38 +63,52 @@ const EditingService = () => {
               <div className="bg-light p-4 text-center rounded">
                 <p>Get help with questions about our services or pricing.</p>
                 <Button variant="success" className="w-100 my-2">
-                  Message us on WhatsApp
+                  Message us on <strong>WhatsApp </strong>
+                  <BsWhatsapp />
                 </Button>
                 <br />
                 <Button variant="primary" className="w-100 my-2">
-                  Start a live chat
+                  Start a <strong>live chat </strong>
+                  <BsFillChatLeftFill />
                 </Button>
               </div>
             </Col>
           </Row>
+
           <Row className="mt-5">
             <Col md={3} xs={6}>
-              <div className="text-light d-flex">
-                <span>icon</span>
-                <p>Written to Standard</p>
+              <div className="text-light">
+                <p>
+                  {" "}
+                  <BsPencil className="me-2 text-danger" /> Written to Standard
+                </p>
               </div>
             </Col>
             <Col md={3} xs={6}>
               <div className="text-light d-flex">
-                <span>icon</span>
-                <p>Plagiarism-free</p>
+                <p>
+                  {" "}
+                  <MdDownloadDone className="me-2 text-danger" />{" "}
+                  Plagiarism-free
+                </p>
               </div>
             </Col>
             <Col md={3} xs={6}>
               <div className="text-light d-flex">
-                <span>icon</span>
-                <p>Always on Time</p>
+                <p>
+                  {" "}
+                  <MdOutlineWatchLater className="me-2 text-danger" /> Always on
+                  Time
+                </p>
               </div>
             </Col>
             <Col md={3} xs={6}>
               <div className="text-light d-flex">
-                <span>icon</span>
-                <p>Unrivalled Quality</p>
+                <p>
+                  {" "}
+                  <AiOutlineFileDone className="me-2 text-danger" /> Unrivalled
+                  Quality
+                </p>
               </div>
             </Col>
           </Row>
@@ -123,7 +157,9 @@ const EditingService = () => {
             <Button variant="success" className="mx-3">
               Order Now
             </Button>
-            <Link to="/check-prices">Check Prices</Link>
+            <Link to="/check-prices" className="text-decoration-none fs-5">
+              Check Prices
+            </Link>
           </div>
         </Container>
       </section>
@@ -176,12 +212,13 @@ const EditingService = () => {
         </div>
       </section>
 
-      <section>
+      <section id="editing-did-you-know">
         <Container>
-          <h2 className="text-center">Editing: Did you know?</h2>
+          <h2 className="text-center my-5">Editing: Did you know?</h2>
           <Row>
             <Col md={6} xs={12}>
               <div>
+                <MdDownloadDone className="text-primary fs-1 mb-3" />
                 <p>
                   Good spelling and grammar are a key part of any piece of
                   academic work, and usually form a specific part of a marking
@@ -197,6 +234,7 @@ const EditingService = () => {
             </Col>
             <Col md={6} xs={12}>
               <div>
+                <AiFillHeart className="text-primary fs-1 mb-3" />
                 <p>
                   Studies show that as many as 80% of employers value candidates
                   and employees with strong written communication skills; this
@@ -217,13 +255,28 @@ const EditingService = () => {
       <section id="take-our-word">
         <Container>
           <h2 className="text-center">Don't just take our word for it!</h2>
-          <p className="text-center">
+          <p className="text-center fs-5 text-secondary">
             We've served over 25,000 customers since we started trading in 2003.
           </p>
           <Row>
             <Col md={4} xs={6}>
               <div className="bg-white p-3">
-                <span>star icons</span> <br />
+                <span>
+                  <AiFillStar className="text-warning fs-5" />
+                </span>
+                <span>
+                  <AiFillStar className="text-warning fs-5" />
+                </span>
+                <span>
+                  <AiFillStar className="text-warning fs-5" />
+                </span>
+                <span>
+                  <AiFillStar className="text-warning fs-5" />
+                </span>
+                <span>
+                  <AiFillStar className="text-warning fs-5" />
+                </span>{" "}
+                <br />
                 <p>
                   Great work, good customer services, answer all the learning
                   outcomes, good professional staff.
@@ -233,7 +286,22 @@ const EditingService = () => {
             </Col>
             <Col md={4} xs={6}>
               <div className="bg-white p-3">
-                <span>star icons</span> <br />
+                <span>
+                  <AiFillStar className="text-warning fs-5" />
+                </span>
+                <span>
+                  <AiFillStar className="text-warning fs-5" />
+                </span>
+                <span>
+                  <AiFillStar className="text-warning fs-5" />
+                </span>
+                <span>
+                  <AiFillStar className="text-warning fs-5" />
+                </span>
+                <span>
+                  <AiFillStar className="text-warning fs-5" />
+                </span>{" "}
+                <br />
                 <p>
                   The writer followed my instructions perfectly and produced an
                   excellent piece of work. I'm delighted with the results.
@@ -243,7 +311,22 @@ const EditingService = () => {
             </Col>
             <Col md={4} xs={6}>
               <div className="bg-white p-3">
-                <span>star icons</span> <br />
+                <span>
+                  <AiFillStar className="text-warning fs-5" />
+                </span>
+                <span>
+                  <AiFillStar className="text-warning fs-5" />
+                </span>
+                <span>
+                  <AiFillStar className="text-warning fs-5" />
+                </span>
+                <span>
+                  <AiFillStar className="text-warning fs-5" />
+                </span>
+                <span>
+                  <AiFillStar className="text-warning fs-5" />
+                </span>{" "}
+                <br />
                 <p>
                   Great service, great communication throughout, would
                   definitely use again
@@ -257,62 +340,83 @@ const EditingService = () => {
 
       <section id="frequently-asked-question">
         <Container>
-          <h2 className="text-center">Frequently asked questions</h2>
+          <h2 className="text-center my-5">Frequently asked questions</h2>
           <Row>
             <Col md={6} xs={12}>
-              <div>
-                <h4>Why use an Editing service?</h4>
-                <p>
-                  Editing is a simple and effective way to improve your work,
-                  and help you learn from mistakes you may have made with your
-                  writing. Marking and comments on your work can only tell you
-                  so much: seeing common mistakes you make with spelling and
-                  grammar and understanding how to address comments can teach
-                  you how to be a better academic writer and improve your
-                  grades. An editor provides you with a fresh perspective and is
-                  there to help you, not catch you out!
-                </p>
+              <div className="d-flex mb-4">
+                <div className="me-4">
+                  <AiOutlineQuestionCircle className="text-info fs-5" />
+                </div>
+                <div>
+                  <h5>Why use an Editing service?</h5>
+                  <p>
+                    Editing is a simple and effective way to improve your work,
+                    and help you learn from mistakes you may have made with your
+                    writing. Marking and comments on your work can only tell you
+                    so much: seeing common mistakes you make with spelling and
+                    grammar and understanding how to address comments can teach
+                    you how to be a better academic writer and improve your
+                    grades. An editor provides you with a fresh perspective and
+                    is there to help you, not catch you out!
+                  </p>
+                </div>
               </div>
             </Col>
             <Col md={6} xs={12}>
-              <div>
-                <h4>What makes this different to other editing services?</h4>
-                <p>
-                  Most editors from other services are not subject-specific
-                  editors: they are often qualified in English, and whilst they
-                  are excellent at fixing spelling and grammar mistakes, they
-                  lack the subject-specific knowledge that we require all of our
-                  editors to have. An editor that understands your work and is
-                  qualified in the subject you are studying will be able to
-                  catch errors in your knowledge that could hurt your chance at
-                  a high grade.
-                </p>
+              <div className="d-flex mb-4">
+                <div className="me-4">
+                  <AiOutlineQuestionCircle className="text-info fs-5" />
+                </div>
+                <div>
+                  <h5>What makes this different to other editing services?</h5>
+                  <p>
+                    Most editors from other services are not subject-specific
+                    editors: they are often qualified in English, and whilst
+                    they are excellent at fixing spelling and grammar mistakes,
+                    they lack the subject-specific knowledge that we require all
+                    of our editors to have. An editor that understands your work
+                    and is qualified in the subject you are studying will be
+                    able to catch errors in your knowledge that could hurt your
+                    chance at a high grade.
+                  </p>
+                </div>
               </div>
             </Col>
             <Col md={6} xs={12}>
-              <div>
-                <h4>
-                  How long does it take you to find a writer for my editing
-                  order?
-                </h4>
-                <p>
-                  Each order is different; however, we ask that you allow 24 to
-                  48 hours for a suitably qualified editor to be found.
-                </p>
+              <div className="d-flex">
+                <div className="me-4">
+                  <AiOutlineQuestionCircle className="text-info fs-5" />
+                </div>
+                <div>
+                  <h5>
+                    How long does it take you to find a writer for my editing
+                    order?
+                  </h5>
+                  <p>
+                    Each order is different; however, we ask that you allow 24
+                    to 48 hours for a suitably qualified editor to be found.
+                  </p>
+                </div>
               </div>
             </Col>
             <Col md={6} xs={12}>
-              <div>
-                <h4>Is the service confidential?</h4>
-                <p>
-                  We work in full compliance with the latest privacy legislation
-                  and regulation. We will not discuss your editing order or
-                  share your information with anyone other than yourself.
-                </p>
+              <div className="d-flex">
+                <div className="me-4">
+                  <AiOutlineQuestionCircle className="text-info fs-5" />
+                </div>
+                <div>
+                  <h4>Is the service confidential?</h4>
+                  <p>
+                    We work in full compliance with the latest privacy
+                    legislation and regulation. We will not discuss your editing
+                    order or share your information with anyone other than
+                    yourself.
+                  </p>
+                </div>
               </div>
             </Col>
           </Row>
-          <div className="text-center">
+          <div className="text-center mt-4">
             <a href="#">
               Still have questions? Search for answers in our help centre
             </a>

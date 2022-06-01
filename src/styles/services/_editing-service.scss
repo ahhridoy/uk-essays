@@ -1,6 +1,7 @@
 #editing-service-hero {
   margin-top: 140px;
-  padding: 50px 0;
+  padding-top: 50px;
+  padding-bottom: 10px;
   background-color: #071d37;
   .price {
     font-size: 80px;
@@ -13,7 +14,8 @@
 }
 
 #editing-process {
-  margin: 50px 0;
+  background-color: #f8f9fa;
+  padding-top: 50px;
   .editing-content {
     display: flex;
     justify-content: space-between;
@@ -30,16 +32,24 @@
   }
 }
 
+#editing-did-you-know {
+  margin: 50px 0;
+}
+
 #take-our-word {
   padding: 50px 0;
   background-color: #f8f9fa;
 }
 
 #frequently-asked-question {
-margin: 50px 0;
+  margin: 50px 0;
+  a {
+    text-decoration: none;
+    border-bottom: 1px dotted;
+  }
 }
 
 #qualified-editors {
-   background-color: red;
-   padding: 100px 0;
+  background-color: red;
+  padding: 100px 0;
 }
