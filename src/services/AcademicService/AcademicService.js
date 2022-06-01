@@ -2,10 +2,28 @@ import React from "react";
 import { Button, Col, Container, Row } from "react-bootstrap";
 import ConfidenceService from "../../components/ConfidenceSerivce/ConfidenceService";
 import FairUsePolicy from "../../components/FairUsePolicy/FairUsePolicy";
-import PhoneOrder from "../../components/PhoneOrder/PhoneOrder";
 import Press from "../../components/Press/Press";
 import ReviewsComponent from "../../components/ReviewsComponent/ReviewsComponent";
-import WhyChoose from "../../components/WhyChoose/WhyChoose";
+import {
+  AiFillStar,
+  AiOutlineFileDone,
+  AiOutlineBars,
+  AiOutlineQuestionCircle,
+} from "react-icons/ai";
+import {
+  BsStarHalf,
+  BsCurrencyPound,
+  BsWhatsapp,
+  BsFillChatLeftFill,
+  BsPencil,
+  BsVolumeMute,
+} from "react-icons/bs";
+import { BiPhoneCall, BiText } from "react-icons/bi";
+import { FiUsers, FiBookOpen, FiMonitor } from "react-icons/fi";
+import { RiArrowRightUpFill, RiFileTextLine } from "react-icons/ri";
+import { HiOutlinePhotograph } from "react-icons/hi";
+import { IoReorderFourSharp } from "react-icons/io5";
+import { MdDownloadDone, MdDone, MdOutlineWatchLater } from "react-icons/md";
 
 const AcademicService = () => {
   return (
@@ -56,36 +74,221 @@ const AcademicService = () => {
             <Col md={4} xs={12}>
               <div className="bg-light p-4 text-center rounded">
                 <i>Prices from</i>
-                <h1 className="price">62</h1>
+                <h1 className="price">
+                  <BsCurrencyPound className="price-icon" />
+                  62
+                </h1>
                 <p>Undergraduate 2:2 • 1000 words • 7 day delivery</p>
                 <img src="/assets/trusted-site.svg" alt="" /> <br />
                 <Button variant="success" className="w-100 my-2">
-                  Order an essay
+                  <strong>Order</strong> an essay
                 </Button>
                 <p>Delivered on-time or your money back</p>
                 <Button variant="primary" className="w-100 my-2">
-                  Request a call back
+                  Request a <strong>call back </strong> <BiPhoneCall />
                 </Button>
                 <br />
                 <Button variant="success" className="w-100 my-2">
-                  Message us on WhatsApp
+                  Message us on <strong>WhatsApp </strong>
+                  <BsWhatsapp />
                 </Button>
                 <br />
                 <Button variant="primary" className="w-100 my-2">
-                  Start a live chat
+                  Start a <strong>live chat </strong>
+                  <BsFillChatLeftFill />
                 </Button>
+              </div>
+              <div className="academic-reviewsio text-center mt-3">
+                <img
+                  src="/assets/reviewsio-logo-white.webp"
+                  alt="logo"
+                  className="academic-reviewsio-logo"
+                />{" "}
+                <br />
+                <span>
+                  <AiFillStar className="text-warning fs-4" />
+                  <AiFillStar className="text-warning fs-4" />
+                  <AiFillStar className="text-warning fs-4" />
+                  <AiFillStar className="text-warning fs-4" />
+                  <BsStarHalf className="text-warning fs-5" />
+                  <span className="text-warning ms-2 fs-5">(3 Reviews)</span>
+                </span>
+              </div>
+            </Col>
+          </Row>
+
+          <Row className="mt-5">
+            <Col md={3} xs={6}>
+              <div className="text-light">
+                <p>
+                  {" "}
+                  <BsPencil className="me-2 text-danger" /> Written to Standard
+                </p>
+              </div>
+            </Col>
+            <Col md={3} xs={6}>
+              <div className="text-light d-flex">
+                <p>
+                  {" "}
+                  <MdDownloadDone className="me-2 text-danger" />{" "}
+                  Plagiarism-free
+                </p>
+              </div>
+            </Col>
+            <Col md={3} xs={6}>
+              <div className="text-light d-flex">
+                <p>
+                  {" "}
+                  <MdOutlineWatchLater className="me-2 text-danger" /> Always on
+                  Time
+                </p>
+              </div>
+            </Col>
+            <Col md={3} xs={6}>
+              <div className="text-light d-flex">
+                <p>
+                  {" "}
+                  <AiOutlineFileDone className="me-2 text-danger" /> Unrivalled
+                  Quality
+                </p>
               </div>
             </Col>
           </Row>
         </Container>
       </section>
 
-      <section>
-        <WhyChoose />
+      <section id="academic-why-choose">
+        <Container>
+          <Row>
+            <Col md={6} xs={12}>
+              <div>
+                <h2>Why choose our academic poster service?</h2>
+                <p>
+                  Our Posters are rich in research and analysis in order to help
+                  you create a perfect academic poster. We provide clear
+                  information that's supported by a robust range of quality
+                  sources and tailored to your desired audience. Each piece of
+                  work we create is beautifully organised and signposted in
+                  order to make it easy to follow. <br /> <br />
+                  Each poster that we create must pass our quality checks,
+                  including the design! We make sure that the work we deliver is
+                  beautifully arranged and visually appealing. We'll make sure
+                  to strike a balance between the proportion of images and text
+                  and include any graphics or charts that you think will be
+                  important.
+                </p>
+              </div>
+            </Col>
+            <Col md={6} xs={12}>
+              <div className="p-3 shadow rounded">
+                <h4>Reasons to choose our service</h4>
+                <p>
+                  <MdDone className="text-success fs-4 me-2" />
+                  We only allow our <strong>
+                    qualified academic writers
+                  </strong>{" "}
+                  with matching qualifications to take on your work.
+                </p>
+                <hr />
+                <p>
+                  <MdDone className="text-success fs-4 me-2" />
+                  Your order will go through{" "}
+                  <strong>rigorous quality controls</strong> and is checked
+                  against your instructions and academic standards by qualified
+                  professionals, we'll even give you a quality report to show
+                  our findings.
+                </p>
+                <hr />
+                <p>
+                  <MdDone className="text-success fs-4 me-2" />
+                  Your order will come with a{" "}
+                  <strong>comprehensive plagiarism report</strong> which is
+                  compiled with our state-of-the-art plagiarism software,
+                  ensuring the work that is produced is not plagiarised.
+                </p>
+                <hr />
+                <p>
+                  <MdDone className="text-success fs-4 me-2" />
+                  You get a <strong>7 day amendment period</strong>, so if
+                  you're not happy with the work, let us know and our customer
+                  support teams will resolve any concerns.
+                </p>
+              </div>
+            </Col>
+          </Row>
+        </Container>
       </section>
 
-      <section>
-        <PhoneOrder />
+      <section id="academic-phone-order">
+        <Container>
+          <Row>
+            <Col md={6} xs={12}>
+              <img
+                src="/assets/phone-order.png"
+                alt="phone-icon"
+                className="w-100"
+              />
+            </Col>
+            <Col md={6} xs={12}>
+              <h2 className="my-3">
+                Our order process is simple Three easy steps!
+              </h2>
+              <div>
+                <div className="text-box">
+                  <div className="first-option">
+                    <p>1</p>
+                  </div>
+                  <div>
+                    <h4>Start your UK Essays order</h4>
+                    <p>
+                      In the first step, select the type of work that you need,
+                      and your requirements for it – including the size of the
+                      poster, the amount of words, the grade you are aiming for
+                      and the date you need it by. Be sure to include enough
+                      time to make the poster yourself! <br /> <br />
+                      Simply head to our <a href="#">online order form</a> to
+                      get started with your UKEssays order and follow the
+                      directions given.
+                    </p>
+                  </div>
+                </div>
+                <div className="text-box">
+                  <div className="second-option">
+                    <p>2</p>
+                  </div>
+                  <div>
+                    <h4>Tell us all your requirements</h4>
+                    <p>
+                      We then need to know about the subject you are studying
+                      and the content that you want in the poster. We'll ask you
+                      some specific questions about the type of poster you need
+                      and exactly what purpose it should fulfil. The more
+                      information that you give us, the better your poster will
+                      be! You can also add any files or marking criteria that
+                      you think will be useful for your project.
+                    </p>
+                  </div>
+                </div>
+                <div className="text-box">
+                  <div className="third-option">
+                    <p>3</p>
+                  </div>
+                  <div>
+                    <h4>An academic expert will start your order</h4>
+                    <p>
+                      Once the work has been completed, we then check your work
+                      for quality. Our in-house Quality Control Team will
+                      examine every aspect of the poster, making sure it follows
+                      your instructions and meets the grade you have asked for.
+                      Once completed, your order can be downloaded from your
+                      online account.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </Col>
+          </Row>
+        </Container>
       </section>
 
       <section id="what-you-get">
@@ -146,8 +349,10 @@ const AcademicService = () => {
           </p>
           <p>When completing an academic poster, our writers will:</p>
           <div>
-            <div className="d-flex">
-              <div>icon</div>
+            <div className="d-flex my-4">
+              <div className="me-5">
+                <BiText className="text-primary fs-2" />
+              </div>
               <div>
                 <h4>Balance the visual with the text</h4>
                 <p>
@@ -158,8 +363,10 @@ const AcademicService = () => {
                 </p>
               </div>
             </div>
-            <div className="d-flex">
-              <div>icon</div>
+            <div className="d-flex mb-4">
+              <div className="me-5">
+                <FiUsers className="text-primary fs-2" />
+              </div>
               <div>
                 <h4>Consider the audience</h4>
                 <p>
@@ -169,8 +376,10 @@ const AcademicService = () => {
                 </p>
               </div>
             </div>
-            <div className="d-flex">
-              <div>icon</div>
+            <div className="d-flex mb-4">
+              <div className="me-5">
+                <RiArrowRightUpFill className="text-primary fs-2" />
+              </div>
               <div>
                 <h4>
                   Present information in graphical format wherever relevant
@@ -182,8 +391,10 @@ const AcademicService = () => {
                 </p>
               </div>
             </div>
-            <div className="d-flex">
-              <div>icon</div>
+            <div className="d-flex mb-4">
+              <div className="me-5">
+                <FiBookOpen className="text-primary fs-2" />
+              </div>
               <div>
                 <h4>
                   Make sure the poster has a very clear structure and reading
@@ -197,8 +408,10 @@ const AcademicService = () => {
                 </p>
               </div>
             </div>
-            <div className="d-flex">
-              <div>icon</div>
+            <div className="d-flex mb-4">
+              <div className="me-5">
+                <RiFileTextLine className="text-primary fs-2" />
+              </div>
               <div>
                 <h4>Colour and formatting are important</h4>
                 <p>
@@ -209,8 +422,10 @@ const AcademicService = () => {
                 </p>
               </div>
             </div>
-            <div className="d-flex">
-              <div>icon</div>
+            <div className="d-flex mb-4">
+              <div className="me-5">
+                <FiMonitor className="text-primary fs-2" />
+              </div>
               <div>
                 <h4>Bear in mind that posters are made to be presented</h4>
                 <p>
@@ -223,8 +438,10 @@ const AcademicService = () => {
                 </p>
               </div>
             </div>
-            <div className="d-flex">
-              <div>icon</div>
+            <div className="d-flex mb-4">
+              <div className="me-5">
+                <AiOutlineBars className="text-primary fs-2" />
+              </div>
               <div>
                 <h4>Make sure a reference list is included</h4>
                 <p>
@@ -247,8 +464,10 @@ const AcademicService = () => {
           </p>
           <p>For a vocational poster, our writers will:</p>
           <div>
-            <div className="d-flex">
-              <div>icon</div>
+            <div className="d-flex my-4">
+              <div className="me-5">
+                <HiOutlinePhotograph className="text-primary fs-2" />
+              </div>
               <div>
                 <h4>Include lots of images</h4>
                 <p>
@@ -258,8 +477,10 @@ const AcademicService = () => {
                 </p>
               </div>
             </div>
-            <div className="d-flex">
-              <div>icon</div>
+            <div className="d-flex mb-4">
+              <div className="me-5">
+                <IoReorderFourSharp className="text-primary fs-2" />
+              </div>
               <div>
                 <h4>Adapt your writing style</h4>
                 <p>
@@ -272,8 +493,10 @@ const AcademicService = () => {
                 </p>
               </div>
             </div>
-            <div className="d-flex">
-              <div>icon</div>
+            <div className="d-flex mb-4">
+              <div className="me-5">
+                <FiUsers className="text-primary fs-2" />
+              </div>
               <div>
                 <h4>Consider the audience</h4>
                 <p>
@@ -286,8 +509,10 @@ const AcademicService = () => {
                 </p>
               </div>
             </div>
-            <div className="d-flex">
-              <div>icon</div>
+            <div className="d-flex mb-4">
+              <div className="me-5">
+                <BsVolumeMute className="text-primary fs-2" />
+              </div>
               <div>
                 <h4>Avoid casual use of jargon</h4>
                 <p>
@@ -305,7 +530,7 @@ const AcademicService = () => {
       <section id="service-correctly">
         <Container>
           <h2 className="text-center">How to use the service correctly</h2>
-          <p className="text-center">
+          <p className="text-center text-secondary fs-5">
             Using the model poster correctly is key to achieving academic
             success
           </p>
@@ -343,72 +568,94 @@ const AcademicService = () => {
         <ConfidenceService />
       </section>
 
-      <section id="frequently-asked-question">
+      <section id="academic-frequently-asked-question">
         <Container>
-          <h2 className="text-center">Frequently asked questions</h2>
+          <h2 className="text-center my-5">Frequently asked questions</h2>
           <Row>
             <Col md={6} xs={12}>
-              <div>
-                <h4>Why do people use academic poster services?</h4>
-                <p>
-                  There are many reasons why you might want to use our Poster
-                  Service, and if you've never used one before, you might be
-                  nervous! Our Live Chat Support Team are happy to help with any
-                  questions that you might have, and you can also check out the
-                  frequently asked questions in our <a href="#">Help Centre</a>.
-                </p>
+              <div className="d-flex">
+                <div className="me-4">
+                  <AiOutlineQuestionCircle className="text-danger fs-5" />
+                </div>
+                <div>
+                  <h5>Why do people use academic poster services?</h5>
+                  <p>
+                    There are many reasons why you might want to use our Poster
+                    Service, and if you've never used one before, you might be
+                    nervous! Our Live Chat Support Team are happy to help with
+                    any questions that you might have, and you can also check
+                    out the frequently asked questions in our{" "}
+                    <a href="#">Help Centre</a>.
+                  </p>
+                </div>
               </div>
             </Col>
             <Col md={6} xs={12}>
-              <div>
-                <h4>Can I submit the writer's work as my own?</h4>
-                <p>
-                  The work we create for you is to be used as a guide to help
-                  you complete your own work. You need to submit your own
-                  poster, and you cannot copy any of our content in your own
-                  work. Our service aims to show you what you need to do to get
-                  the grade you want, and you can look at the structure and
-                  references we've used to help you do this. You can learn more
-                  about how to use your order in our{" "}
-                  <a href="#">Fair Use Policy</a>.
-                </p>
+              <div className="d-flex">
+                <div className="me-4">
+                  <AiOutlineQuestionCircle className="text-danger fs-5" />
+                </div>
+                <div>
+                  <h4>Can I submit the writer's work as my own?</h4>
+                  <p>
+                    The work we create for you is to be used as a guide to help
+                    you complete your own work. You need to submit your own
+                    poster, and you cannot copy any of our content in your own
+                    work. Our service aims to show you what you need to do to
+                    get the grade you want, and you can look at the structure
+                    and references we've used to help you do this. You can learn
+                    more about how to use your order in our{" "}
+                    <a href="#">Fair Use Policy</a>.
+                  </p>
+                </div>
               </div>
             </Col>
             <Col md={6} xs={12}>
-              <div>
-                <h4>When does the delivery period start?</h4>
-                <p>
-                  The delivery period starts once we've found a writer and have
-                  received a payment of at least 50% of the order cost. It
-                  typically takes between 24 and 48 hours to find a writer,
-                  although every order is different, so be sure to choose a
-                  delivery date that gives you enough time to re-write your
-                  work! We always keep you updated whilst we're looking for a
-                  writer, so you're kept informed every step of the way.
-                  Additionally, we might sometimes ask for a little more
-                  information before we begin looking for a writer in order to
-                  make sure the right person is assigned to your work.
-                </p>
+              <div className="d-flex">
+                <div className="me-4">
+                  <AiOutlineQuestionCircle className="text-danger fs-5" />
+                </div>
+                <div>
+                  <h4>When does the delivery period start?</h4>
+                  <p>
+                    The delivery period starts once we've found a writer and
+                    have received a payment of at least 50% of the order cost.
+                    It typically takes between 24 and 48 hours to find a writer,
+                    although every order is different, so be sure to choose a
+                    delivery date that gives you enough time to re-write your
+                    work! We always keep you updated whilst we're looking for a
+                    writer, so you're kept informed every step of the way.
+                    Additionally, we might sometimes ask for a little more
+                    information before we begin looking for a writer in order to
+                    make sure the right person is assigned to your work.
+                  </p>
+                </div>
               </div>
             </Col>
             <Col md={6} xs={12}>
-              <div>
-                <h4>Is your service confidential?</h4>
-                <p>
-                  Our service is fully confidential, and any files that you send
-                  us are anonymised before sending them on to your writer. We
-                  are fully compliant with the Data Protection Act 2018, and we
-                  ensure our Privacy Policy is kept in-line with the latest
-                  privacy regulations. We don't keep your files any longer than
-                  necessary, and we never sell your data to any third parties.
-                </p>
+              <div className="d-flex">
+                <div className="me-4">
+                  <AiOutlineQuestionCircle className="text-danger fs-5" />
+                </div>
+                <div>
+                  <h4>Is your service confidential?</h4>
+                  <p>
+                    Our service is fully confidential, and any files that you
+                    send us are anonymised before sending them on to your
+                    writer. We are fully compliant with the Data Protection Act
+                    2018, and we ensure our Privacy Policy is kept in-line with
+                    the latest privacy regulations. We don't keep your files any
+                    longer than necessary, and we never sell your data to any
+                    third parties.
+                  </p>
+                </div>
               </div>
             </Col>
           </Row>
         </Container>
       </section>
 
-      <section id="related-service">
+      <section id="academic-related-service">
         <Container>
           <h2 className="text-center">Related services</h2>
           <p className="text-center my-3">
@@ -453,7 +700,7 @@ const AcademicService = () => {
               </div>
             </Col>
           </Row>
-          <p className="text-center">
+          <p className="text-center mt-5">
             View our <a href="#">full service portfolio.</a>
           </p>
         </Container>

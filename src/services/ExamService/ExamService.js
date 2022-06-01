@@ -1,15 +1,8 @@
 import React from "react";
 import { Accordion, Button, Col, Container, Row } from "react-bootstrap";
 import FairUsePolicy from "../../components/FairUsePolicy/FairUsePolicy";
-import PhoneOrder from "../../components/PhoneOrder/PhoneOrder";
 import ReviewsComponent from "../../components/ReviewsComponent/ReviewsComponent";
-import WhyChoose from "../../components/WhyChoose/WhyChoose";
-import {
-  AiFillStar,
-  AiOutlineFileDone,
-  AiOutlineStar,
-  AiOutlineQuestionCircle,
-} from "react-icons/ai";
+import { AiFillStar, AiOutlineFileDone } from "react-icons/ai";
 import {
   BsStarHalf,
   BsCurrencyPound,
@@ -17,9 +10,8 @@ import {
   BsFillChatLeftFill,
   BsPencil,
 } from "react-icons/bs";
-import { BiPhoneCall, BiLockAlt } from "react-icons/bi";
+import { BiPhoneCall } from "react-icons/bi";
 import { MdDownloadDone, MdDone, MdOutlineWatchLater } from "react-icons/md";
-import { FiBookOpen } from "react-icons/fi";
 
 const ExamService = () => {
   return (
@@ -347,7 +339,7 @@ const ExamService = () => {
                 unsure: we're a friendly team based in Nottingham, and we are
                 always happy to help! Check out our independent{" "}
                 <a href="#">customer reviews </a>
-                 to see just how professional and supportive our staff are:
+                to see just how professional and supportive our staff are:
                 they're posted by customers just like you! <br /> <br />
                 Our website is checked daily by online security experts,
                 TrustedSite. As part of these checks our website is screened for

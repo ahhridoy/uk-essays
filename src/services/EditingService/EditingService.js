@@ -2,18 +2,11 @@ import React from "react";
 import { Button, Col, Container, Row } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import Press from "../../components/Press/Press";
-import {
-  BsStarHalf,
-  BsCurrencyPound,
-  BsWhatsapp,
-  BsFillChatLeftFill,
-  BsPencil,
-} from "react-icons/bs";
-import { MdDownloadDone, MdDone, MdOutlineWatchLater } from "react-icons/md";
+import { BsWhatsapp, BsFillChatLeftFill, BsPencil } from "react-icons/bs";
+import { MdDownloadDone, MdOutlineWatchLater } from "react-icons/md";
 import {
   AiFillStar,
   AiOutlineFileDone,
-  AiOutlineStar,
   AiOutlineQuestionCircle,
   AiFillHeart,
 } from "react-icons/ai";
