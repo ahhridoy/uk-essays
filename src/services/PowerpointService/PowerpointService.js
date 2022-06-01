@@ -14,7 +14,6 @@ import {
 } from "react-icons/bs";
 import { BiPhoneCall, BiLockAlt } from "react-icons/bi";
 import { MdDownloadDone, MdDone, MdOutlineWatchLater } from "react-icons/md";
-import { FiUserCheck } from "react-icons/fi";
 
 const PowerpointService = () => {
   return (
@@ -103,6 +102,7 @@ const PowerpointService = () => {
               </div>
             </Col>
           </Row>
+          
           <Row className="mt-5">
             <Col md={3} xs={6}>
               <div className="text-light">
