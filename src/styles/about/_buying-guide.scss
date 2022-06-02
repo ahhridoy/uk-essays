@@ -1,0 +1,40 @@
+#buying-guide {
+  margin-top: 130px;
+  padding: 50px 0;
+  background-color: #071d37;
+}
+
+#before-buy-essay {
+  margin: 50px 0;
+  .buying-checklist {
+    a {
+      text-decoration: none;
+      color: green;
+      border-bottom: 1px dotted;
+    }
+    .checklist::first-letter {
+      color: green;
+      font-weight: 600;
+    }
+  }
+  .buying-cost {
+    table {
+      background-color: #f8f9fa;
+      font-family: arial, sans-serif;
+      border-collapse: collapse;
+      width: 100%;
+      .too-bg {
+        background-color: #ffb4b5;
+      }
+      .ok-bg {
+        background-color: #b0f2a9;
+      }
+    }
+    td,
+    th {
+      border: 1px solid #dddddd;
+      text-align: left;
+      padding: 8px;
+    }
+  }
+}

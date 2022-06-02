@@ -128,7 +128,7 @@ const Header = () => {
                         <Link to="/guarantees">Our Guarantees</Link>
                         <Link to="/quality">Our Quality Procedures</Link>
                         <Link to="/reviews">Customer Reviews</Link>
-                        <Link to="/essay-guide">Essay Buying Guide</Link>
+                        <Link to="/buying-guide">Essay Buying Guide</Link>
                         <Link to="/finance">Payl8r Finance</Link>
                       </div>
                       <div>

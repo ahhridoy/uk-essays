@@ -1,5 +1,6 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import AboutUK from "./about/AboutUK/AboutUK";
+import BuyingGuide from "./about/BuyingGuide/BuyingGuide";
 import Contact from "./about/Contact/Contact";
 import FairUse from "./about/FairUse/FairUse";
 import Guarantees from "./about/Guarantees/Guarantees";
@@ -70,6 +71,7 @@ function App() {
           <Route path="/expert-writers" element={<OurExpert />} />
           <Route path="/guarantees" element={<Guarantees />} />
           <Route path="/quality" element={<Quality />} />
+          <Route path="/buying-guide" element={<BuyingGuide />} />
           <Route path="/fair-use" element={<FairUse />} />
 
           {/* ------------------------- */}
