@@ -3,6 +3,11 @@ import { Button, Col, Container, Row } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import Press from "../../components/Press/Press";
 import ReviewRating from "../../components/ReviewRating/ReviewRating";
+import { AiOutlineFileProtect, AiOutlineFileDone } from "react-icons/ai";
+import { BiLockAlt } from "react-icons/bi";
+import { FiFastForward } from "react-icons/fi";
+import { IoHome } from "react-icons/io5";
+import { MdOutlineWatchLater, MdOutlineNotInterested } from "react-icons/md";
 
 const Guarantees = () => {
   return (
@@ -27,7 +32,7 @@ const Guarantees = () => {
       <section id="our-guarantees">
         <Container>
           <h2 className="text-center">Our guarantees to you</h2>
-          <p className="text-center">
+          <p className="text-center mb-5">
             We’re backed by over 17 years of experience in delivering high
             quality essays, assignments, dissertations and much more. We’ve
             helped thousands of students with their studies, providing much
@@ -35,74 +40,120 @@ const Guarantees = () => {
           </p>
           <Row>
             <Col md={4} xs={12}>
-              <h5>Plagiarism-free, every time</h5>
-              <p>
-                Every piece of work we deliver comes with a dedicated plagiarism
-                report using Viper, our bespoke plagiarism scanner. Not only is
-                all work we produce plagiarism free, but we'll prove it, too.
-                Just like industry-approved Turnitin, our Viper Plagiarism
-                Scanner will scan against online resources, as well as our own
-                database of previous work, to check for any similarities.
-              </p>
+              <div className="d-flex">
+                <div className="me-4">
+                  <AiOutlineFileProtect className="text-danger fs-2" />
+                </div>
+                <div>
+                  <h5>Plagiarism-free, every time</h5>
+                  <p>
+                    Every piece of work we deliver comes with a dedicated
+                    plagiarism report using Viper, our bespoke plagiarism
+                    scanner. Not only is all work we produce plagiarism free,
+                    but we'll prove it, too. Just like industry-approved
+                    Turnitin, our Viper Plagiarism Scanner will scan against
+                    online resources, as well as our own database of previous
+                    work, to check for any similarities.
+                  </p>
+                </div>
+              </div>
             </Col>
             <Col md={4} xs={12}>
-              <h5>Always on Time</h5>
-              <p>
-                Deadlines – they’re a nightmare. That’s why we don’t mess about
-                when it comes to delivering your work on time. If we’re even a
-                minute late, the work is on us – it’s free! You’ll be kept
-                informed every step of the way on the progress of your order.
-                We’re so confident we'll deliver on time, every time, we can
-                guarantee you peace of mind every time you order.
-              </p>
+              <div className="d-flex">
+                <div className="me-4">
+                  <MdOutlineWatchLater className="text-danger fs-2" />
+                </div>
+                <div>
+                  <h5>Always on Time</h5>
+                  <p>
+                    Deadlines – they’re a nightmare. That’s why we don’t mess
+                    about when it comes to delivering your work on time. If
+                    we’re even a minute late, the work is on us – it’s free!
+                    You’ll be kept informed every step of the way on the
+                    progress of your order. We’re so confident we'll deliver on
+                    time, every time, we can guarantee you peace of mind every
+                    time you order.
+                  </p>
+                </div>
+              </div>
             </Col>
             <Col md={4} xs={12}>
-              <h5>Written to standard</h5>
-              <p>
-                We're extremely proud of our work - all of our assignments go
-                through a stringent quality checking process from start to
-                finish. As soon as our writers have completed your work, it is
-                proofread, checked for any errors and given a thorough
-                plagiarism scan. We don't stop there either – we then check that
-                all the points that you requested have been clearly covered by
-                our in-house university educated academics, before we finally
-                release your assignment!
-              </p>
+              <div className="d-flex">
+                <div className="me-4">
+                  <AiOutlineFileDone className="text-danger fs-2" />
+                </div>
+                <div>
+                  <h5>Written to standard</h5>
+                  <p>
+                    We're extremely proud of our work - all of our assignments
+                    go through a stringent quality checking process from start
+                    to finish. As soon as our writers have completed your work,
+                    it is proofread, checked for any errors and given a thorough
+                    plagiarism scan. We don't stop there either – we then check
+                    that all the points that you requested have been clearly
+                    covered by our in-house university educated academics,
+                    before we finally release your assignment!
+                  </p>
+                </div>
+              </div>
             </Col>
             <Col md={4} xs={12}>
-              <h5>Never resold – never published</h5>
-              <p>
-                It’s that simple. We are never going to re-sell your order to
-                another person, and we’re never going to publish it online.
-                Every order is created uniquely for you, and nobody else – we
-                guarantee it.
-              </p>
+              <div className="d-flex">
+                <div className="me-4">
+                  <MdOutlineNotInterested className="text-danger fs-2" />
+                </div>
+                <div>
+                  <h5>Never resold – never published</h5>
+                  <p>
+                    It’s that simple. We are never going to re-sell your order
+                    to another person, and we’re never going to publish it
+                    online. Every order is created uniquely for you, and nobody
+                    else – we guarantee it.
+                  </p>
+                </div>
+              </div>
             </Col>
             <Col md={4} xs={12}>
-              <h5>Completely confidential and totally secure</h5>
-              <p>
-                Every order with UK Essays is completely, 100%, confidential.
-                Your details are never shared or sold to third parties. Unlike
-                many other companies, we adhere to and are bound by GDPR and UK
-                Law, and are registered data controllers, meaning we’ve been
-                certified to safely store your data. You have total piece of
-                mind with UK Essays that your data is safe and secure with a
-                trustworthy company.
-              </p>
+              <div className="d-flex">
+                <div className="me-4">
+                  <BiLockAlt className="text-danger fs-2" />
+                </div>
+                <div>
+                  <h5>Completely confidential and totally secure</h5>
+                  <p>
+                    Every order with UK Essays is completely, 100%,
+                    confidential. Your details are never shared or sold to third
+                    parties. Unlike many other companies, we adhere to and are
+                    bound by GDPR and UK Law, and are registered data
+                    controllers, meaning we’ve been certified to safely store
+                    your data. You have total piece of mind with UK Essays that
+                    your data is safe and secure with a trustworthy company.
+                  </p>
+                </div>
+              </div>
             </Col>
             <Col md={4} xs={12}>
-              <h5>UK Based and 100% real</h5>
-              <p>
-                We’re a UK company, based in the UK. Many others moonlight as UK
-                companies, but are not – don’t fall for the many scams and fake
-                sites out there!{" "}
-                <a href="#">Check us out and see for yourself!</a>
-              </p>
+              <div className="d-flex">
+                <div className="me-4">
+                  <IoHome className="text-danger fs-2" />
+                </div>
+                <div>
+                  <h5>UK Based and 100% real</h5>
+                  <p>
+                    We’re a UK company, based in the UK. Many others moonlight
+                    as UK companies, but are not – don’t fall for the many scams
+                    and fake sites out there!{" "}
+                    <a href="#">Check us out and see for yourself!</a>
+                  </p>
+                </div>
+              </div>
             </Col>
           </Row>
           <div className="text-center">
-            <Button variant="succes">Start your order</Button>
-            <Link to="/check-prices">Check prices</Link>
+            <Button variant="success">Start your order</Button>
+            <Link to="/check-prices" className="text-decoration-none ms-3">
+              Check prices
+            </Link>
           </div>
         </Container>
       </section>
@@ -245,28 +296,43 @@ const Guarantees = () => {
         <Container className="text-center">
           <Row>
             <Col md={4} xs={6}>
-              <div>
-                <h4>Easy</h4>
-                <p>3-step order process</p>
+              <div className="d-flex">
+                <div className="me-4">
+                  <AiOutlineFileProtect className="text-danger fs-2" />
+                </div>
+                <div className="text-start">
+                  <h4>Easy</h4>
+                  <p>3-step order process</p>
+                </div>
               </div>
             </Col>
             <Col md={4} xs={6}>
-              <div>
-                <h4>Trusted</h4>
-                <p>Used by over 25,000 people</p>
+              <div className="d-flex">
+                <div className="me-4">
+                  <BiLockAlt className="text-danger fs-2" />
+                </div>
+                <div className="text-start">
+                  <h4>Trusted</h4>
+                  <p>Used by over 25,000 people</p>
+                </div>
               </div>
             </Col>
             <Col md={4} xs={6}>
-              <div>
-                <h4>Fast</h4>
-                <p>Delivered to your schedule</p>
+              <div className="d-flex">
+                <div className="me-4">
+                  <FiFastForward className="text-danger fs-2" />
+                </div>
+                <div className="text-start">
+                  <h4>Fast</h4>
+                  <p>Delivered to your schedule</p>
+                </div>
               </div>
             </Col>
           </Row>
           <hr />
         </Container>
       </section>
-
+      
       <section id="have-a-question">
         <Container>
           <h2 className="text-center mb-4">Have a questions</h2>

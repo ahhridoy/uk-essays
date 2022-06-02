@@ -1,6 +1,9 @@
 import React from "react";
 import { Button, Col, Container, Row } from "react-bootstrap";
 import Press from "../../components/Press/Press";
+import { FiPhoneCall, FiUsers } from "react-icons/fi";
+import { HiOutlineMail } from "react-icons/hi";
+import { FaTelegramPlane, FaWhatsapp } from "react-icons/fa";
 
 const Contact = () => {
   return (
@@ -15,7 +18,8 @@ const Contact = () => {
             Controller No: Z1821391.
           </p>
           <div className="text-center">
-            <Button variant="light">Login to your online account</Button> <br /> <br />
+            <Button variant="light">Login to your online account</Button> <br />{" "}
+            <br />
             <Button variant="danger">Place an order</Button>
           </div>
         </Container>
@@ -29,11 +33,12 @@ const Contact = () => {
               <h5>Get in touch with us for help and support</h5>
               <div className="ms-3">
                 <p>
-                  UK / International :{" "}
-                  <a href="+44 (0)115 966 7955">+44 (0)115 966 7955</a>
+                  <FiPhoneCall /> UK / International :{" "}
+                  <a href="tel:+44 (0)115 966 7955">+44 (0)115 966 7955</a>
                 </p>
                 <p>
-                  USA: <a href="855-339-7955"></a>855-339-7955
+                  <FiPhoneCall /> USA:{" "}
+                  <a href="tel:855-339-7955">855-339-7955</a>
                 </p>
               </div>
 
@@ -63,33 +68,36 @@ const Contact = () => {
                 If you have general issues, view our <a href="#">help centre</a>
               </p>
               <Button variant="primary" className="w-100 mb-3">
-                Send us an email
+                Send us an email <HiOutlineMail />
               </Button>
               <Button variant="primary" className="w-100 mb-3">
-                Send a message through your online account
+                Send a message through your online account <FaTelegramPlane />
               </Button>
               <Button variant="primary" className="w-100 mb-3">
-                Start a live chat
+                Start a live chat <FiUsers />
               </Button>
               <Button variant="success" className="w-100 mb-3">
-                Message us on WhatsApp
+                Message us on WhatsApp <FaWhatsapp />
               </Button>
 
               <h2>Validate our details</h2>
-              <p>
-                <strong>
-                  Company Registration No: <a href="#">4964706</a>
-                </strong>
+              <p className="d-flex justify-content-between">
+                <strong>Company Registration No:</strong>
+                <a href="tel:4964706" className="me-5">
+                  4964706
+                </a>
               </p>
-              <p>
-                <strong>
-                  VAT Registration No: <a href="#">842417633</a>
-                </strong>
+              <p className="d-flex justify-content-between">
+                <strong>VAT Registration No:</strong>
+                <a href="tel:842417633" className="me-5">
+                  842417633
+                </a>
               </p>
-              <p>
-                <strong>
-                  Data Controller No: <a href="#">Z1821391</a>
-                </strong>
+              <p className="d-flex justify-content-between">
+                <strong>Data Controller No:</strong>
+                <a href="tel:Z1821391" className="me-5">
+                  Z1821391
+                </a>
               </p>
             </Col>
           </Row>

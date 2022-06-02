@@ -1,6 +1,7 @@
 import React from "react";
 import { Button, Col, Container, Row } from "react-bootstrap";
 import Press from "../../components/Press/Press";
+import { FiUsers, FiFileText } from 'react-icons/fi';
 
 const OurExpert = () => {
   return (
@@ -31,18 +32,11 @@ const OurExpert = () => {
                 <img src="/assets/accounting.jpg" alt="" className="w-100" />
                 <div className="p-3">
                   <h5>Accounting</h5>
-                  <div>
-                    <span>icon</span>
-                    <span>Writers in this area: 26</span>
-                  </div>
-                  <div>
-                    <span>icon</span>
-                    <span>Lecture</span>
-                  </div>
-                  <div>
-                    <span>icon</span>
-                    <span>No Sample available</span>
-                  </div>
+                    <div className="ms-3">
+                      <p><FiUsers /> Writers in this area: 26</p>
+                      <p><FiFileText /> Lecture 26</p>
+                      <p><FiFileText /> No Sample available 26</p>
+                    </div>
                 </div>
               </div>
             </Col>

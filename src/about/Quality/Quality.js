@@ -1,6 +1,12 @@
 import React from "react";
 import { Accordion, Col, Container, Row } from "react-bootstrap";
 import ServicesComponent from "../../components/ServicesComponent/ServicesComponent";
+import { AiOutlineFileProtect } from "react-icons/ai";
+import { FiSearch } from "react-icons/fi";
+import { MdOutlineDownloadDone, MdOutlineWatchLater } from "react-icons/md";
+import { GiNetworkBars } from "react-icons/gi";
+import { GrSystem } from "react-icons/gr";
+import { IoWarningOutline } from "react-icons/io5";
 
 const Quality = () => {
   return (
@@ -38,14 +44,14 @@ const Quality = () => {
           <h3 className="text-center text-primary">
             Getting things right first time
           </h3>
-          <p className="text-center">
+          <p className="text-center mb-5">
             Here at UK Essays, our success has been built on the quality of the
-            work that we deliver. We've been operating since 2003 and our
-            experience has taught us that, ultimately, getting your work
-            completed to the quality you expect on time is what you really want.
-            Whilst this might not sound like much, it does takes a lot of hard
-            work to deliver. We work hard at every stage of your order to ensure
-            the quality is exactly what you need.
+            work <br /> that we deliver. We've been operating since 2003 and our
+            experience has <br /> taught us that, ultimately, getting your work
+            completed to the quality <br /> you expect on time is what you
+            really want. Whilst this might not sound <br /> like much, it does
+            takes a lot of hard work to deliver. We work hard at <br /> every
+            stage of your order to ensure the quality is exactly what you need.
           </p>
           <Row>
             <Col md={6} xs={12}>
@@ -53,7 +59,10 @@ const Quality = () => {
             </Col>
             <Col md={6} xs={12}>
               <div>
-                <h4>We use deep, rigorous quality control checks</h4>
+                <h4>
+                  <FiSearch className="text-primary me-3 fs-2" /> We use deep,
+                  rigorous quality control checks
+                </h4>
                 <p>
                   Every single order goes through rigorous quality control and
                   is checked against your instructions and academic standards by
@@ -70,6 +79,8 @@ const Quality = () => {
               </div>
               <div>
                 <h4>
+                  {" "}
+                  <MdOutlineDownloadDone className="text-primary me-3 fs-2" />
                   We only hire and match fully qualified writers to your order
                 </h4>
                 <p>
@@ -90,7 +101,10 @@ const Quality = () => {
             </Col>
             <Col md={6} xs={12}>
               <div>
-                <h4>We build on our success</h4>
+                <h4>
+                  <GiNetworkBars className="text-primary me-3 fs-2" /> We build
+                  on our success
+                </h4>
                 <p>
                   We're happy and proud of the quality of work we deliver but
                   it's only from learning from past mistakes that we got to
@@ -101,7 +115,10 @@ const Quality = () => {
                 </p>
               </div>
               <div>
-                <h4>We solve problems with fast resolutions</h4>
+                <h4>
+                  <MdOutlineWatchLater className="text-primary me-3 fs-2" /> We
+                  solve problems with fast resolutions
+                </h4>
                 <p>
                   Sometimes things go wrong - it's bound to happen when you
                   deliver such a tailored product. Here at UK Essays, however,
@@ -124,7 +141,10 @@ const Quality = () => {
             </Col>
             <Col md={6} xs={12}>
               <div>
-                <h4>We offer extensive guarantees</h4>
+                <h4>
+                  <AiOutlineFileProtect className="text-primary me-3 fs-2" /> We
+                  offer extensive guarantees
+                </h4>
                 <p>
                   The guarantees are the foundation of our service. We are so
                   confident in our quality control that we guarantee to deliver
@@ -137,7 +157,10 @@ const Quality = () => {
                 </p>
               </div>
               <div>
-                <h4>We use our unique system</h4>
+                <h4>
+                  <GrSystem className="text-primary me-3 fs-2" /> We use our
+                  unique system
+                </h4>
                 <p>
                   In the early days we relied on forms and paper to keep track
                   of your orders - we now have a fully customised order and
@@ -155,7 +178,7 @@ const Quality = () => {
 
       <section id="transparency">
         <Container className="transparency-content">
-          <span>icon</span>
+          <IoWarningOutline className="text-primary mb-3 fs-2" />
           <h4>Transparency</h4>
           <p>
             We believe in total transparency when it comes to our quality

@@ -7,4 +7,8 @@
 #call-msg {
   padding: 50px 0;
   background-color: #f8f9fa;
+  a {
+    text-decoration: none;
+    border-bottom: 1px dotted;
+  }
 }
