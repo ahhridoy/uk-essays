@@ -16,6 +16,7 @@ import Offers from "./pages/Offers/Offers";
 import PlaceOrder from "./pages/PlaceOrder/PlaceOrder";
 import PlaceOrder2 from "./pages/PlaceOrder/PlaceOrder2";
 import PlaceOrder3 from "./pages/PlaceOrder/PlaceOrder3";
+import Register from "./pages/Register/Register";
 import ResourcesPage from "./pages/ResourcesPage/ResourcesPage";
 import ReviewsPage from "./pages/ReviewsPage/ReviewsPage";
 import Samples from "./pages/Samples/Samples";
@@ -83,7 +84,8 @@ function App() {
           <Route path="/place-order" element={<PlaceOrder />} />
           <Route path="/upgrades" element={<PlaceOrder2 />} />
           <Route path="/questions" element={<PlaceOrder3 />} />
-          <Route path="/login" element={<Login />} />
+          <Route path="/signin" element={<Login />} />
+          <Route path="/signup" element={<Register />} />
 
           {/* ------------------------- */}
 

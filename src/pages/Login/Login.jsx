@@ -1,6 +1,7 @@
 import React from "react";
 import { Button, Container } from "react-bootstrap";
 import { useForm } from "react-hook-form";
+import { Link } from "react-router-dom";
 import "./_Login.scss";
 
 const Login = () => {
@@ -43,11 +44,9 @@ const Login = () => {
             <Button variant="success" className="w-100 mt-3 py-2 fs-5 fw-bold">
               Sign In
             </Button>
-            <p className="text-center mt-2">
-              <a href="#" className="text-decoration-none">
-                Forget Password?
-              </a>
-            </p>
+            <Link to="/signup" className="text-decoration-none">
+              <p className="text-center mt-2">New User?</p>
+            </Link>
           </div>
         </form>
       </Container>
