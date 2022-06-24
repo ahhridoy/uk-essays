@@ -1,6 +1,7 @@
 import React from "react";
 import { useForm } from "react-hook-form";
 import { Container, Row, Col, Button } from "react-bootstrap";
+import { FaLock } from "react-icons/fa";
 import "./_PlaceOrder.scss";
 import PaymentOption from "../PaymentOption/PaymentOption";
 
@@ -21,7 +22,10 @@ const PlaceOrder = () => {
                   <strong>Package</strong>
                 </label>{" "}
                 <br />
-                <select {...register("package")} className="input-box border bg-light rounded">
+                <select
+                  {...register("package")}
+                  className="input-box border bg-light rounded"
+                >
                   <option value="bronze">Bronze: CV Only</option>
                   <option value="silver">Silver: CV + 2 Revisions</option>
                   <option value="gold">
@@ -71,7 +75,10 @@ const PlaceOrder = () => {
                   <strong>Your Where are you located?</strong>
                 </label>{" "}
                 <br />
-                <select {...register("country")} className="input-box border bg-light rounded">
+                <select
+                  {...register("country")}
+                  className="input-box border bg-light rounded"
+                >
                   <option value="">Please select a country</option>
                   <option value="afghanistan">Afghanistan</option>
                   <option value="australia">Australia</option>
@@ -125,7 +132,7 @@ const PlaceOrder = () => {
               </div>{" "}
               <br />
               <Button variant="success" className="w-100">
-                Continue securely
+                <FaLock /> Continue securely
               </Button>
             </form>
           </Col>
