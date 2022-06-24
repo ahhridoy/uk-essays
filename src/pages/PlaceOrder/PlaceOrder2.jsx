@@ -28,7 +28,7 @@ const PlaceOrder2 = () => {
                   team.
                 </p>
 
-                <div className="d-flex justify-content-between bg-light p-3 border">
+                <div className="d-flex justify-content-between bg-light p-3 border rounded">
                   <div>
                     <input
                       type="radio"
@@ -62,7 +62,7 @@ const PlaceOrder2 = () => {
                 </p>
                 <p>Add Early Release to your order for <strong>just £37.00</strong></p>
 
-                <div className="d-flex justify-content-between bg-light p-3 border">
+                <div className="d-flex justify-content-between bg-light p-3 border rounded">
                   <div>
                     <input
                       type="radio"
@@ -87,7 +87,7 @@ const PlaceOrder2 = () => {
                 </div>
               </div> <br />
               <Link to="/upgrades">
-              <Button variant="success" className="w-100">
+              <Button variant="success" className="w-100 py-3 fs-5 fw-bold">
                 <FaLock /> Continue securely
               </Button>
               </Link>

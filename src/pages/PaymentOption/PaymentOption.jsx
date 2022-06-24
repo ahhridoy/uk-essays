@@ -56,7 +56,7 @@ const PaymentOption = () => {
         Got a coupon code? <br />
         <input type="text" className="w-100 input-box border bg-light rounded" />
         <br />
-        <Button className="w-100 mt-3" variant="success">
+        <Button className="w-100 mt-3 py-2 fs-5 fw-bold" variant="success">
           Apply code
         </Button>
       </div>

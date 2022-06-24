@@ -171,7 +171,9 @@ const Header = () => {
             </Nav>
             <Nav className="ms-auto">
               <Link to="/place-order">
-                <Button variant="success">Place an order</Button>
+                <Button variant="success" className="fw-bold">
+                  Place an order
+                </Button>
               </Link>
             </Nav>
           </Navbar.Collapse>

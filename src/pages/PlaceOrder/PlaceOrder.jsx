@@ -133,7 +133,7 @@ const PlaceOrder = () => {
               </div>{" "}
               <br />
               <Link to="/upgrades">
-              <Button variant="success" className="w-100">
+              <Button variant="success" className="w-100 py-3 fs-5 fw-bold">
                 <FaLock /> Continue securely
               </Button>
               </Link>
