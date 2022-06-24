@@ -4,11 +4,15 @@ import { Col, Container, Row, Button } from "react-bootstrap";
 import PaymentOption from "../PaymentOption/PaymentOption";
 import "./_PlaceOrder.scss";
 import { FaLock } from "react-icons/fa";
-import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 const PlaceOrder2 = () => {
+  const navigate = useNavigate();
   const { register, handleSubmit } = useForm();
-  const onSubmit = (data) => console.log(data);
+  const onSubmit = (data) => {
+    console.log(data);
+    navigate("/questions");
+  };
   return (
     <div id="place-order2">
       <Container>
@@ -31,24 +35,26 @@ const PlaceOrder2 = () => {
                 <div className="d-flex justify-content-between bg-light p-3 border rounded">
                   <div>
                     <input
+                      {...register("product")}
                       type="radio"
+                      name="product"
                       value="yes"
-                      id="yes"
-                      name="upgrades"
+                      id="product-field"
                       className="me-2"
                     />
-                    <label htmlFor="yes">Yes</label>
+                    <label htmlFor="product-field">Yes</label>
                   </div>
 
                   <div>
                     <input
+                      {...register("product")}
                       type="radio"
+                      name="product"
                       value="no"
-                      id="no"
-                      name="upgrades"
+                      id="product-field"
                       className="me-2"
                     />
-                    <label htmlFor="no">No</label>
+                    <label htmlFor="product-field">No</label>
                   </div>
                 </div>
               </div>
@@ -58,39 +64,53 @@ const PlaceOrder2 = () => {
                   <strong>EARLY RELEASE</strong>
                 </h4>
                 <p>
-                Get your order released early! Our delivery times are typically at 9pm during the week - so if you want to receive your order back by 5pm on your selected date, please select this option. For this additional fee, we will endeavour to process your order and find a writer as quickly as possible for you. Please note, this is not applicable to Next Day or Same Day deliveries.
+                  Get your order released early! Our delivery times are
+                  typically at 9pm during the week - so if you want to receive
+                  your order back by 5pm on your selected date, please select
+                  this option. For this additional fee, we will endeavour to
+                  process your order and find a writer as quickly as possible
+                  for you. Please note, this is not applicable to Next Day or
+                  Same Day deliveries.
                 </p>
-                <p>Add Early Release to your order for <strong>just £37.00</strong></p>
+                <p>
+                  Add Early Release to your order for{" "}
+                  <strong>just £37.00</strong>
+                </p>
 
                 <div className="d-flex justify-content-between bg-light p-3 border rounded">
                   <div>
                     <input
+                      {...register("early")}
                       type="radio"
+                      name="early"
                       value="yes"
-                      id="yes"
-                      name="upgrades"
+                      id="early-field"
                       className="me-2"
                     />
-                    <label htmlFor="yes">Yes</label>
+                    <label htmlFor="early-field">Yes</label>
                   </div>
 
                   <div>
                     <input
+                      {...register("early")}
                       type="radio"
+                      name="early"
                       value="no"
-                      id="no"
-                      name="upgrades"
+                      id="early-field"
                       className="me-2"
                     />
-                    <label htmlFor="no">No</label>
+                    <label htmlFor="early-field">No</label>
                   </div>
                 </div>
-              </div> <br />
-              <Link to="/questions">
-              <Button variant="success" className="w-100 py-3 fs-5 fw-bold">
+              </div>{" "}
+              <br />
+              <Button
+                type="submit"
+                variant="success"
+                className="w-100 py-3 fs-5 fw-bold"
+              >
                 <FaLock /> Continue securely
               </Button>
-              </Link>
             </form>
           </Col>
           <Col md={4} xs={12}>

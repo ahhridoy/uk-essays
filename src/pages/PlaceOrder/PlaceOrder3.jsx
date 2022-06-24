@@ -1,12 +1,16 @@
-import React from "react";
+import React, { useState } from "react";
 import { useForm } from "react-hook-form";
 import { Button, Col, Container, Row } from "react-bootstrap";
 import PaymentOption from "../PaymentOption/PaymentOption";
 import { FaLock } from "react-icons/fa";
 
 const PlaceOrder3 = () => {
-  const { register, handleSubmit } = useForm();
-  const onSubmit = (data) => console.log(data);
+  const { register, handleSubmit, setValue } = useForm();
+  const onSubmit = (data) => {
+    console.log(data);
+    alert(JSON.stringify(data));
+  };
+  const [val, setVal] = useState(false);
   return (
     <div id="place-order3">
       <Container>
@@ -31,37 +35,40 @@ const PlaceOrder3 = () => {
                 <div className="d-flex justify-content-between bg-light p-3 border rounded">
                   <div>
                     <input
+                      {...register("questions")}
                       type="radio"
-                      value="job-applications"
-                      id="job-applications"
                       name="questions"
+                      value="job-applications"
+                      id="ques-field"
                       className="me-2"
                     />
-                    <label htmlFor="job-applications">Job Applications</label>
+                    <label htmlFor="ques-field">Job Applications</label>
                   </div>
 
                   <div>
                     <input
+                      {...register("questions")}
                       type="radio"
-                      value="academic-applications"
-                      id="academic-applications"
                       name="questions"
+                      value="academic-applications"
+                      id="ques-field"
                       className="me-2"
                     />
-                    <label htmlFor="academic-applications">
+                    <label htmlFor="ques-field">
                       Academic Applications
                     </label>
                   </div>
 
                   <div>
                     <input
+                      {...register("questions")}
                       type="radio"
-                      value="other"
-                      id="other"
                       name="questions"
+                      value="other"
+                      id="ques-field"
                       className="me-2"
                     />
-                    <label htmlFor="other">Other</label>
+                    <label htmlFor="ques-field">Other</label>
                   </div>
                 </div>
               </div>
@@ -83,7 +90,7 @@ const PlaceOrder3 = () => {
                   Do you have anything additional to tell your writer?
                 </label>
                 <textarea
-                  {...register("order")}
+                  {...register("additional")}
                   className="input-box text-area border bg-light rounded"
                 />
               </div>
@@ -102,27 +109,15 @@ const PlaceOrder3 = () => {
                   marketing communications via:
                 </p>
 
-                <input
-                  type="checkbox"
-                  value="email"
-                  id="email"
-                  className="me-2"
-                />
-                <label htmlFor="email" className="me-3">
-                  EMAIL
-                </label>
+                <input type="checkbox" name="email" className="me-2" />
+                <label className="me-3">EMAIL</label>
 
-                <input
-                  type="checkbox"
-                  value="phone"
-                  id="phone"
-                  className="me-2"
-                />
+                <input type="checkbox" name="phone" className="me-2" />
                 <label htmlFor="phone" className="me-3">
                   PHONE
                 </label>
 
-                <input type="checkbox" value="sms" id="sms" className="me-2" />
+                <input type="checkbox" name="sms" className="me-2" />
                 <label htmlFor="sms" className="me-3">
                   SMS
                 </label>
@@ -134,9 +129,13 @@ const PlaceOrder3 = () => {
                 </h4>
                 <input
                   type="checkbox"
-                  value="terms"
-                  id="terms"
+                  name="terms"
                   className="me-2"
+                  onChange={(e) => {
+                    setValue("terms", e.target.checked ? "yes" : "no");
+                    setVal(!val);
+                  }}
+                  checked={val}
                 />
                 <label htmlFor="terms">
                   By ticking this box you are agreeing to our{" "}
@@ -150,7 +149,11 @@ const PlaceOrder3 = () => {
                 </label>
               </div>
               <br />
-              <Button variant="success" className="w-100 py-3 fs-5 fw-bold mb-4">
+              <Button
+                type="submit"
+                variant="success"
+                className="w-100 py-3 fs-5 fw-bold mb-4"
+              >
                 <FaLock /> Place order
               </Button>
             </form>

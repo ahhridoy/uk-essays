@@ -15,7 +15,7 @@ const Register = () => {
           <h2 className="text-white">UKEssays</h2>
         </div>
         <form onSubmit={handleSubmit(onSubmit)}>
-          <div className="login-form">
+          <div className="register-form">
             <h4 className="text-center mb-5">Sign Up</h4>
             <label className="mt-3">First Name</label> <br />
             <input

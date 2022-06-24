@@ -4,11 +4,15 @@ import { Container, Row, Col, Button } from "react-bootstrap";
 import { FaLock } from "react-icons/fa";
 import "./_PlaceOrder.scss";
 import PaymentOption from "../PaymentOption/PaymentOption";
-import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 const PlaceOrder = () => {
+  const navigate = useNavigate();
   const { register, handleSubmit } = useForm();
-  const onSubmit = (data) => console.log(data);
+  const onSubmit = (data) => {
+    console.log(data);
+    navigate("/upgrades");
+  };
   return (
     <div id="place-order">
       <Container>
@@ -132,11 +136,13 @@ const PlaceOrder = () => {
                 </div>
               </div>{" "}
               <br />
-              <Link to="/upgrades">
-              <Button variant="success" className="w-100 py-3 fs-5 fw-bold">
+              <Button
+                type="submit"
+                variant="success"
+                className="w-100 py-3 fs-5 fw-bold"
+              >
                 <FaLock /> Continue securely
               </Button>
-              </Link>
             </form>
           </Col>
           <Col md={4} xs={12}>
