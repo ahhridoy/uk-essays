@@ -1,20 +1,39 @@
 #place-order {
-   margin-top: 100px;
-   background-color: #f8f9fa;
-   .input-box {
-      border: none;
-      height: 50px;
-      width: 100%;
-      padding-left: 10px;      
-      padding-right: 10px;
-      margin-top: 10px;
-      &:focus {
-         outline: none;
-      }
-   }
+  margin-top: 100px;
+  background-color: #f8f9fa;
+  .input-box {
+    border: none;
+    height: 50px;
+    width: 100%;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-top: 10px;
+    &:focus {
+      outline: none;
+    }
+  }
 }
 
 #place-order2 {
-   margin-top: 130px;
-   background-color: #f8f9fa;
+  margin-top: 130px;
+  background-color: #f8f9fa;
+}
+
+#place-order3 {
+  margin-top: 130px;
+  background-color: #f8f9fa;
+  .input-box {
+    border: none;
+    height: 50px;
+    width: 100%;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-top: 10px;
+    &:focus {
+      outline: none;
+    }
+  }
+  .text-area {
+   height: 120px;
+  }
 }
