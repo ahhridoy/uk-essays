@@ -4,6 +4,7 @@ import { Container, Row, Col, Button } from "react-bootstrap";
 import { FaLock } from "react-icons/fa";
 import "./_PlaceOrder.scss";
 import PaymentOption from "../PaymentOption/PaymentOption";
+import { Link } from "react-router-dom";
 
 const PlaceOrder = () => {
   const { register, handleSubmit } = useForm();
@@ -131,9 +132,11 @@ const PlaceOrder = () => {
                 </div>
               </div>{" "}
               <br />
+              <Link to="/upgrades">
               <Button variant="success" className="w-100">
                 <FaLock /> Continue securely
               </Button>
+              </Link>
             </form>
           </Col>
           <Col md={4} xs={12}>

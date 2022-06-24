@@ -2,6 +2,7 @@ import React from "react";
 import { Button } from "react-bootstrap";
 import { FaAddressBook } from "react-icons/fa";
 import { AiFillInfoCircle } from "react-icons/ai";
+import "./_PaymentOption.scss";
 
 const PaymentOption = () => {
   return (
