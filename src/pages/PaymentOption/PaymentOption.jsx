@@ -5,28 +5,28 @@ import { AiFillInfoCircle } from "react-icons/ai";
 
 const PaymentOption = () => {
   return (
-    <div>
+    <div id="payment-option">
       <div className="bg-white p-3">
-        <div className="d-flex">
+        <div className="d-flex mb-3">
           <div className="me-3">
             <FaAddressBook className="fs-1" />
           </div>
           <div>
-            <h4>Cv in No Subject</h4>
-            <p>Not applicable</p>
-            <p>Bronze: CV Only</p>
-            <p>Jun 26, 2022</p>
+            <strong>Cv in No Subject</strong> <br />
+            <span>Not applicable</span> <br />
+            <span>Bronze: CV Only</span> <br />
+            <span>Jun 26, 2022</span> <br />
           </div>
         </div>
-        <div className="d-flex justify-content-between">
+        <div className="d-flex justify-content-between mb-3">
           <div>
-            <p>CV</p>
-            <h4>TOTAL TO PAY</h4>
+            <span>CV</span> <br />
+            <strong>TOTAL TO PAY</strong>
           </div>
           <div>
-            <p>$123.00</p>
-            <h4>$123.00</h4>
-            <a href="#">Change currency</a>
+            <span>$123.00</span> <br />
+            <strong>$123.00</strong> <br />
+            <a href="#" className="text-decoration-none">Change currency</a>
           </div>
         </div>
         <div className="bg-dark p-2">
@@ -51,14 +51,16 @@ const PaymentOption = () => {
         </div>
       </div>{" "}
       <br />
-      <div className="mt-2">
+      <div className="mt-2 bg-white p-3">
         Got a coupon code? <br />
-        <input type="text" />
+        <input type="text" className="w-100 input-box border bg-light rounded" />
         <br />
+        <Button className="w-100 mt-3" variant="success">
+          Apply code
+        </Button>
       </div>
-      <Button className="w-100 mt-3" variant="success">Apply code</Button>
       <div className="text-center mt-3">
-         <img src="/assets/trusted-site.svg" alt="" />
+        <img src="/assets/trusted-site.svg" alt="" />
       </div>
     </div>
   );
