@@ -41,7 +41,7 @@ const TopBar = () => {
               </span>
               <p>Notifications</p>
             </Link>
-            <Link to="/signin">
+            <Link to="/login">
               <span>
                 <VscSignIn />
               </span>

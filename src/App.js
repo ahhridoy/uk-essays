@@ -11,6 +11,7 @@ import Header from "./components/Header/Header";
 import TopBar from "./components/Header/TopBar";
 import HowItWorks from "./pages/HowItWorks/HowItWorks";
 import LandingPage from "./pages/LandingPage/LandingPage";
+import Login from "./pages/Login/Login";
 import Offers from "./pages/Offers/Offers";
 import PlaceOrder from "./pages/PlaceOrder/PlaceOrder";
 import PlaceOrder2 from "./pages/PlaceOrder/PlaceOrder2";
@@ -82,6 +83,7 @@ function App() {
           <Route path="/place-order" element={<PlaceOrder />} />
           <Route path="/upgrades" element={<PlaceOrder2 />} />
           <Route path="/questions" element={<PlaceOrder3 />} />
+          <Route path="/login" element={<Login />} />
 
           {/* ------------------------- */}
 
