@@ -12,6 +12,7 @@ import TopBar from "./components/Header/TopBar";
 import HowItWorks from "./pages/HowItWorks/HowItWorks";
 import LandingPage from "./pages/LandingPage/LandingPage";
 import Offers from "./pages/Offers/Offers";
+import PlaceOrder from "./pages/PlaceOrder/PlaceOrder";
 import ResourcesPage from "./pages/ResourcesPage/ResourcesPage";
 import ReviewsPage from "./pages/ReviewsPage/ReviewsPage";
 import Samples from "./pages/Samples/Samples";
@@ -54,7 +55,10 @@ function App() {
           <Route path="/essayplan-service" element={<EssayplanService />} />
           <Route path="/reflective-service" element={<ReflectiveService />} />
           <Route path="/research-service" element={<ResearchService />} />
-          <Route path="/dissertation-service" element={<DissertationServices />} />
+          <Route
+            path="/dissertation-service"
+            element={<DissertationServices />}
+          />
           <Route path="/report-service" element={<ReportService />} />
           <Route path="/case-study-service" element={<CasestudyService />} />
           <Route path="/powerpoint-service" element={<PowerpointService />} />
@@ -73,6 +77,7 @@ function App() {
           <Route path="/quality" element={<Quality />} />
           <Route path="/buying-guide" element={<BuyingGuide />} />
           <Route path="/fair-use" element={<FairUse />} />
+          <Route path="/place-order" element={<PlaceOrder />} />
 
           {/* ------------------------- */}
 
