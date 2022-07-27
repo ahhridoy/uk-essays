@@ -1,0 +1,22 @@
+#home-dashboard {
+   display: flex;
+   .home-container {
+      margin-top: 300px;
+     flex: 5;
+   }
+ }
+ 
+ .card {
+   background: #91f87b;
+   border-radius: 5px;
+   margin-top: 20px;
+   padding: 10px;
+   .content {
+     text-align: center;
+     img {
+       width: 53px;
+       height: 53px;
+     }
+   }
+ }
+ 

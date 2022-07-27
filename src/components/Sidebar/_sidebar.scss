@@ -1,0 +1,49 @@
+#sidebar {
+   margin-top: 80px;
+  flex: 1;
+  background-color: rgb(31, 22, 22);
+  min-height: 100vh;
+  .center {
+    position: fixed;
+    width: 300px;
+    .logo {
+      margin-bottom: 20px;
+    }
+    ul {
+      list-style: none;
+      li {
+        margin-bottom: 20px;
+        border-bottom: 1px solid rgb(73, 73, 73);
+        padding-bottom: 15px;
+        color: white;
+        .icons {
+          font-size: 25px;
+          color: white;
+          margin-right: 10px;
+        }
+        p {
+          margin-top: 5px;
+          margin-left: 15px;
+           a {
+            text-decoration: none;
+            color: white;
+           }
+        }
+        a {
+         color: white;
+        }
+      }
+      .logout {
+        margin-top: 300px;
+        cursor: pointer;
+      }
+    }
+    .active {
+      padding: 10px 0;
+      background-color: black;
+      display: inline-block;
+      width: 100%;
+      border-right: 3px solid orangered;
+    }
+  }
+}

@@ -6,9 +6,11 @@ import FairUse from "./about/FairUse/FairUse";
 import Guarantees from "./about/Guarantees/Guarantees";
 import OurExpert from "./about/OurExpert/OurExpert";
 import Quality from "./about/Quality/Quality";
+import DashboardForm from "./components/DashboardForm/DashboardForm";
 import Footer from "./components/Footer/Footer";
 import Header from "./components/Header/Header";
 import TopBar from "./components/Header/TopBar";
+import Dashboard from "./pages/Dashboard/Dashboard";
 import HowItWorks from "./pages/HowItWorks/HowItWorks";
 import LandingPage from "./pages/LandingPage/LandingPage";
 import Login from "./pages/Login/Login";
@@ -86,6 +88,12 @@ function App() {
           <Route path="/questions" element={<PlaceOrder3 />} />
           <Route path="/signin" element={<Login />} />
           <Route path="/signup" element={<Register />} />
+
+          {/* ------------------------- */}
+
+          <Route path="/dashboard" element={<Dashboard />} />
+          <Route path="/essays" element={<DashboardForm />} />
+          <Route path="/assignment" element={<DashboardForm />} />
 
           {/* ------------------------- */}
 

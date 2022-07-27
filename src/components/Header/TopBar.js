@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import { AiOutlineHeart } from "react-icons/ai";
 import { HiOutlineQuestionMarkCircle } from "react-icons/hi";
 import { MdOutlineNotificationsNone } from "react-icons/md";
-import { VscSignIn } from "react-icons/vsc";
+import { VscSignIn } from "react-icons/vsc"; 
 import { FiSearch } from "react-icons/fi";
 
 const TopBar = () => {
