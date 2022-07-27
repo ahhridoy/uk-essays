@@ -1,18 +1,58 @@
-import React from "react";
+import axios from "axios";
+import React, { useEffect, useState } from "react";
 import { useForm } from "react-hook-form";
 import { Container, Row, Col, Button } from "react-bootstrap";
 import { FaLock } from "react-icons/fa";
 import "./_PlaceOrder.scss";
 import PaymentOption from "../PaymentOption/PaymentOption";
 import { useNavigate } from "react-router-dom";
+import Select from "react-select";
 
 const PlaceOrder = () => {
+  // const [blogs, setBlogs] = useState([]);
+
+  const blogs = [
+    {
+      label: "200 Words 1 Page",
+      value: 120,
+    },
+    {
+      label: "300 Words 1 Page",
+      value: 160,
+    },
+    {
+      label: "500 Words 2 Page",
+      value: 200,
+    },
+    {
+      label: "700 Words 2 Page",
+      value: 280,
+    },
+    {
+      label: "800 Words 3 Page",
+      value: 320,
+    },
+  ];
+
+  // useEffect(() => {
+  //   axios.get("http://localhost:5000/blogs").then((res) => {
+  //     setBlogs(res.data);
+  //   });
+  // }, []);
+
   const navigate = useNavigate();
   const { register, handleSubmit } = useForm();
   const onSubmit = (data) => {
     console.log(data);
     navigate("/upgrades");
   };
+
+  const [result, ddIvalue] = useState(blogs.value);
+
+  const ddIHandler = (e) => {
+    ddIvalue(e.value);
+  };
+
   return (
     <div id="place-order">
       <Container>
@@ -27,19 +67,11 @@ const PlaceOrder = () => {
                   <strong>Package</strong>
                 </label>{" "}
                 <br />
-                <select
-                  {...register("package")}
+                <Select
+                  options={blogs}
+                  onChange={ddIHandler}
                   className="input-box border bg-light rounded"
-                >
-                  <option value="bronze">Bronze: CV Only</option>
-                  <option value="silver">Silver: CV + 2 Revisions</option>
-                  <option value="gold">
-                    Gold: CV + Cover Letter + 2 Revisions
-                  </option>
-                  <option value="platinum">
-                    Platinum: CV + Cover Letter + Linkedin Bio + 3 Revisions
-                  </option>
-                </select>{" "}
+                />
                 <br />
                 <label className="mt-3">
                   <strong>Delivery Time</strong>
@@ -146,7 +178,7 @@ const PlaceOrder = () => {
             </form>
           </Col>
           <Col md={4} xs={12}>
-            <PaymentOption />
+            <PaymentOption result={result} />
           </Col>
         </Row>
       </Container>

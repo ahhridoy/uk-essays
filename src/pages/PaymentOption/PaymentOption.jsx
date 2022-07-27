@@ -4,7 +4,7 @@ import { FaAddressBook } from "react-icons/fa";
 import { AiFillInfoCircle } from "react-icons/ai";
 import "./_PaymentOption.scss";
 
-const PaymentOption = () => {
+const PaymentOption = ({result}) => {
   return (
     <div id="payment-option">
       <div className="bg-white p-3">
@@ -25,8 +25,8 @@ const PaymentOption = () => {
             <strong>TOTAL TO PAY</strong>
           </div>
           <div>
-            <span>$123.00</span> <br />
-            <strong>$123.00</strong> <br />
+            <span>${result}</span> <br />
+            <strong>${result}</strong> <br />
             <a href="#" className="text-decoration-none">Change currency</a>
           </div>
         </div>
