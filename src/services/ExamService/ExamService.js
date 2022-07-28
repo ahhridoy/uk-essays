@@ -1,130 +1,15 @@
 import React from "react";
-import { Accordion, Button, Col, Container, Row } from "react-bootstrap";
+import { Accordion, Col, Container, Row } from "react-bootstrap";
 import FairUsePolicy from "../../components/FairUsePolicy/FairUsePolicy";
 import ReviewsComponent from "../../components/ReviewsComponent/ReviewsComponent";
-import { AiFillStar, AiOutlineFileDone } from "react-icons/ai";
-import {
-  BsStarHalf,
-  BsCurrencyPound,
-  BsWhatsapp,
-  BsFillChatLeftFill,
-  BsPencil,
-} from "react-icons/bs";
-import { BiPhoneCall } from "react-icons/bi";
-import { MdDownloadDone, MdDone, MdOutlineWatchLater } from "react-icons/md";
+import { MdDone } from "react-icons/md";
+import ServicesHero from "../../components/ServicesHero/ServicesHero";
+import data from "../../data.json";
 
 const ExamService = () => {
   return (
     <main style={{ overflow: "hidden" }}>
-      <section id="exam-service-hero">
-        <Container>
-          <Row>
-            <Col md={8} xs={12}>
-              <div className="text-light">
-                <h2 className="my-2">Exam Revision Service</h2>
-                <p className="fs-5">
-                  Exams are used across almost all degree subjects as a way for
-                  students to demonstrate their understanding of the course or
-                  the specific module they are studying. Exams can be one of the
-                  hardest types of assessment, as choosing the information that
-                  will be the most useful, as well as revising everything in
-                  time, can be a difficult balancing act. Students often feel
-                  nervous before entering the exam hall, and this is completely
-                  natural, but revision is key to calming your anxiety: the more
-                  prepared you are, the more confident you will feel. <br />{" "}
-                  <br />
-                  Our Exam Revision Service can help you prepare for any type of
-                  exam: it’s personalised to your needs and will support you in
-                  your revision to help get you the grade you want!
-                </p>
-              </div>
-            </Col>
-
-            <Col md={4} xs={12}>
-              <div className="bg-light p-4 text-center rounded">
-                <i>Prices from</i>
-                <h1 className="price">
-                  <BsCurrencyPound className="price-icon" />
-                  124
-                </h1>
-                <p>Undergraduate 2:2 • 1000 words • 7 day delivery</p>
-                <img src="/assets/trusted-site.svg" alt="" /> <br />
-                <Button variant="success" className="w-100 my-2">
-                  <strong>Order</strong> an essay
-                </Button>
-                <p>Delivered on-time or your money back</p>
-                <Button variant="primary" className="w-100 my-2">
-                  Request a <strong>call back </strong> <BiPhoneCall />
-                </Button>
-                <br />
-                <Button variant="success" className="w-100 my-2">
-                  Message us on <strong>WhatsApp </strong>
-                  <BsWhatsapp />
-                </Button>
-                <br />
-                <Button variant="primary" className="w-100 my-2">
-                  Start a <strong>live chat </strong>
-                  <BsFillChatLeftFill />
-                </Button>
-              </div>
-              <div className="exam-reviewsio text-center mt-3">
-                <img
-                  src="/assets/reviewsio-logo-white.webp"
-                  alt="logo"
-                  className="exam-reviewsio-logo"
-                />{" "}
-                <br />
-                <span>
-                  <AiFillStar className="text-warning fs-4" />
-                  <AiFillStar className="text-warning fs-4" />
-                  <AiFillStar className="text-warning fs-4" />
-                  <AiFillStar className="text-warning fs-4" />
-                  <BsStarHalf className="text-warning fs-5" />
-                  <span className="text-warning ms-2 fs-5">(6 Reviews)</span>
-                </span>
-              </div>
-            </Col>
-          </Row>
-
-          <Row className="mt-5">
-            <Col md={3} xs={6}>
-              <div className="text-light">
-                <p>
-                  {" "}
-                  <BsPencil className="me-2 text-danger" /> Written to Standard
-                </p>
-              </div>
-            </Col>
-            <Col md={3} xs={6}>
-              <div className="text-light d-flex">
-                <p>
-                  {" "}
-                  <MdDownloadDone className="me-2 text-danger" />{" "}
-                  Plagiarism-free
-                </p>
-              </div>
-            </Col>
-            <Col md={3} xs={6}>
-              <div className="text-light d-flex">
-                <p>
-                  {" "}
-                  <MdOutlineWatchLater className="me-2 text-danger" /> Always on
-                  Time
-                </p>
-              </div>
-            </Col>
-            <Col md={3} xs={6}>
-              <div className="text-light d-flex">
-                <p>
-                  {" "}
-                  <AiOutlineFileDone className="me-2 text-danger" /> Unrivalled
-                  Quality
-                </p>
-              </div>
-            </Col>
-          </Row>
-        </Container>
-      </section>
+      <ServicesHero service={data.services[12]} />
 
       <section id="exam-why-choose">
         <Container>

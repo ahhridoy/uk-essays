@@ -2,115 +2,21 @@ import React from "react";
 import { Button, Col, Container, Row } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import Press from "../../components/Press/Press";
-import { BsWhatsapp, BsFillChatLeftFill, BsPencil } from "react-icons/bs";
 import {
-  MdDownloadDone,
   MdDone,
   MdOutlineWatchLater,
   MdOutlineDownloadDone,
 } from "react-icons/md";
 import { RiFileTextLine } from "react-icons/ri";
 import { TiWeatherDownpour } from "react-icons/ti";
-import {
-  AiFillStar,
-  AiOutlineFileDone,
-  AiOutlineQuestionCircle,
-} from "react-icons/ai";
+import { AiFillStar, AiOutlineQuestionCircle } from "react-icons/ai";
+import ServicesHero from "../../components/ServicesHero/ServicesHero";
+import data from "../../data.json";
 
 const CVWritingService = () => {
   return (
     <main style={{ overflow: "hidden" }}>
-      <section id="cv-service-hero">
-        <Container>
-          <Row>
-            <Col md={8} xs={12}>
-              <div className="text-light">
-                <h2 className="my-2">CV Writing Service</h2>
-                <p className="fs-5">
-                  Finding the perfect job starts with the perfect CV. Giving the
-                  right first impression with your CV – curriculum vitae - is
-                  crucial to getting noticed, securing interviews, and
-                  ultimately the job you want. A well written and engaging CV is
-                  key – that's where our writers can help! <br /> <br />
-                  At UKEssays we have hundreds of writers academically qualified
-                  and with professional writing experience who can help produce
-                  the perfect professionally written CV. Unlike other CV writing
-                  companies, our perspective is unique; we aim to match you with
-                  someone with the qualifications and knowledge in the area you
-                  are qualified in and want to work in. We don't use generic CV
-                  writers, so every CV is produced uniquely to your
-                  specifications and with your future employment wishes in mind.
-                </p>
-                <div>
-                  <Button variant="success" className="mx-3">
-                    Order Now
-                  </Button>
-                  <Link
-                    to="/check-prices"
-                    className="text-decoration-none text-light fs-5"
-                  >
-                    Check Prices
-                  </Link>
-                </div>
-              </div>
-            </Col>
-
-            <Col md={4} xs={12}>
-              <div className="bg-light p-4 text-center rounded">
-                <p>Get help with questions about our services or pricing.</p>
-                <Button variant="success" className="w-100 my-2">
-                  Message us on <strong>WhatsApp </strong>
-                  <BsWhatsapp />
-                </Button>
-                <br />
-                <Button variant="primary" className="w-100 my-2">
-                  Start a <strong>live chat </strong>
-                  <BsFillChatLeftFill />
-                </Button>
-              </div>
-            </Col>
-          </Row>
-
-          <Row className="mt-5">
-            <Col md={3} xs={6}>
-              <div className="text-light">
-                <p>
-                  {" "}
-                  <BsPencil className="me-2 text-danger" /> Written to Standard
-                </p>
-              </div>
-            </Col>
-            <Col md={3} xs={6}>
-              <div className="text-light d-flex">
-                <p>
-                  {" "}
-                  <MdDownloadDone className="me-2 text-danger" />{" "}
-                  Plagiarism-free
-                </p>
-              </div>
-            </Col>
-            <Col md={3} xs={6}>
-              <div className="text-light d-flex">
-                <p>
-                  {" "}
-                  <MdOutlineWatchLater className="me-2 text-danger" /> Always on
-                  Time
-                </p>
-              </div>
-            </Col>
-            <Col md={3} xs={6}>
-              <div className="text-light d-flex">
-                <p>
-                  {" "}
-                  <AiOutlineFileDone className="me-2 text-danger" /> Unrivalled
-                  Quality
-                </p>
-              </div>
-            </Col>
-          </Row>
-        </Container>
-      </section>
-
+      <ServicesHero service={data.services[14]} />
       <section id="choose-cv">
         <Container>
           <h2>Choose a CV package to suit your needs</h2>

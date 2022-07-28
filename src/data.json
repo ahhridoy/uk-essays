@@ -159,6 +159,67 @@
         "time": "Always on Time",
         "quality": "Unrivalled Quality"
       }
+    },
+    {
+      "name": "Marking and Proofreading Service",
+      "title": "Proofreading is the final step towards completing your work: it is one of the best opportunities to grab a few extra marks. If you do it perfectly, it might even help you achieve a higher grade!",
+      "description": "Maybe you've been consistently getting a grade that's just below what you want. Maybe you always seem to get the same kind of feedback, but you just don't know where you're going wrong. Maybe you've just been staring at the paper for so long that you need a fresh pair of eyes to look at it! Our Marking and Proofreading Service is a perfect way to give you that competitive edge and boost your grade. Designed to help you squeeze every bit of potential out of your work, our professional marking service will provide you with in-depth and informative feedback.",
+      "price": 35,
+      "reviews": 22,
+      "offers": {
+        "standard": "Written to Standard",
+        "free": "Plagiarism-free",
+        "time": "Always on Time",
+        "quality": "Unrivalled Quality"
+      }
+    },
+    {
+      "name": "Editing Service",
+      "title": "Have you completed your work and need some editing or improvements? Do you feel like your university assignment needs that extra level of refinement? Perhaps you have received feedback and need some help addressing it and improving your essay or dissertation? Our Editing service is designed to give you the extra support your academic work needs.",
+      "description": "At UKEssays, we work closely with qualified editors and writers in almost every university subject, giving you access to skilled academics alongside our highly-rated customer service team and after care service. Our editors are on standby, ready and waiting to help, and unlike other editing services, we personally match you to a qualified editor in your subject area, allowing them to focus on the key terminology and theories specific to your subject.",
+      "offers": {
+        "free": "Plagiarism-free",
+        "time": "Always on Time",
+        "quality": "Unrivalled Quality"
+      }
+    },
+    {
+      "name": "Exam Revision Service",
+      "title": "Exams are used across almost all degree subjects as a way for students to demonstrate their understanding of the course or the specific module they are studying. Exams can be one of the hardest types of assessment, as choosing the information that will be the most useful, as well as revising everything in time, can be a difficult balancing act. Students often feel nervous before entering the exam hall, and this is completely natural, but revision is key to calming your anxiety: the more prepared you are, the more confident you will feel.",
+      "description": "Our Exam Revision Service can help you prepare for any type of exam: it’s personalised to your needs and will support you in your revision to help get you the grade you want!",
+      "price": 124,
+      "reviews": 6,
+      "offers": {
+        "standard": "Written to Standard",
+        "free": "Plagiarism-free",
+        "time": "Always on Time",
+        "quality": "Unrivalled Quality"
+      }
+    },
+    {
+      "name": "Academic Poster Service",
+      "title": "Posters are a great way to express your work or research in a concise and creative way. They're often used in the academic setting as a university assignment to summarise or publicise research. Creating a poster that's informative, attention-grabbing and comprehensible can be hard, but our expert writers are here to help!",
+      "description": "Balancing design and information can be tricky. It's easy to get lost amongst all the content that you need to share - especially if there is a word count, pictures or a required paper size. With our Academic Poster Service, we will be able to give the poster a clear purpose and cater to the needs of your audience.",
+      "description2": "Our Academic Poster Service will give you both style and substance! Our writers are confident in the design principles of font size, graphics and colouring, and are knowledgeable in every field, so they are well-equipped to demonstrate the type of content and referencing that your poster will need.",
+      "price": 62,
+      "reviews": 3,
+      "offers": {
+        "standard": "Written to Standard",
+        "free": "Plagiarism-free",
+        "time": "Always on Time",
+        "quality": "Unrivalled Quality"
+      }
+    },
+    {
+      "name": "CV Writing Service",
+      "title": "Finding the perfect job starts with the perfect CV. Giving the right first impression with your CV – curriculum vitae - is crucial to getting noticed, securing interviews, and ultimately the job you want. A well written and engaging CV is key – that's where our writers can help!",
+      "description": "At UKEssays we have hundreds of writers academically qualified and with professional writing experience who can help produce the perfect professionally written CV. Unlike other CV writing companies, our perspective is unique; we aim to match you with someone with the qualifications and knowledge in the area you are qualified in and want to work in. We don't use generic CV writers, so every CV is produced uniquely to your specifications and with your future employment wishes in mind.",
+      "offers": {
+        "standard": "Written to Standard",
+        "free": "Plagiarism-free",
+        "time": "Always on Time",
+        "quality": "Unrivalled Quality"
+      }
     }
   ]
 }

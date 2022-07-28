@@ -2,112 +2,19 @@ import React from "react";
 import { Button, Col, Container, Row } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import Press from "../../components/Press/Press";
-import { BsWhatsapp, BsFillChatLeftFill, BsPencil } from "react-icons/bs";
-import { MdDownloadDone, MdOutlineWatchLater } from "react-icons/md";
+import { MdDownloadDone } from "react-icons/md";
 import {
   AiFillStar,
-  AiOutlineFileDone,
   AiOutlineQuestionCircle,
   AiFillHeart,
 } from "react-icons/ai";
+import ServicesHero from "../../components/ServicesHero/ServicesHero";
+import data from "../../data.json";
 
 const EditingService = () => {
   return (
     <main style={{ overflow: "hidden" }}>
-      <section id="editing-service-hero">
-        <Container>
-          <Row>
-            <Col md={8} xs={12}>
-              <div className="text-light">
-                <h2 className="my-2">Editing Service</h2>
-                <p className="fs-5">
-                  Have you completed your work and need some editing or
-                  improvements? Do you feel like your university assignment
-                  needs that extra level of refinement? Perhaps you have
-                  received feedback and need some help addressing it and
-                  improving your essay or dissertation? Our Editing service is
-                  designed to give you the extra support your academic work
-                  needs.
-                  <br /> <br />
-                  At UKEssays, we work closely with qualified editors and
-                  writers in almost every university subject, giving you access
-                  to skilled academics alongside our highly-rated customer
-                  service team and after care service. Our editors are on
-                  standby, ready and waiting to help, and unlike other editing
-                  services, we personally match you to a qualified editor in
-                  your subject area, allowing them to focus on the key
-                  terminology and theories specific to your subject.
-                </p>
-                <div>
-                  <Button variant="success" className="mx-3">
-                    Order Now
-                  </Button>
-                  <Link
-                    to="/check-prices"
-                    className="text-decoration-none text-light fs-5"
-                  >
-                    Check Prices
-                  </Link>
-                </div>
-              </div>
-            </Col>
-
-            <Col md={4} xs={12}>
-              <div className="bg-light p-4 text-center rounded">
-                <p>Get help with questions about our services or pricing.</p>
-                <Button variant="success" className="w-100 my-2">
-                  Message us on <strong>WhatsApp </strong>
-                  <BsWhatsapp />
-                </Button>
-                <br />
-                <Button variant="primary" className="w-100 my-2">
-                  Start a <strong>live chat </strong>
-                  <BsFillChatLeftFill />
-                </Button>
-              </div>
-            </Col>
-          </Row>
-
-          <Row className="mt-5">
-            <Col md={3} xs={6}>
-              <div className="text-light">
-                <p>
-                  {" "}
-                  <BsPencil className="me-2 text-danger" /> Written to Standard
-                </p>
-              </div>
-            </Col>
-            <Col md={3} xs={6}>
-              <div className="text-light d-flex">
-                <p>
-                  {" "}
-                  <MdDownloadDone className="me-2 text-danger" />{" "}
-                  Plagiarism-free
-                </p>
-              </div>
-            </Col>
-            <Col md={3} xs={6}>
-              <div className="text-light d-flex">
-                <p>
-                  {" "}
-                  <MdOutlineWatchLater className="me-2 text-danger" /> Always on
-                  Time
-                </p>
-              </div>
-            </Col>
-            <Col md={3} xs={6}>
-              <div className="text-light d-flex">
-                <p>
-                  {" "}
-                  <AiOutlineFileDone className="me-2 text-danger" /> Unrivalled
-                  Quality
-                </p>
-              </div>
-            </Col>
-          </Row>
-        </Container>
-      </section>
-
+      <ServicesHero service={data.services[11]} />
       <section id="effective-editing">
         <Container>
           <h2>Simple, powerful and effective editing</h2>

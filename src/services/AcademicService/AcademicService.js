@@ -1,161 +1,24 @@
 import React from "react";
-import { Button, Col, Container, Row } from "react-bootstrap";
+import { Col, Container, Row } from "react-bootstrap";
 import ConfidenceService from "../../components/ConfidenceSerivce/ConfidenceService";
 import FairUsePolicy from "../../components/FairUsePolicy/FairUsePolicy";
 import Press from "../../components/Press/Press";
 import ReviewsComponent from "../../components/ReviewsComponent/ReviewsComponent";
-import {
-  AiFillStar,
-  AiOutlineFileDone,
-  AiOutlineBars,
-  AiOutlineQuestionCircle,
-} from "react-icons/ai";
-import {
-  BsStarHalf,
-  BsCurrencyPound,
-  BsWhatsapp,
-  BsFillChatLeftFill,
-  BsPencil,
-  BsVolumeMute,
-} from "react-icons/bs";
-import { BiPhoneCall, BiText } from "react-icons/bi";
+import { AiOutlineBars, AiOutlineQuestionCircle } from "react-icons/ai";
+import { BsVolumeMute } from "react-icons/bs";
+import { BiText } from "react-icons/bi";
 import { FiUsers, FiBookOpen, FiMonitor } from "react-icons/fi";
 import { RiArrowRightUpFill, RiFileTextLine } from "react-icons/ri";
 import { HiOutlinePhotograph } from "react-icons/hi";
 import { IoReorderFourSharp } from "react-icons/io5";
-import { MdDownloadDone, MdDone, MdOutlineWatchLater } from "react-icons/md";
+import { MdDone } from "react-icons/md";
+import ServicesHero from "../../components/ServicesHero/ServicesHero";
+import data from "../../data.json";
 
 const AcademicService = () => {
   return (
     <main style={{ overflow: "hidden" }}>
-      <section id="academic-service-hero">
-        <Container>
-          <Row>
-            <Col md={8} xs={12}>
-              <div className="text-light">
-                <h2 className="my-2">Academic Poster Service</h2>
-                <p className="fs-5">
-                  Posters are a great way to express your work or research in a
-                  concise and creative way. They're often used in the academic
-                  setting as a university assignment to summarise or publicise
-                  research. Creating a poster that's informative,
-                  attention-grabbing and comprehensible can be hard, but our
-                  expert writers are here to help! <br /> <br />
-                  Balancing design and information can be tricky. It's easy to
-                  get lost amongst all the content that you need to share -
-                  especially if there is a word count, pictures or a required
-                  paper size. With our Academic Poster Service, we will be able
-                  to give the poster a clear purpose and cater to the needs of
-                  your audience. <br /> <br />
-                  Our Academic Poster Service will give you both style and
-                  substance! Our writers are confident in the design principles
-                  of font size, graphics and colouring, and are knowledgeable in
-                  every field, so they are well-equipped to demonstrate the type
-                  of content and referencing that your poster will need.
-                </p>
-                <div className="bg-black p-3 my-2">
-                  <h4>See for yourself</h4>
-                  <h3>
-                    <span className="text-success">Samples</span> of our work
-                  </h3>
-                  <p>
-                    We have a number of sample essays to illustrate the quality
-                    of our services. Each sample has been written to a specific
-                    academic grade.
-                  </p>
-                  <Button variant="success" className="mx-2">
-                    Samples of our work
-                  </Button>
-                  <Button variant="success">Samples of essays</Button>
-                </div>
-              </div>
-            </Col>
-
-            <Col md={4} xs={12}>
-              <div className="bg-light p-4 text-center rounded">
-                <i>Prices from</i>
-                <h1 className="price">
-                  <BsCurrencyPound className="price-icon" />
-                  62
-                </h1>
-                <p>Undergraduate 2:2 • 1000 words • 7 day delivery</p>
-                <img src="/assets/trusted-site.svg" alt="" /> <br />
-                <Button variant="success" className="w-100 my-2">
-                  <strong>Order</strong> an essay
-                </Button>
-                <p>Delivered on-time or your money back</p>
-                <Button variant="primary" className="w-100 my-2">
-                  Request a <strong>call back </strong> <BiPhoneCall />
-                </Button>
-                <br />
-                <Button variant="success" className="w-100 my-2">
-                  Message us on <strong>WhatsApp </strong>
-                  <BsWhatsapp />
-                </Button>
-                <br />
-                <Button variant="primary" className="w-100 my-2">
-                  Start a <strong>live chat </strong>
-                  <BsFillChatLeftFill />
-                </Button>
-              </div>
-              <div className="academic-reviewsio text-center mt-3">
-                <img
-                  src="/assets/reviewsio-logo-white.webp"
-                  alt="logo"
-                  className="academic-reviewsio-logo"
-                />{" "}
-                <br />
-                <span>
-                  <AiFillStar className="text-warning fs-4" />
-                  <AiFillStar className="text-warning fs-4" />
-                  <AiFillStar className="text-warning fs-4" />
-                  <AiFillStar className="text-warning fs-4" />
-                  <BsStarHalf className="text-warning fs-5" />
-                  <span className="text-warning ms-2 fs-5">(3 Reviews)</span>
-                </span>
-              </div>
-            </Col>
-          </Row>
-
-          <Row className="mt-5">
-            <Col md={3} xs={6}>
-              <div className="text-light">
-                <p>
-                  {" "}
-                  <BsPencil className="me-2 text-danger" /> Written to Standard
-                </p>
-              </div>
-            </Col>
-            <Col md={3} xs={6}>
-              <div className="text-light d-flex">
-                <p>
-                  {" "}
-                  <MdDownloadDone className="me-2 text-danger" />{" "}
-                  Plagiarism-free
-                </p>
-              </div>
-            </Col>
-            <Col md={3} xs={6}>
-              <div className="text-light d-flex">
-                <p>
-                  {" "}
-                  <MdOutlineWatchLater className="me-2 text-danger" /> Always on
-                  Time
-                </p>
-              </div>
-            </Col>
-            <Col md={3} xs={6}>
-              <div className="text-light d-flex">
-                <p>
-                  {" "}
-                  <AiOutlineFileDone className="me-2 text-danger" /> Unrivalled
-                  Quality
-                </p>
-              </div>
-            </Col>
-          </Row>
-        </Container>
-      </section>
+      <ServicesHero service={data.services[13]} />
 
       <section id="academic-why-choose">
         <Container>

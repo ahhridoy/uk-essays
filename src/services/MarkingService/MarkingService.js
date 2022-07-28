@@ -1,154 +1,24 @@
 import React from "react";
-import { Button, Col, Container, Row } from "react-bootstrap";
+import { Col, Container, Row } from "react-bootstrap";
 import ConfidenceService from "../../components/ConfidenceSerivce/ConfidenceService";
 import Press from "../../components/Press/Press";
 import ReviewsComponent from "../../components/ReviewsComponent/ReviewsComponent";
 import {
-  AiFillStar,
   AiOutlineFileDone,
   AiOutlineStar,
   AiOutlineQuestionCircle,
 } from "react-icons/ai";
-import {
-  BsStarHalf,
-  BsCurrencyPound,
-  BsWhatsapp,
-  BsFillChatLeftFill,
-  BsPencil,
-} from "react-icons/bs";
-import { BiPhoneCall, BiLockAlt } from "react-icons/bi";
-import { MdDownloadDone, MdDone, MdOutlineWatchLater } from "react-icons/md";
+import { BsPencil } from "react-icons/bs";
+import { BiLockAlt } from "react-icons/bi";
+import { MdDone } from "react-icons/md";
 import { FiBookOpen } from "react-icons/fi";
+import ServicesHero from "../../components/ServicesHero/ServicesHero";
+import data from "../../data.json";
 
 const MarkingService = () => {
   return (
     <main style={{ overflow: "hidden" }}>
-      <section id="marking-service-hero">
-        <Container>
-          <Row>
-            <Col md={8} xs={12}>
-              <div className="text-light">
-                <h2 className="my-2">Marking and Proofreading Service</h2>
-                <p className="fs-5">
-                  Proofreading is the final step towards completing your work:
-                  it is one of the best opportunities to grab a few extra marks.
-                  If you do it perfectly, it might even help you achieve a
-                  higher grade!
-                  <br /> <br />
-                  Maybe you've been consistently getting a grade that's just
-                  below what you want. Maybe you always seem to get the same
-                  kind of feedback, but you just don't know where you're going
-                  wrong. Maybe you've just been staring at the paper for so long
-                  that you need a fresh pair of eyes to look at it! Our Marking
-                  and Proofreading Service is a perfect way to give you that
-                  competitive edge and boost your grade. Designed to help you
-                  squeeze every bit of potential out of your work, our
-                  professional marking service will provide you with in-depth
-                  and informative feedback.
-                </p>
-                <div className="bg-black p-3 my-2">
-                  <h4>See for yourself</h4>
-                  <h3>
-                    <span className="text-success">Samples</span> of our work
-                  </h3>
-                  <p>
-                    We have a number of sample essays to illustrate the quality
-                    of our services. Each sample has been written to a specific
-                    academic grade.
-                  </p>
-                  <Button variant="success" className="mx-2">
-                    Samples of our work
-                  </Button>
-                  <Button variant="success">Samples of essays</Button>
-                </div>
-              </div>
-            </Col>
-
-            <Col md={4} xs={12}>
-              <div className="bg-light p-4 text-center rounded">
-                <i>Prices from</i>
-                <h1 className="price">
-                  <BsCurrencyPound className="price-icon" />
-                  35
-                </h1>
-                <p>Undergraduate 2:2 • 1000 words • 7 day delivery</p>
-                <img src="/assets/trusted-site.svg" alt="" /> <br />
-                <Button variant="success" className="w-100 my-2">
-                  <strong>Order</strong> an essay
-                </Button>
-                <p>Delivered on-time or your money back</p>
-                <Button variant="primary" className="w-100 my-2">
-                  Request a <strong>call back </strong> <BiPhoneCall />
-                </Button>
-                <br />
-                <Button variant="success" className="w-100 my-2">
-                  Message us on <strong>WhatsApp </strong>
-                  <BsWhatsapp />
-                </Button>
-                <br />
-                <Button variant="primary" className="w-100 my-2">
-                  Start a <strong>live chat </strong>
-                  <BsFillChatLeftFill />
-                </Button>
-              </div>
-              <div className="marking-reviewsio text-center mt-3">
-                <img
-                  src="/assets/reviewsio-logo-white.webp"
-                  alt="logo"
-                  className="marking-reviewsio-logo"
-                />{" "}
-                <br />
-                <span>
-                  <AiFillStar className="text-warning fs-4" />
-                  <AiFillStar className="text-warning fs-4" />
-                  <AiFillStar className="text-warning fs-4" />
-                  <AiFillStar className="text-warning fs-4" />
-                  <BsStarHalf className="text-warning fs-5" />
-                  <span className="text-warning ms-2 fs-5">(22 Reviews)</span>
-                </span>
-              </div>
-            </Col>
-          </Row>
-
-          <Row className="mt-5">
-            <Col md={3} xs={6}>
-              <div className="text-light">
-                <p>
-                  {" "}
-                  <BsPencil className="me-2 text-danger" /> Written to Standard
-                </p>
-              </div>
-            </Col>
-            <Col md={3} xs={6}>
-              <div className="text-light d-flex">
-                <p>
-                  {" "}
-                  <MdDownloadDone className="me-2 text-danger" />{" "}
-                  Plagiarism-free
-                </p>
-              </div>
-            </Col>
-            <Col md={3} xs={6}>
-              <div className="text-light d-flex">
-                <p>
-                  {" "}
-                  <MdOutlineWatchLater className="me-2 text-danger" /> Always on
-                  Time
-                </p>
-              </div>
-            </Col>
-            <Col md={3} xs={6}>
-              <div className="text-light d-flex">
-                <p>
-                  {" "}
-                  <AiOutlineFileDone className="me-2 text-danger" /> Unrivalled
-                  Quality
-                </p>
-              </div>
-            </Col>
-          </Row>
-        </Container>
-      </section>
+      <ServicesHero service={data.services[10]} />
 
       <section id="marking-why-choose">
         <Container>
