@@ -9,7 +9,7 @@ import "./_sidebar.scss";
 
 const Sidebar = () => {
   return (
-    <main id="sidebar">
+    <main id="dashboard-sidebar">
       <div className="center mt-4">
         <div>
           <img src="/assets/logo.png" alt="logo" className="logo" />

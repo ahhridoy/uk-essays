@@ -1,0 +1,151 @@
+{
+  "services": [
+    {
+      "name": "Essay",
+      "sub_name": "Get Essay Help from the Academic Experts",
+      "social": {
+        "facebook": "Facebook",
+        "twitter": "Twitter",
+        "reddit": "Reddit",
+        "linkedin": "Linkedin",
+        "whatsapp": "WhatsApp"
+      },
+      "description": "Our essay writing service is designed to get you the extra help you need in completing your next university essay. We match the best academic writers, qualified across an enormous range of subjects and grades, to requests for help from students just like you. Writing in perfect English, our writers will create a custom piece of work designed just for you and to help you reach the grade you require.",
+      "price": 124,
+      "reviews": 307,
+      "offers": {
+        "standard": "Written to Standard",
+        "free": "Plagiarism-free",
+        "time": "Always on Time",
+        "quality": "Unrivalled Quality"
+      }
+    },
+    {
+      "name": "Assignment",
+      "sub_name": "Get Assignment Help from the Experts",
+      "title": "Assignments are completed throughout your time in university and are used by tutors to measure your progress and understanding of a course or module.",
+      "description": "Our essay writing service is designed to get you the extra help you need in completing your next university essay. We match the best academic writers, qualified across an enormous range of subjects and grades, to requests for help from students just like you. Writing in perfect English, our writers will create a custom piece of work designed just for you and to help you reach the grade you require.",
+      "price": 124,
+      "reviews": 85,
+      "difference": {
+        "experts": "Written by Academic Experts",
+        "trusted": " Trusted, Secure & Confidential",
+        "guaranteed": "Guaranteed Plagiarism-free",
+        "exception": "Exceptional Customer Service"
+      }
+    },
+    {
+      "name": "Coursework",
+      "title": "Academic coursework is how you show your tutors or teachers what you have learned throughout your course or module. Coursework-style assessments are often used in undergraduate degrees or diplomas, and usually count towards your final grade.",
+      "description": "Our Coursework Writing Service will help you to develop a well-written, perfectly structured and flawlessly referenced piece of work no matter what your requirements are.",
+      "price": 124,
+      "reviews": 15,
+      "offers": {
+        "standard": "Written to Standard",
+        "free": "Plagiarism-free",
+        "time": "Always on Time",
+        "quality": "Unrivalled Quality"
+      }
+    },
+    {
+      "name": "Essay Plan",
+      "description": "An essay plan is a framework which provides the structure and key information needed for your final essay or piece of work. This consists of bullet points guiding you on how to complete your introduction, which elements should be discussed in each paragraph, key points from the literature or theorists, and what to include in the conclusion. Our outline is a perfect guide to help you write your work and get the grade you want!",
+      "price": 124,
+      "reviews": 10,
+      "offers": {
+        "standard": "Written to Standard",
+        "free": "Plagiarism-free",
+        "time": "Always on Time",
+        "quality": "Unrivalled Quality"
+      }
+    },
+    {
+      "name": "Reflective",
+      "sub_name": "Get Help from the Experts in Academic Reflection",
+      "social": {
+        "facebook": "Facebook",
+        "twitter": "Twitter",
+        "reddit": "Reddit",
+        "linkedin": "Linkedin",
+        "whatsapp": "WhatsApp"
+      },
+      "title": "Reflective Practice Assessments are becoming more common for students at UK universities. These assignments are set to encourage you to think critically about your experiences and learning, and to consider steps towards self-improvement. Reflective Writing can also help you in your professional life, as you can use it to consider what you excel at, where you might be lacking, and the skills you need to develop in order to improve yourself.",
+      "description": "Writing a reflective essay can be challenging, because it’s very different from the traditional essay format. It can be tough if your course is typically assessed on practical exams, or often based in a placement because you may not be familiar with how to complete these assignments. Luckily, we’re here to help with your reflective essay or assignment - our writers have a huge amount of experience in writing personalised reflections.",
+      "price": 124,
+      "reviews": 51,
+      "offers": {
+        "standard": "Written to Standard",
+        "free": "Plagiarism-free",
+        "time": "Always on Time",
+        "quality": "Unrivalled Quality"
+      }
+    },
+    {
+      "name": "Research",
+      "sub_name": "Craft the perfect research paper with UK Essays' expert writers",
+      "title": "A Research Paper is a bit like an essay, or a report, but instead of reporting on something, the goal is to research an interesting topic instead! Completing a research paper is a time-consuming task that takes a large amount of planning, preparation, analysis, and above all, research. After choosing something interesting to study, the goal is to write an informative research paper that provides the reader with a structured and detailed investigation into the topic that interprets and evaluates any findings while being engaging and enjoyable to read.",
+      "description": "Maybe you've picked an interesting topic to research but don't know where to get started, or you are having trouble identifying a good idea to start with? Our Research Paper Writing Service is designed to give you all of the tools you require to produce an interesting and detailed piece of work. Our experts have delivered thousands of research papers, and so can supply you with a perfectly written paper designed to show you everything you need to know, from the introduction to the closing summary.",
+      "price": 124,
+      "reviews": 4,
+      "offers": {
+        "standard": "Written to Standard",
+        "free": "Plagiarism-free",
+        "time": "Always on Time",
+        "quality": "Unrivalled Quality"
+      }
+    },
+    {
+      "name": "Dissertation",
+      "sub_name": "Get Dissertation Writing Help from the Experts",
+      "social": {
+        "facebook": "Facebook",
+        "twitter": "Twitter",
+        "reddit": "Reddit",
+        "linkedin": "Linkedin",
+        "whatsapp": "WhatsApp"
+      },
+      "title": "Your dissertation is likely to be the toughest project you will encounter in your degree and often forms a large part of your overall grade. Our Dissertation Writing Service is specifically designed to help you read, write and research to the best of your ability.",
+      "description": "A dissertation is a larger piece of work on a subject of your choice that is typically completed at the end of a university course - either in an undergraduate or master's degree or as your PhD thesis. Dissertations usually aim to fill a gap in the student's knowledge about a topic or else offer a new take on an old topic.",
+      "price": 136,
+      "reviews": 4,
+      "offers": {
+        "standard": "Written to Standard",
+        "free": "Plagiarism-free",
+        "time": "Always on Time",
+        "quality": "Unrivalled Quality"
+      }
+    },
+    {
+      "name": "Report",
+      "description": "Our Report Writing Service will help you to create a concise and informative academic report that will get you the grades you need. Our reports are written by the highest-quality writers in the industry and our team of in-house staff will support you through every step of the process to make sure you get the most out of your report!",
+      "price": 124,
+      "reviews": 49,
+      "offers": {
+        "standard": "Written to Standard",
+        "free": "Plagiarism-free",
+        "time": "Always on Time",
+        "quality": "Unrivalled Quality"
+      }
+    },
+    {
+      "name": "Case Study",
+      "sub_name": "Get Expert Help with Your Case Study",
+      "social": {
+        "facebook": "Facebook",
+        "twitter": "Twitter",
+        "reddit": "Reddit",
+        "linkedin": "Linkedin",
+        "whatsapp": "WhatsApp"
+      },
+      "description": "Case Studies are written as a special type of academic report that focuses on a specific case – producing a focused, well-structured and well written case study can be very challenging! Our case study writing service is designed to help you achieve success with your case study report, giving you all the tools that you need to effectively examine the case at hand and produce a detailed report. We can provide you with an exceptionally written case study, researched and prepared by a fully qualified academic in your subject area. Your case study report will be a detailed yet easy to understand analysis of the case – everything you need to gain a full understanding of how to produce a fantastic case study!",
+      "price": 124,
+      "reviews": 6,
+      "offers": {
+        "standard": "Written to Standard",
+        "free": "Plagiarism-free",
+        "time": "Always on Time",
+        "quality": "Unrivalled Quality"
+      }
+    }
+  ]
+}

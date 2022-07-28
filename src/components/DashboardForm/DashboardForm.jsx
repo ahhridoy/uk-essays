@@ -11,9 +11,9 @@ const DashboardForm = () => {
         <div className="home-container">
           {/* <TopBar />
           <Header /> */}
-          <div id="category">
+          <div id="dashboard">
             <Container>
-              <div className="category-header">
+              <div className="dashboard-header">
                 <span>This Essays </span>
               </div>
               <div className="form-box">
@@ -35,7 +35,6 @@ const DashboardForm = () => {
                     Add
                   </button>
                 </form>
-                
               </div>
             </Container>
           </div>

@@ -1,15 +1,15 @@
-#category-dashboard {
+#home-dashboard {
   display: flex;
-  .category-container {
+  .home-container {
     flex: 5;
   }
 }
 
-#category {
+#dashboard {
   background: gray;
   .container {
     margin-top: 50px;
-    .category-header {
+    .dashboard-header {
       position: relative;
       text-align: right;
       z-index: 1;
