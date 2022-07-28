@@ -6,139 +6,18 @@ import EssayToday from "../../components/EssayToday/EssayToday";
 import FairUsePolicy from "../../components/FairUsePolicy/FairUsePolicy";
 import Press from "../../components/Press/Press";
 import ReviewsComponent from "../../components/ReviewsComponent/ReviewsComponent";
-import { AiFillStar, AiFillHeart } from "react-icons/ai";
 import {
-  BsStarHalf,
-  BsCurrencyPound,
-  BsWhatsapp,
-  BsFillChatLeftFill,
   BsPencil,
 } from "react-icons/bs";
-import { BiPhoneCall, BiLockAlt } from "react-icons/bi";
-import { MdDownloadDone, MdDone } from "react-icons/md";
+import {  MdDone } from "react-icons/md";
 import { FiBookOpen } from "react-icons/fi";
+import ServicesHero from "../../components/ServicesHero/ServicesHero";
+import data from "../../data.json";
 
 const AssignmentService = () => {
   return (
     <main style={{ overflow: "hidden" }}>
-      <section id="assignment-service-hero">
-        <Container>
-          <Row>
-            <Col md={8} xs={12}>
-              <div className="text-light">
-                <h2 className="my-2">Assignment Writing Service</h2>
-                <h4 className="text-success my-2">
-                  Get Assignment Help from the Experts
-                </h4>
-                <p className="fs-5">
-                  Assignments are completed throughout your time in university
-                  and are used by tutors to measure your progress and
-                  understanding of a course or module. <br /> <br />
-                  Our Assignment Writing Service will create a 100% custom
-                  written assignment that will help you to be the best. We work
-                  with a professional team of UK based writers who, following
-                  your requirements and instructions, will develop a model
-                  answer which is flawlessly structured, well-sourced and
-                  written in perfect English.
-                </p>
-                <div className="bg-black p-3 my-2">
-                  <h4>See for yourself</h4>
-                  <h3>
-                    <span className="text-success">Samples</span> of our work
-                  </h3>
-                  <p>
-                    We have a number of sample essays to illustrate the quality
-                    of our services. Each sample has been written to a specific
-                    academic grade.
-                  </p>
-                  <Button variant="success" className="mx-2">
-                    Samples of our work
-                  </Button>
-                  <Button variant="success">Samples of essays</Button>
-                </div>
-              </div>
-            </Col>
-
-            <Col md={4} xs={12}>
-              <div className="bg-light p-4 text-center rounded">
-                <i>Prices from</i>
-                <h1 className="price">
-                  <BsCurrencyPound className="price-icon" />
-                  124
-                </h1>
-                <p>Undergraduate 2:2 • 1000 words • 7 day delivery</p>
-                <img src="/assets/trusted-site.svg" alt="" /> <br />
-                <Button variant="success" className="w-100 my-2">
-                  <strong>Order</strong> an essay
-                </Button>
-                <p>Delivered on-time or your money back</p>
-                <Button variant="primary" className="w-100 my-2">
-                  Request a <strong>call back </strong> <BiPhoneCall />
-                </Button>
-                <br />
-                <Button variant="success" className="w-100 my-2">
-                  Message us on <strong>WhatsApp </strong>
-                  <BsWhatsapp />
-                </Button>
-                <br />
-                <Button variant="primary" className="w-100 my-2">
-                  Start a <strong>live chat </strong>
-                  <BsFillChatLeftFill />
-                </Button>
-              </div>
-              <div className="assignment-reviewsio text-center mt-3">
-                <img
-                  src="/assets/reviewsio-logo-white.webp"
-                  alt="logo"
-                  className="assignment-reviewsio-logo"
-                />{" "}
-                <br />
-                <span>
-                  <AiFillStar className="text-warning fs-4" />
-                  <AiFillStar className="text-warning fs-4" />
-                  <AiFillStar className="text-warning fs-4" />
-                  <AiFillStar className="text-warning fs-4" />
-                  <BsStarHalf className="text-warning fs-5" />
-                  <span className="text-warning ms-2 fs-5">(85 Reviews)</span>
-                </span>
-              </div>
-            </Col>
-          </Row>
-        </Container>
-      </section>
-
-      <section id="assignment-difference">
-        <Container>
-          <Row>
-            <h2 className="text-center text-light mb-4">
-              The UKEssays Difference
-            </h2>
-            <div className="text-box">
-              <div className="text-light">
-                <p>
-                  <BsPencil className="me-2 text-danger" /> Written by Academic
-                  Experts
-                </p>
-                <p>
-                  <BiLockAlt className="me-2 text-warning" /> Trusted, Secure &
-                  Confidential
-                </p>
-              </div>
-
-              <div className="text-light">
-                <p>
-                  <MdDownloadDone className="me-2 text-success" /> Guaranteed
-                  Plagiarism-free
-                </p>
-                <p>
-                  <AiFillHeart className="me-2 text-danger" /> Exceptional
-                  Customer Service
-                </p>
-              </div>
-            </div>
-          </Row>
-        </Container>
-      </section>
+      <ServicesHero service={data.services[1]} />
 
       <section id="assignment-why-choose">
         <Container>

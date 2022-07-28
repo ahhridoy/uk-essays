@@ -1,165 +1,18 @@
 import React from "react";
 import { Button, Col, Container, Row } from "react-bootstrap";
 import AskedQuestion from "../../components/AskedQuestion/AskedQuestion";
-import PhoneOrder from "../../components/PhoneOrder/PhoneOrder";
 import Press from "../../components/Press/Press";
 import ReviewsComponent from "../../components/ReviewsComponent/ReviewsComponent";
-import {
-  AiFillStar,
-  AiFillHeart,
-  AiOutlineFileDone,
-  AiOutlineGift,
-  AiOutlineStar,
-} from "react-icons/ai";
-import {
-  BsStarHalf,
-  BsCurrencyPound,
-  BsWhatsapp,
-  BsFillChatLeftFill,
-  BsPencil,
-  BsHexagon,
-} from "react-icons/bs";
-import { BiPhoneCall, BiLockAlt } from "react-icons/bi";
-import { MdDownloadDone, MdOutlineWatchLater, MdDone } from "react-icons/md";
-import { FiBookOpen, FiThumbsUp } from "react-icons/fi";
+import { AiOutlineGift, AiOutlineStar } from "react-icons/ai";
+import { BsHexagon } from "react-icons/bs";
+import { FiThumbsUp } from "react-icons/fi";
+import ServicesHero from "../../components/ServicesHero/ServicesHero";
+import data from "../../data.json";
 
 const ResearchService = () => {
   return (
     <main style={{ overflow: "hidden" }}>
-      <section id="research-service-hero">
-        <Container>
-          <Row>
-            <Col md={8} xs={12}>
-              <div className="text-light">
-                <h2 className="my-2">Research Paper Writing Service</h2>
-                <h4 className="text-success my-2">
-                  Craft the perfect research paper with UK Essays' expert
-                  writers
-                </h4>
-                <p className="fs-5">
-                  A Research Paper is a bit like an essay, or a report, but
-                  instead of reporting on something, the goal is to research an
-                  interesting topic instead! Completing a research paper is a
-                  time-consuming task that takes a large amount of planning,
-                  preparation, analysis, and above all, research. After choosing
-                  something interesting to study, the goal is to write an
-                  informative research paper that provides the reader with a
-                  structured and detailed investigation into the topic that
-                  interprets and evaluates any findings while being engaging and
-                  enjoyable to read. <br /> <br />
-                  Maybe you've picked an interesting topic to research but don't
-                  know where to get started, or you are having trouble
-                  identifying a good idea to start with? Our Research Paper
-                  Writing Service is designed to give you all of the tools you
-                  require to produce an interesting and detailed piece of work.
-                  Our experts have delivered thousands of research papers, and
-                  so can supply you with a perfectly written paper designed to
-                  show you everything you need to know, from the introduction to
-                  the closing summary.
-                </p>
-                <div className="bg-black p-3 my-2">
-                  <h4>See for yourself</h4>
-                  <h3>
-                    <span className="text-success">Samples</span> of our work
-                  </h3>
-                  <p>
-                    We have a number of sample essays to illustrate the quality
-                    of our services. Each sample has been written to a specific
-                    academic grade.
-                  </p>
-                  <Button variant="success" className="mx-2">
-                    Samples of our work
-                  </Button>
-                  <Button variant="success">Samples of essays</Button>
-                </div>
-              </div>
-            </Col>
-
-            <Col md={4} xs={12}>
-              <div className="bg-light p-4 text-center rounded">
-                <i>Prices from</i>
-                <h1 className="price">
-                  <BsCurrencyPound className="price-icon" />
-                  124
-                </h1>
-                <p>Undergraduate 2:2 • 1000 words • 7 day delivery</p>
-                <img src="/assets/trusted-site.svg" alt="" /> <br />
-                <Button variant="success" className="w-100 my-2">
-                  <strong>Order</strong> an essay
-                </Button>
-                <p>Delivered on-time or your money back</p>
-                <Button variant="primary" className="w-100 my-2">
-                  Request a <strong>call back </strong> <BiPhoneCall />
-                </Button>
-                <br />
-                <Button variant="success" className="w-100 my-2">
-                  Message us on <strong>WhatsApp </strong>
-                  <BsWhatsapp />
-                </Button>
-                <br />
-                <Button variant="primary" className="w-100 my-2">
-                  Start a <strong>live chat </strong>
-                  <BsFillChatLeftFill />
-                </Button>
-              </div>
-              <div className="research-reviewsio text-center mt-3">
-                <img
-                  src="/assets/reviewsio-logo-white.webp"
-                  alt="logo"
-                  className="research-reviewsio-logo"
-                />{" "}
-                <br />
-                <span>
-                  <AiFillStar className="text-warning fs-4" />
-                  <AiFillStar className="text-warning fs-4" />
-                  <AiFillStar className="text-warning fs-4" />
-                  <AiFillStar className="text-warning fs-4" />
-                  <BsStarHalf className="text-warning fs-5" />
-                  <span className="text-warning ms-2 fs-5">(4 Reviews)</span>
-                </span>
-              </div>
-            </Col>
-          </Row>
-
-          <Row className="mt-5">
-            <Col md={3} xs={6}>
-              <div className="text-light">
-                <p>
-                  {" "}
-                  <BsPencil className="me-2 text-danger" /> Written to Standard
-                </p>
-              </div>
-            </Col>
-            <Col md={3} xs={6}>
-              <div className="text-light d-flex">
-                <p>
-                  {" "}
-                  <MdDownloadDone className="me-2 text-danger" />{" "}
-                  Plagiarism-free
-                </p>
-              </div>
-            </Col>
-            <Col md={3} xs={6}>
-              <div className="text-light d-flex">
-                <p>
-                  {" "}
-                  <MdOutlineWatchLater className="me-2 text-danger" /> Always on
-                  Time
-                </p>
-              </div>
-            </Col>
-            <Col md={3} xs={6}>
-              <div className="text-light d-flex">
-                <p>
-                  {" "}
-                  <AiOutlineFileDone className="me-2 text-danger" /> Unrivalled
-                  Quality
-                </p>
-              </div>
-            </Col>
-          </Row>
-        </Container>
-      </section>
+      <ServicesHero service={data.services[5]} />
 
       <section id="research-phone-order">
         <Container>
@@ -342,7 +195,9 @@ const ResearchService = () => {
             </div>
           </div>
           <div className="text-center">
-            <Button variant="danger"><strong>Order</strong> a research paper today!</Button>
+            <Button variant="danger">
+              <strong>Order</strong> a research paper today!
+            </Button>
           </div>
         </Container>
       </section>

@@ -6,6 +6,7 @@ import {
   AiFillLinkedin,
   AiOutlineWhatsApp,
   AiFillStar,
+  AiOutlineFileDone, AiFillHeart
 } from "react-icons/ai";
 import {
   BsTwitter,
@@ -16,7 +17,6 @@ import {
   BsCurrencyPound,
 } from "react-icons/bs";
 import { MdDownloadDone, MdOutlineWatchLater } from "react-icons/md";
-import { AiOutlineFileDone, AiFillHeart } from "react-icons/ai";
 import { BiPhoneCall, BiLockAlt } from "react-icons/bi";
 
 const ServicesHero = ({ service }) => {
@@ -39,7 +39,7 @@ const ServicesHero = ({ service }) => {
           <Row>
             <Col md={8} xs={12}>
               <div className="text-light">
-                <h2 className="my-2">{name} Writing Service</h2>
+                <h2 className="my-2">{name}</h2>
                 {social && (
                   <div className="text-light my-3">
                     <span>Share this: </span>

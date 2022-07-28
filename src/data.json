@@ -1,7 +1,7 @@
 {
   "services": [
     {
-      "name": "Essay",
+      "name": "Essay Writing Service",
       "sub_name": "Get Essay Help from the Academic Experts",
       "social": {
         "facebook": "Facebook",
@@ -21,7 +21,7 @@
       }
     },
     {
-      "name": "Assignment",
+      "name": "Assignment Writing Service",
       "sub_name": "Get Assignment Help from the Experts",
       "title": "Assignments are completed throughout your time in university and are used by tutors to measure your progress and understanding of a course or module.",
       "description": "Our essay writing service is designed to get you the extra help you need in completing your next university essay. We match the best academic writers, qualified across an enormous range of subjects and grades, to requests for help from students just like you. Writing in perfect English, our writers will create a custom piece of work designed just for you and to help you reach the grade you require.",
@@ -35,7 +35,7 @@
       }
     },
     {
-      "name": "Coursework",
+      "name": "Coursework Writing Service",
       "title": "Academic coursework is how you show your tutors or teachers what you have learned throughout your course or module. Coursework-style assessments are often used in undergraduate degrees or diplomas, and usually count towards your final grade.",
       "description": "Our Coursework Writing Service will help you to develop a well-written, perfectly structured and flawlessly referenced piece of work no matter what your requirements are.",
       "price": 124,
@@ -48,7 +48,7 @@
       }
     },
     {
-      "name": "Essay Plan",
+      "name": "Essay Plan Writing Service",
       "description": "An essay plan is a framework which provides the structure and key information needed for your final essay or piece of work. This consists of bullet points guiding you on how to complete your introduction, which elements should be discussed in each paragraph, key points from the literature or theorists, and what to include in the conclusion. Our outline is a perfect guide to help you write your work and get the grade you want!",
       "price": 124,
       "reviews": 10,
@@ -60,7 +60,7 @@
       }
     },
     {
-      "name": "Reflective",
+      "name": "Reflective Writing Service",
       "sub_name": "Get Help from the Experts in Academic Reflection",
       "social": {
         "facebook": "Facebook",
@@ -81,7 +81,7 @@
       }
     },
     {
-      "name": "Research",
+      "name": "Research Writing Service",
       "sub_name": "Craft the perfect research paper with UK Essays' expert writers",
       "title": "A Research Paper is a bit like an essay, or a report, but instead of reporting on something, the goal is to research an interesting topic instead! Completing a research paper is a time-consuming task that takes a large amount of planning, preparation, analysis, and above all, research. After choosing something interesting to study, the goal is to write an informative research paper that provides the reader with a structured and detailed investigation into the topic that interprets and evaluates any findings while being engaging and enjoyable to read.",
       "description": "Maybe you've picked an interesting topic to research but don't know where to get started, or you are having trouble identifying a good idea to start with? Our Research Paper Writing Service is designed to give you all of the tools you require to produce an interesting and detailed piece of work. Our experts have delivered thousands of research papers, and so can supply you with a perfectly written paper designed to show you everything you need to know, from the introduction to the closing summary.",
@@ -95,7 +95,7 @@
       }
     },
     {
-      "name": "Dissertation",
+      "name": "Dissertation Writing Service",
       "sub_name": "Get Dissertation Writing Help from the Experts",
       "social": {
         "facebook": "Facebook",
@@ -116,7 +116,7 @@
       }
     },
     {
-      "name": "Report",
+      "name": "Report Writing Service",
       "description": "Our Report Writing Service will help you to create a concise and informative academic report that will get you the grades you need. Our reports are written by the highest-quality writers in the industry and our team of in-house staff will support you through every step of the process to make sure you get the most out of your report!",
       "price": 124,
       "reviews": 49,
@@ -128,7 +128,7 @@
       }
     },
     {
-      "name": "Case Study",
+      "name": "Case Study Writing Service",
       "sub_name": "Get Expert Help with Your Case Study",
       "social": {
         "facebook": "Facebook",
@@ -140,6 +140,19 @@
       "description": "Case Studies are written as a special type of academic report that focuses on a specific case – producing a focused, well-structured and well written case study can be very challenging! Our case study writing service is designed to help you achieve success with your case study report, giving you all the tools that you need to effectively examine the case at hand and produce a detailed report. We can provide you with an exceptionally written case study, researched and prepared by a fully qualified academic in your subject area. Your case study report will be a detailed yet easy to understand analysis of the case – everything you need to gain a full understanding of how to produce a fantastic case study!",
       "price": 124,
       "reviews": 6,
+      "offers": {
+        "standard": "Written to Standard",
+        "free": "Plagiarism-free",
+        "time": "Always on Time",
+        "quality": "Unrivalled Quality"
+      }
+    },
+    {
+      "name": "Academic PowerPoint Presentation Service",
+      "title": "Many university courses now use PowerPoint presentations as a form of academic assessment: that means that your tutors ask you to present your knowledge to a room full of people. We know just how scary that can be, and we're here to help!",
+      "description": "Our service can help you to develop an academic PowerPoint presentation which is engaging, professional and shows your information in a clear and informative manner. Our presentations also include explanatory notes – meaning you really do have everything you need to develop your communication and presentation skills!",
+      "price": 124,
+      "reviews": 13,
       "offers": {
         "standard": "Written to Standard",
         "free": "Plagiarism-free",
