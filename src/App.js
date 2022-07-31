@@ -52,9 +52,7 @@ function App() {
           <Route path="/offers" element={<Offers />} />
           <Route path="/samples" element={<Samples />} />
           <Route path="/reviews" element={<ReviewsPage />} />
-
           {/* --------------------- */}
-
           <Route path="/essay-service" element={<EssayService />} />
           <Route path="/assignment-service" element={<AssignmentService />} />
           <Route path="/coursework-service" element={<CourseworkService />} />
@@ -73,9 +71,7 @@ function App() {
           <Route path="/exam-service" element={<ExamService />} />
           <Route path="/academic-service" element={<AcademicService />} />
           <Route path="/cv-service" element={<CVWritingService />} />
-
           {/* ------------------------ */}
-
           <Route path="/contact" element={<Contact />} />
           <Route path="/about" element={<AboutUK />} />
           <Route path="/expert-writers" element={<OurExpert />} />
@@ -88,15 +84,13 @@ function App() {
           <Route path="/questions" element={<PlaceOrder3 />} />
           <Route path="/signin" element={<Login />} />
           <Route path="/signup" element={<Register />} />
-
           {/* ------------------------- */}
-
-          <Route path="/dashboard" element={<Dashboard />} />
-          <Route path="/essays" element={<DashboardForm />} />
-          <Route path="/assignment" element={<DashboardForm />} />
-
+          <Route path="/dashboard" element={<Dashboard />}>
+            <Route path="essays" element={<DashboardForm />} />
+            <Route path="assignment" element={<DashboardForm />} />
+          </Route>{" "}
+          />
           {/* ------------------------- */}
-
           <Route path="/resources" element={<ResourcesPage />} />
         </Routes>
         <Footer />

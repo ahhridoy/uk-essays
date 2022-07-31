@@ -225,10 +225,22 @@ const LandingPage = () => {
             UKEssays <strong className="text-success">promises</strong> you:
           </h2>
           <Row>
-            <UkPromisesCard card={data.ukPromises[0]} icon={MdDone} />
-            <UkPromisesCard card={data.ukPromises[1]} icon={MdOutlineWatchLater} />
-            <UkPromisesCard card={data.ukPromises[2]} icon={BsPencil} />
-            <UkPromisesCard card={data.ukPromises[3]} icon={AiOutlineFileDone} />
+            <UkPromisesCard
+              card={data.ukPromises[0]}
+              icon={<MdDone className="fs-2 text-success mb-2" />}
+            />
+            <UkPromisesCard
+              card={data.ukPromises[1]}
+              icon={<MdOutlineWatchLater className="fs-2 text-success mb-2" />}
+            />
+            <UkPromisesCard
+              card={data.ukPromises[2]}
+              icon={<BsPencil className="fs-2 text-success mb-2" />}
+            />
+            <UkPromisesCard
+              card={data.ukPromises[3]}
+              icon={<AiOutlineFileDone className="fs-2 text-success mb-2" />}
+            />
           </Row>
           <div className="text-center">
             <Button variant="success" className="my-4">

@@ -1,24 +1,15 @@
 import React from "react";
-import Sidebar from "../../components/Sidebar/Sidebar";
 import { Container } from "react-bootstrap";
 import "./_dashboard-form.scss";
 
 const DashboardForm = () => {
   return (
     <main style={{ overflow: "hidden" }}>
-      <div id="home-dashboard">
-        <Sidebar />
-        <div className="home-container">
-          {/* <TopBar />
-          <Header /> */}
           <div id="dashboard">
             <Container>
-              <div className="dashboard-header">
-                <span>This Essays </span>
-              </div>
-              <div className="form-box">
+              <div className="form-box shadow">
                 <form>
-                  <h4>Essays</h4>
+                  <h1 className="pb-3 text-white">Essays</h1>
                   <input
                     placeholder="Number of Page"
                     type="text"
@@ -38,8 +29,6 @@ const DashboardForm = () => {
               </div>
             </Container>
           </div>
-        </div>
-      </div>
     </main>
   );
 };

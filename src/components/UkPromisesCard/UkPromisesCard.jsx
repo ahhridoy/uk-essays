@@ -5,7 +5,7 @@ const UkPromisesCard = ({ card, icon }) => {
   const { title, sub_title } = card;
   return (
     <Col md={3} xs={12} className="text-center">
-      {/* {icon} */}
+      {icon}
       <h3>{title}</h3>
       <p>{sub_title}</p>
     </Col>
