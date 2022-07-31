@@ -221,5 +221,135 @@
         "quality": "Unrivalled Quality"
       }
     }
+  ],
+  "servicesList": [
+    {
+      "img": "../public/assets/services1.png",
+      "name": "Essay Writing Service"
+    },
+    {
+      "img": "../public/assets/services2.png",
+      "name": "Assignment Writing Service"
+    },
+    {
+      "img": "../public/assets/services3.png",
+      "name": "Dissertation Writing Service"
+    },
+    {
+      "img": "../public/assets/services4.png",
+      "name": "Dissertation Proposals"
+    }
+  ],
+  "Resources": [
+    {
+      "img": "../public/assets/resources1.png",
+      "name": "FREE Lectures"
+    },
+    {
+      "img": "../public/assets/resources2.png",
+      "name": "FREE Essays"
+    },
+    {
+      "img": "../public/assets/resources3.png",
+      "name": "FREE Study Guides"
+    },
+    {
+      "img": "../public/assets/resources4.png",
+      "name": "FREE Referencing Resources"
+    }
+  ],
+  "ukPromises": [
+    {
+      "title": "Plagiarism-free",
+      "sub_title": "If the work we produce contains plagiarism we'll pay out a £5,000 guarantee."
+    },
+    {
+      "title": "Always on Time",
+      "sub_title": "If we are a minute late, the work is on us - it's free!"
+    },
+    {
+      "title": "Written to Standard",
+      "sub_title": "All of our assignments go through a stringent quality checking process from start to finish."
+    },
+    {
+      "title": "Quality",
+      "sub_title": "Providing quality work is core to our beliefs, which is why we will strive to give you exactly that, and more!"
+    }
+  ],
+  "OrderToady": [
+    {
+      "title": "Order an Essay Today!",
+      "sub_title": "We have over 500 expert essay writers, ready and waiting to help you achieve academic success",
+      "btn": "Order an Essay"
+    },
+    {
+      "title": "Order An Assignment Today!",
+      "sub_title": "We have over 500 expert assignment writers, ready and waiting to help you achieve academic success",
+      "btn": "Order an Assignment"
+    },
+    {
+      "title": "Order a Reflective Essay Today!",
+      "sub_title": "We have over 500 expert essay writers, ready and waiting to help you achieve academic success",
+      "btn": "Order an Reflective Essay"
+    },
+    {
+      "title": "Order a Report Today!",
+      "sub_title": "We have over 500 expert essay writers, ready and waiting to help you achieve academic success",
+      "btn": "Order an Report"
+    }
+  ],
+  "whyChoose": [
+    {
+      "title": "Why choose our Essay Writing Service?",
+      "sub_title": "Using an essay writing service is one of the best ways to improve your own academic writing skills and to do better at university. Whether you’re studying in the UK or abroad; at undergraduate, masters or a different level; returning to education after a long break or just struggling with a specific topic, we can help!",
+      "description": "We think the best way to highlight the quality of our essay writing service is to show you our work – it speaks for itself! We’ve produced some fantastic samples that show you exactly the kind of work you’ll receive when ordering from us. Take a look at our sample essays, prepared at undergraduate and master's level across a range of grades and subjects."
+    },
+    {
+      "title": "Why choose our assignment writing service?",
+      "sub_title": "We know how tough writing an assignment can be. Maybe you're trying to break into a new grade boundary; maybe you can't figure out how to structure your work; or maybe it's just that you have to talk about a topic that you're really struggling to understand!",
+      "description": "When you order with us, you're working with some of the most experienced experts in modern academia. We have a huge team of professional writers who undergo rigorous tests before they start working for us. We have writers in every subject, and many hold several degrees.",
+      "footer": "We only begin your assignment order when we're sure we have someone who is well-versed in your subject area and qualified to write to the grade you need."
+    },
+    {
+      "title": "Why choose our coursework writing service?",
+      "sub_title": "Writing a piece of coursework can be difficult, but we're here to help! We understand how tough it can be to turn all your reading into a structured piece of work, but our coursework service will help you get the grade you need - on time, every time.",
+      "description": "If you've done an experiment and need help writing up the results, that's no problem! If you're writing a piece of coursework on a project that you've worked on, we can help with this, too! Nothing is too big or small for our experienced coursework writers."
+    },
+    {
+      "title": "Why choose an Essay Plan?",
+      "sub_title": "Our essay plan writing service is great value for money: you can order just 1/3rd of the overall word count of your full piece of work. You'll find the depth and quality of our work provided by our professional writers is of the same excellence that you would get with a full model answer!",
+      "description": "Still not sure if an essay plan is for you? Take a look at some sample essay plans we have written, as created by our writers, or discover more about the service, how to use your essay plan, and why you can always trust UK Essays to create a fantastic piece of work."
+    },
+    {
+      "title": "Why choose our reflective practice writing service?",
+      "sub_title": "The best way to use our reflective essay writing service is to use your order to develop the skills and knowledge that you will need to create your own assessment.",
+      "description": "After your work has been written and checked over by our Quality Control Team, it’s time for you to begin writing your own reflective piece, using your order to help you. We’ve given you everything you need to describe your experiences, apply your chosen reflective cycle and critically evaluate your skills.",
+      "footer": "Our service works best if you read through the work we have sent you a few times, making notes as you go about the style and structure of your order, the types of sources that have been cited, and any thoughts you might have about how you can learn from your experiences in the same way. These notes can then be used to write your work, and if you’re struggling to write your Reflection, our Aftercare Team are always on hand to help."
+    },
+    {
+      "title": "Why choose our Dissertation Writing Service?",
+      "sub_title": "Our service will help you learn how to write the perfect dissertation. Our highly qualified academic writers can craft a completely custom, engaging, and interesting dissertation based on whatever title or proposal you can come up with. Just tell us if you require a full dissertation or part of one, and which chapters you need help with when placing your order.",
+      "description": "We understand the frustration that student's face when trying to juggle work, a social life and university assessments, which is why we're here to help you get the most out of your university experience. Our service is 100% confidential, 100% plagiarism free, always delivered on time and we have over 500 expert writers ready to help you.",
+      "footer": "If you need help and assistance in choosing a dissertation topic or title, then our Topic and Titles service is a great place to get started."
+    },
+    {
+      "title": "Why choose our PowerPoint Presentation Service?",
+      "sub_title": "Our PowerPoint presentations consider every aspect of your assessment. Not only will we create model slides for you as a basis to work on, but we also will give explanatory notes to help you expand on the information covered on the slides! Our PowerPoint services are designed to give you as much content as possible to help you prepare for your presentation, so every slide includes 50 words of text AND 200 words of notes to help you explain each slide. As if that wasn't enough, for a small additional fee, your writer can also provide you with speech notes in a script form: you can rehearse before your presentation and be word-perfect!",
+      "description": "We also work hard on the design of the presentation, and each PowerPoint we deliver undergoes strict quality checks before the work is given to you."
+    },
+    {
+      "title": "Why choose our Marking and Proofreading Service?",
+      "sub_title": "When you order our Marking and Proofreading Service, we'll send the work you've written to a marker who's experienced in your subject. They'll read the work several times, looking at the spelling and grammar, the content, the sources you've used, and the flow of your work. We'll give you a grade that you are currently at, and the grade that you could achieve with a few simple tweaks!",
+      "description": "We use the 'track changes' and comments features in Microsoft Word to give you feedback which is easy to understand. The marker will correct any spelling and grammar mistakes and will give detailed advice for improving your work and adding a little 'sparkle'. Alongside your annotated work, you'll receive a detailed feedback form summarising the marker's comments and giving you an estimate of your current grade. Our markers will be completely honest with you to ensure you aren't left in the dark about your grades. Just like a lecturer or tutor, we'll suggest changes, improvements, additions and deletions to help you get the most out of your work."
+    },
+    {
+      "title": "Why choose our Exam Revision Service?",
+      "sub_title": "Our Exam Revision Service has helped thousands of customers prepare for their exams! We have a huge team of writers who come from every academic background you can imagine and who are very well-versed in exam revision, so will know exactly what you need to write about and how best to structure the information so you can revise it and really take it in."
+    },
+    {
+      "title": "Why choose our academic poster service?",
+      "sub_title": "Our Posters are rich in research and analysis in order to help you create a perfect academic poster. We provide clear information that's supported by a robust range of quality sources and tailored to your desired audience. Each piece of work we create is beautifully organised and signposted in order to make it easy to follow.",
+      "description": "Each poster that we create must pass our quality checks, including the design! We make sure that the work we deliver is beautifully arranged and visually appealing. We'll make sure to strike a balance between the proportion of images and text and include any graphics or charts that you think will be important."
+    }
   ]
 }

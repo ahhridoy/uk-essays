@@ -9,78 +9,14 @@ import { AiOutlineQuestionCircle } from "react-icons/ai";
 import { FiBookOpen } from "react-icons/fi";
 import ServicesHero from "../../components/ServicesHero/ServicesHero";
 import data from "../../data.json";
+import WhyChoose from "../../components/WhyChoose/WhyChoose";
 
 const ReflectiveService = () => {
   return (
     <main style={{ overflow: "hidden" }}>
       <ServicesHero service={data.services[4]} />
 
-      <section id="reflective-why-choose">
-        <Container>
-          <Row>
-            <Col md={6} xs={12}>
-              <div>
-                <h2>Why choose our reflective practice writing service?</h2>
-                <p>
-                  The best way to use our reflective essay writing service is to
-                  use your order to develop the skills and knowledge that you
-                  will need to create your own assessment. <br /> <br />
-                  After your work has been written and checked over by our
-                  Quality Control Team, it’s time for you to begin writing your
-                  own reflective piece, using your order to help you. We’ve
-                  given you everything you need to describe your experiences,
-                  apply your chosen reflective cycle and critically evaluate
-                  your skills. <br /> <br />
-                  Our service works best if you read through the work we have
-                  sent you a few times, making notes as you go about the style
-                  and structure of your order, the types of sources that have
-                  been cited, and any thoughts you might have about how you can
-                  learn from your experiences in the same way. These notes can
-                  then be used to write your work, and if you’re struggling to
-                  write your Reflection, our Aftercare Team are always on hand
-                  to help.
-                </p>
-              </div>
-            </Col>
-            <Col md={6} xs={12}>
-              <div className="p-3 shadow rounded">
-                <h4>Reasons to choose our service</h4>
-                <p>
-                  <MdDone className="text-success fs-4 me-2" />
-                  We only allow our <strong>
-                    qualified academic writers
-                  </strong>{" "}
-                  with matching qualifications to take on your work.
-                </p>
-                <hr />
-                <p>
-                  <MdDone className="text-success fs-4 me-2" />
-                  Your order will go through{" "}
-                  <strong>rigorous quality controls</strong> and is checked
-                  against your instructions and academic standards by qualified
-                  professionals, we'll even give you a quality report to show
-                  our findings.
-                </p>
-                <hr />
-                <p>
-                  <MdDone className="text-success fs-4 me-2" />
-                  Your order will come with a{" "}
-                  <strong>comprehensive plagiarism report</strong> which is
-                  compiled with our state-of-the-art plagiarism software,
-                  ensuring the work that is produced is not plagiarised.
-                </p>
-                <hr />
-                <p>
-                  <MdDone className="text-success fs-4 me-2" />
-                  You get a <strong>7 day amendment period</strong>, so if
-                  you're not happy with the work, let us know and our customer
-                  support teams will resolve any concerns.
-                </p>
-              </div>
-            </Col>
-          </Row>
-        </Container>
-      </section>
+      <WhyChoose whyChoose={data.whyChoose[4]} />
 
       <section id="reflective-essay-today">
         <Container className="py-5 text-light text-center">

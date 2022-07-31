@@ -14,80 +14,14 @@ import { MdDone } from "react-icons/md";
 import { FiBookOpen } from "react-icons/fi";
 import ServicesHero from "../../components/ServicesHero/ServicesHero";
 import data from "../../data.json";
+import WhyChoose from "../../components/WhyChoose/WhyChoose";
 
 const MarkingService = () => {
   return (
     <main style={{ overflow: "hidden" }}>
       <ServicesHero service={data.services[10]} />
 
-      <section id="marking-why-choose">
-        <Container>
-          <Row>
-            <Col md={6} xs={12}>
-              <div>
-                <h2>Why choose our Marking and Proofreading Service?</h2>
-                <p>
-                  When you order our Marking and Proofreading Service, we'll
-                  send the work you've written to a marker who's experienced in
-                  your subject. They'll read the work several times, looking at
-                  the spelling and grammar, the content, the sources you've
-                  used, and the flow of your work. We'll give you a grade that
-                  you are currently at, and the grade that you could achieve
-                  with a few simple tweaks! <br /> <br />
-                  We use the 'track changes' and comments features in Microsoft
-                  Word to give you feedback which is easy to understand. The
-                  marker will correct any spelling and grammar mistakes and will
-                  give detailed advice for improving your work and adding a
-                  little 'sparkle'. Alongside your annotated work, you'll
-                  receive a detailed feedback form summarising the marker's
-                  comments and giving you an estimate of your current grade. Our
-                  markers will be completely honest with you to ensure you
-                  aren't left in the dark about your grades. Just like a
-                  lecturer or tutor, we'll suggest changes, improvements,
-                  additions and deletions to help you get the most out of your
-                  work.
-                </p>
-              </div>
-            </Col>
-            <Col md={6} xs={12}>
-              <div className="p-3 shadow rounded">
-                <h4>Reasons to choose our service</h4>
-                <p>
-                  <MdDone className="text-success fs-4 me-2" />
-                  We only allow our <strong>
-                    qualified academic writers
-                  </strong>{" "}
-                  with matching qualifications to take on your work.
-                </p>
-                <hr />
-                <p>
-                  <MdDone className="text-success fs-4 me-2" />
-                  Your order will go through{" "}
-                  <strong>rigorous quality controls</strong> and is checked
-                  against your instructions and academic standards by qualified
-                  professionals, we'll even give you a quality report to show
-                  our findings.
-                </p>
-                <hr />
-                <p>
-                  <MdDone className="text-success fs-4 me-2" />
-                  Your order will come with a{" "}
-                  <strong>comprehensive plagiarism report</strong> which is
-                  compiled with our state-of-the-art plagiarism software,
-                  ensuring the work that is produced is not plagiarised.
-                </p>
-                <hr />
-                <p>
-                  <MdDone className="text-success fs-4 me-2" />
-                  You get a <strong>7 day amendment period</strong>, so if
-                  you're not happy with the work, let us know and our customer
-                  support teams will resolve any concerns.
-                </p>
-              </div>
-            </Col>
-          </Row>
-        </Container>
-      </section>
+      <WhyChoose whyChoose={data.whyChoose[7]} />
 
       <section id="marking-phone-order">
         <Container>

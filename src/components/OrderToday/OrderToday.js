@@ -1,17 +1,15 @@
 import React from "react";
 import { Button, Container } from "react-bootstrap";
 
-const EssayToday = () => {
+const OrderToday = ({ card }) => {
+  const { title, sub_title, btn } = card;
   return (
     <main id="essay-today">
       <Container className="py-5 text-light text-center">
-        <h1>Order an Essay Today!</h1>
-        <p>
-          We have over 500 expert essay writers, ready and waiting to help you
-          achieve academic success
-        </p>
+        <h1>{title}</h1>
+        <p>{sub_title}</p>
         <Button variant="dark" className="mx-4">
-          Order an Essay
+          {btn}
         </Button>
         <Button variant="light">Check Prices</Button>
       </Container>
@@ -19,4 +17,4 @@ const EssayToday = () => {
   );
 };
 
-export default EssayToday;
+export default OrderToday;

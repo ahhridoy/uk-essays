@@ -12,72 +12,14 @@ import { BiLockAlt } from "react-icons/bi";
 import { FiBookOpen, FiUserCheck } from "react-icons/fi";
 import ServicesHero from "../../components/ServicesHero/ServicesHero";
 import data from "../../data.json";
+import WhyChoose from "../../components/WhyChoose/WhyChoose";
 
 const CourseworkService = () => {
   return (
     <main style={{ overflow: "hidden" }}>
       <ServicesHero service={data.services[2]} />
 
-      <section id="coursework-why-choose">
-        <Container>
-          <Row>
-            <Col md={6} xs={12}>
-              <div>
-                <h2>Why choose our coursework writing service?</h2>
-                <p>
-                  Writing a piece of coursework can be difficult, but we're here
-                  to help! We understand how tough it can be to turn all your
-                  reading into a structured piece of work, but our coursework
-                  service will help you get the grade you need - on time, every
-                  time.
-                  <br /> <br />
-                  If you've done an experiment and need help writing up the
-                  results, that's no problem! If you're writing a piece of
-                  coursework on a project that you've worked on, we can help
-                  with this, too! Nothing is too big or small for our
-                  experienced coursework writers.
-                </p>
-              </div>
-            </Col>
-            <Col md={6} xs={12}>
-              <div className="p-3 shadow rounded">
-                <h4>Reasons to choose our service</h4>
-                <p>
-                  <MdDone className="text-success fs-4 me-2" />
-                  We only allow our <strong>
-                    qualified academic writers
-                  </strong>{" "}
-                  with matching qualifications to take on your work.
-                </p>
-                <hr />
-                <p>
-                  <MdDone className="text-success fs-4 me-2" />
-                  Your order will go through{" "}
-                  <strong>rigorous quality controls</strong> and is checked
-                  against your instructions and academic standards by qualified
-                  professionals, we'll even give you a quality report to show
-                  our findings.
-                </p>
-                <hr />
-                <p>
-                  <MdDone className="text-success fs-4 me-2" />
-                  Your order will come with a{" "}
-                  <strong>comprehensive plagiarism report</strong> which is
-                  compiled with our state-of-the-art plagiarism software,
-                  ensuring the work that is produced is not plagiarised.
-                </p>
-                <hr />
-                <p>
-                  <MdDone className="text-success fs-4 me-2" />
-                  You get a <strong>7 day amendment period</strong>, so if
-                  you're not happy with the work, let us know and our customer
-                  support teams will resolve any concerns.
-                </p>
-              </div>
-            </Col>
-          </Row>
-        </Container>
-      </section>
+      <WhyChoose whyChoose={data.whyChoose[2]} />
 
       <section id="coursework-phone-order">
         <Container>

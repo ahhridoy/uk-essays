@@ -9,74 +9,14 @@ import { BiLockAlt } from "react-icons/bi";
 import { MdDone } from "react-icons/md";
 import ServicesHero from "../../components/ServicesHero/ServicesHero";
 import data from "../../data.json";
+import WhyChoose from "../../components/WhyChoose/WhyChoose";
 
 const PowerpointService = () => {
   return (
     <main style={{ overflow: "hidden" }}>
       <ServicesHero service={data.services[9]} />
-      <section id="powerpoint-why-choose">
-        <Container>
-          <Row>
-            <Col md={6} xs={12}>
-              <div>
-                <h2>Why choose our PowerPoint Presentation Service?</h2>
-                <p>
-                  Our PowerPoint presentations consider every aspect of your
-                  assessment. Not only will we create model slides for you as a
-                  basis to work on, but we also will give explanatory notes to
-                  help you expand on the information covered on the slides! Our
-                  PowerPoint services are designed to give you as much content
-                  as possible to help you prepare for your presentation, so
-                  every slide includes 50 words of text AND 200 words of notes
-                  to help you explain each slide. As if that wasn't enough, for
-                  a small additional fee, your writer can also provide you with
-                  speech notes in a script form: you can rehearse before your
-                  presentation and be word-perfect! <br /> <br />
-                  We also work hard on the design of the presentation, and each
-                  PowerPoint we deliver undergoes strict quality checks before
-                  the work is given to you.
-                </p>
-              </div>
-            </Col>
-            <Col md={6} xs={12}>
-              <div className="p-3 shadow rounded">
-                <h4>Reasons to choose our service</h4>
-                <p>
-                  <MdDone className="text-success fs-4 me-2" />
-                  We only allow our <strong>
-                    qualified academic writers
-                  </strong>{" "}
-                  with matching qualifications to take on your work.
-                </p>
-                <hr />
-                <p>
-                  <MdDone className="text-success fs-4 me-2" />
-                  Your order will go through{" "}
-                  <strong>rigorous quality controls</strong> and is checked
-                  against your instructions and academic standards by qualified
-                  professionals, we'll even give you a quality report to show
-                  our findings.
-                </p>
-                <hr />
-                <p>
-                  <MdDone className="text-success fs-4 me-2" />
-                  Your order will come with a{" "}
-                  <strong>comprehensive plagiarism report</strong> which is
-                  compiled with our state-of-the-art plagiarism software,
-                  ensuring the work that is produced is not plagiarised.
-                </p>
-                <hr />
-                <p>
-                  <MdDone className="text-success fs-4 me-2" />
-                  You get a <strong>7 day amendment period</strong>, so if
-                  you're not happy with the work, let us know and our customer
-                  support teams will resolve any concerns.
-                </p>
-              </div>
-            </Col>
-          </Row>
-        </Container>
-      </section>
+
+      <WhyChoose whyChoose={data.whyChoose[6]} />
 
       <section id="powerpoint-phone-order">
         <Container>

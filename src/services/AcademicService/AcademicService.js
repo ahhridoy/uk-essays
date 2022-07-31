@@ -14,73 +14,14 @@ import { IoReorderFourSharp } from "react-icons/io5";
 import { MdDone } from "react-icons/md";
 import ServicesHero from "../../components/ServicesHero/ServicesHero";
 import data from "../../data.json";
+import WhyChoose from "../../components/WhyChoose/WhyChoose";
 
 const AcademicService = () => {
   return (
     <main style={{ overflow: "hidden" }}>
       <ServicesHero service={data.services[13]} />
 
-      <section id="academic-why-choose">
-        <Container>
-          <Row>
-            <Col md={6} xs={12}>
-              <div>
-                <h2>Why choose our academic poster service?</h2>
-                <p>
-                  Our Posters are rich in research and analysis in order to help
-                  you create a perfect academic poster. We provide clear
-                  information that's supported by a robust range of quality
-                  sources and tailored to your desired audience. Each piece of
-                  work we create is beautifully organised and signposted in
-                  order to make it easy to follow. <br /> <br />
-                  Each poster that we create must pass our quality checks,
-                  including the design! We make sure that the work we deliver is
-                  beautifully arranged and visually appealing. We'll make sure
-                  to strike a balance between the proportion of images and text
-                  and include any graphics or charts that you think will be
-                  important.
-                </p>
-              </div>
-            </Col>
-            <Col md={6} xs={12}>
-              <div className="p-3 shadow rounded">
-                <h4>Reasons to choose our service</h4>
-                <p>
-                  <MdDone className="text-success fs-4 me-2" />
-                  We only allow our <strong>
-                    qualified academic writers
-                  </strong>{" "}
-                  with matching qualifications to take on your work.
-                </p>
-                <hr />
-                <p>
-                  <MdDone className="text-success fs-4 me-2" />
-                  Your order will go through{" "}
-                  <strong>rigorous quality controls</strong> and is checked
-                  against your instructions and academic standards by qualified
-                  professionals, we'll even give you a quality report to show
-                  our findings.
-                </p>
-                <hr />
-                <p>
-                  <MdDone className="text-success fs-4 me-2" />
-                  Your order will come with a{" "}
-                  <strong>comprehensive plagiarism report</strong> which is
-                  compiled with our state-of-the-art plagiarism software,
-                  ensuring the work that is produced is not plagiarised.
-                </p>
-                <hr />
-                <p>
-                  <MdDone className="text-success fs-4 me-2" />
-                  You get a <strong>7 day amendment period</strong>, so if
-                  you're not happy with the work, let us know and our customer
-                  support teams will resolve any concerns.
-                </p>
-              </div>
-            </Col>
-          </Row>
-        </Container>
-      </section>
+      <WhyChoose whyChoose={data.whyChoose[9]} />
 
       <section id="academic-phone-order">
         <Container>

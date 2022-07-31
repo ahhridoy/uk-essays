@@ -2,7 +2,6 @@ import React from "react";
 import { Button, Col, Container, Row } from "react-bootstrap";
 import AboutCompany from "../../components/AboutCompany/AboutCompany";
 import AskedQuestion from "../../components/AskedQuestion/AskedQuestion";
-import EssayToday from "../../components/EssayToday/EssayToday";
 import FairUsePolicy from "../../components/FairUsePolicy/FairUsePolicy";
 import Press from "../../components/Press/Press";
 import ReviewsComponent from "../../components/ReviewsComponent/ReviewsComponent";
@@ -13,77 +12,17 @@ import {  MdDone } from "react-icons/md";
 import { FiBookOpen } from "react-icons/fi";
 import ServicesHero from "../../components/ServicesHero/ServicesHero";
 import data from "../../data.json";
+import WhyChoose from "../../components/WhyChoose/WhyChoose";
+import OrderToday from "../../components/OrderToday/OrderToday";
 
 const AssignmentService = () => {
   return (
     <main style={{ overflow: "hidden" }}>
       <ServicesHero service={data.services[1]} />
 
-      <section id="assignment-why-choose">
-        <Container>
-          <Row>
-            <Col md={6} xs={12}>
-              <div>
-                <h2>Why choose our assignment writing service?</h2>
-                <p>
-                  We know how tough writing an assignment can be. Maybe you're
-                  trying to break into a new grade boundary; maybe you can't
-                  figure out how to structure your work; or maybe it's just that
-                  you have to talk about a topic that you're really struggling
-                  to understand! <br /> <br />
-                  When you order with us, you're working with some of the most
-                  experienced experts in modern academia. We have a huge team of
-                  professional writers who undergo rigorous tests before they
-                  start working for us. We have writers in every subject, and
-                  many hold several degrees. <br /> <br />
-                  We only begin your assignment order when we're sure we have
-                  someone who is well-versed in your subject area and qualified
-                  to write to the grade you need.
-                </p>
-              </div>
-            </Col>
-            <Col md={6} xs={12}>
-              <div className="p-3 shadow rounded">
-                <h4>Reasons to choose our service</h4>
-                <p>
-                  <MdDone className="text-success fs-4 me-2" />
-                  We only allow our <b>qualified academic writers</b> with
-                  matching qualifications to take on your work.
-                </p>
-                <hr />
-                <p>
-                  <MdDone className="text-success fs-4 me-2" />
-                  Your order will go through <b>
-                    rigorous quality controls
-                  </b>{" "}
-                  and is checked against your instructions and academic
-                  standards by qualified professionals, we'll even give you a
-                  quality report to show our findings.
-                </p>
-                <hr />
-                <p>
-                  <MdDone className="text-success fs-4 me-2" />
-                  Your order will come with a{" "}
-                  <strong>comprehensive plagiarism report</strong> which is
-                  compiled with our state-of-the-art plagiarism software,
-                  ensuring the work that is produced is not plagiarised.
-                </p>
-                <hr />
-                <p>
-                  <MdDone className="text-success fs-4 me-2" />
-                  You get a <strong>7 day amendment period</strong>, so if
-                  you're not happy with the work, let us know and our customer
-                  support teams will resolve any concerns.
-                </p>
-              </div>
-            </Col>
-          </Row>
-        </Container>
-      </section>
+      <WhyChoose whyChoose={data.whyChoose[1]} />
 
-      <section>
-        <EssayToday />
-      </section>
+      <OrderToday card={data.OrderToady[1]} />
 
       <section id="assignment-phone-order">
         <Container>

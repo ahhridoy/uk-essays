@@ -2,28 +2,18 @@ import React from "react";
 import { Col, Container, Row } from "react-bootstrap";
 import { MdDone } from "react-icons/md";
 
-const WhyChoose = () => {
+const WhyChoose = ({ whyChoose }) => {
+  const { title, sub_title, description, footer } = whyChoose;
   return (
     <section id="why-choose">
       <Container>
         <Row>
           <Col md={6} xs={12}>
             <div>
-              <h2>Why choose our Essay Writing Service?</h2>
-              <p>
-                Using an essay writing service is one of the best ways to
-                improve your own academic writing skills and to do better at
-                university. Whether you’re studying in the UK or abroad; at
-                undergraduate, masters or a different level; returning to
-                education after a long break or just struggling with a specific
-                topic, we can help! <br /> <br />
-                We think the best way to highlight the quality of our essay
-                writing service is to show you our work – it speaks for itself!
-                We’ve produced some fantastic samples that show you exactly the
-                kind of work you’ll receive when ordering from us. Take a look
-                at our <a href="#">sample essays</a>, prepared at undergraduate
-                and master's level across a range of grades and subjects.
-              </p>
+              <h2>{title}</h2>
+              <p>{sub_title}</p>
+              {description && <p>{description}</p>}
+              {footer && <p>{footer}</p>}
             </div>
           </Col>
           <Col md={6} xs={12}>

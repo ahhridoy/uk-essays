@@ -1,14 +1,17 @@
 import React from "react";
 import { Button, Col, Container, Row } from "react-bootstrap";
-import EssayToday from "../../components/EssayToday/EssayToday";
 import FairUsePolicy from "../../components/FairUsePolicy/FairUsePolicy";
 import Resources from "../../components/Resources/Resources";
 import ReviewRating from "../../components/ReviewRating/ReviewRating";
 import ServicesComponent from "../../components/ServicesComponent/ServicesComponent";
 import "../../styles/pages/_landing.scss";
 import { AiFillStar, AiOutlineFileDone, AiFillHeart } from "react-icons/ai";
-import { BsStarHalf, BsPencil, BsPeopleFill } from "react-icons/bs";
-import { MdDone, MdOutlineWatchLater } from "react-icons/md";
+import { BsStarHalf, BsPeopleFill } from "react-icons/bs";
+import { MdOutlineWatchLater, MdDone } from "react-icons/md";
+import { BsPencil } from "react-icons/bs";
+import data from "../../data.json";
+import OrderToday from "../../components/OrderToday/OrderToday";
+import UkPromisesCard from "../../components/UkPromisesCard/UkPromisesCard";
 
 const LandingPage = () => {
   return (
@@ -222,35 +225,10 @@ const LandingPage = () => {
             UKEssays <strong className="text-success">promises</strong> you:
           </h2>
           <Row>
-            <Col md={3} xs={12} className="text-center">
-              <MdDone className="fs-3 text-success mb-4" />
-              <h3>Plagiarism-free</h3>
-              <p>
-                If the work we produce contains plagiarism we'll pay out a
-                £5,000 guarantee.
-              </p>
-            </Col>
-            <Col md={3} xs={12} className="text-center">
-              <MdOutlineWatchLater className="fs-3 text-success mb-4" />
-              <h3>Always on Time</h3>
-              <p>If we are a minute late, the work is on us - it's free!</p>
-            </Col>
-            <Col md={3} xs={12} className="text-center">
-              <BsPencil className="fs-3 text-success mb-4" />
-              <h3>Written to Standard</h3>
-              <p>
-                All of our assignments go through a stringent quality checking
-                process from start to finish.
-              </p>
-            </Col>
-            <Col md={3} xs={12} className="text-center">
-              <AiOutlineFileDone className="fs-3 text-success mb-4" />
-              <h3>Quality</h3>
-              <p>
-                Providing quality work is core to our beliefs, which is why we
-                will strive to give you exactly that, and more!
-              </p>
-            </Col>
+            <UkPromisesCard card={data.ukPromises[0]} icon={MdDone} />
+            <UkPromisesCard card={data.ukPromises[1]} icon={MdOutlineWatchLater} />
+            <UkPromisesCard card={data.ukPromises[2]} icon={BsPencil} />
+            <UkPromisesCard card={data.ukPromises[3]} icon={AiOutlineFileDone} />
           </Row>
           <div className="text-center">
             <Button variant="success" className="my-4">
@@ -349,7 +327,7 @@ const LandingPage = () => {
       </section>
 
       <section>
-        <EssayToday />
+        <OrderToday card={data.OrderToady[0]} />
       </section>
 
       <section>

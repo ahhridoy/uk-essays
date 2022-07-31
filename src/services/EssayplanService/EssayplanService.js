@@ -11,71 +11,14 @@ import { BiLockAlt } from "react-icons/bi";
 import { FiBookOpen, FiUserCheck } from "react-icons/fi";
 import ServicesHero from "../../components/ServicesHero/ServicesHero";
 import data from "../../data.json";
+import WhyChoose from "../../components/WhyChoose/WhyChoose";
 
 const EssayplanService = () => {
   return (
     <main style={{ overflow: "hidden" }}>
       <ServicesHero service={data.services[3]} />
 
-      <section id="essayplan-why-choose">
-        <Container>
-          <Row>
-            <Col md={6} xs={12}>
-              <div>
-                <h2>Why choose an Essay Plan?</h2>
-                <p>
-                  Our essay plan writing service is great value for money: you
-                  can order just 1/3rd of the overall word count of your full
-                  piece of work. You'll find the depth and quality of our work
-                  provided by our professional writers is of the same excellence
-                  that you would get with a full model answer! <br /> <br />
-                  Still not sure if an essay plan is for you? Take a look at
-                  some <a href="#">sample essay</a> plans we have written, as
-                  created by our writers, or discover more about the service,
-                  how to use your essay plan, and why you can always trust UK
-                  Essays to create a fantastic piece of work.
-                </p>
-              </div>
-            </Col>
-            <Col md={6} xs={12}>
-              <div className="p-3 shadow rounded">
-                <h4>Reasons to choose our service</h4>
-                <p>
-                  <MdDone className="text-success fs-4 me-2" />
-                  We only allow our <strong>
-                    qualified academic writers
-                  </strong>{" "}
-                  with matching qualifications to take on your work.
-                </p>
-                <hr />
-                <p>
-                  <MdDone className="text-success fs-4 me-2" />
-                  Your order will go through{" "}
-                  <strong>rigorous quality controls</strong> and is checked
-                  against your instructions and academic standards by qualified
-                  professionals, we'll even give you a quality report to show
-                  our findings.
-                </p>
-                <hr />
-                <p>
-                  <MdDone className="text-success fs-4 me-2" />
-                  Your order will come with a{" "}
-                  <strong>comprehensive plagiarism report</strong> which is
-                  compiled with our state-of-the-art plagiarism software,
-                  ensuring the work that is produced is not plagiarised.
-                </p>
-                <hr />
-                <p>
-                  <MdDone className="text-success fs-4 me-2" />
-                  You get a <strong>7 day amendment period</strong>, so if
-                  you're not happy with the work, let us know and our customer
-                  support teams will resolve any concerns.
-                </p>
-              </div>
-            </Col>
-          </Row>
-        </Container>
-      </section>
+      <WhyChoose whyChoose={data.whyChoose[3]} />
 
       <section id="essayplan-phone-order">
         <Container>
