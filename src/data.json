@@ -317,7 +317,7 @@
     },
     {
       "title": "Why choose an Essay Plan?",
-      "sub_title": "Our essay plan writing service is great value for money: you can order just 1/3rd of the overall word count of your full piece of work. You'll find the depth and quality of our work provided by our professional writers is of the same excellence that you would get with a full model answer!",
+      "sub_title": "Our essay plan writing service is great price for money: you can order just 1/3rd of the overall word count of your full piece of work. You'll find the depth and quality of our work provided by our professional writers is of the same excellence that you would get with a full model answer!",
       "description": "Still not sure if an essay plan is for you? Take a look at some sample essay plans we have written, as created by our writers, or discover more about the service, how to use your essay plan, and why you can always trust UK Essays to create a fantastic piece of work."
     },
     {
@@ -350,6 +350,40 @@
       "title": "Why choose our academic poster service?",
       "sub_title": "Our Posters are rich in research and analysis in order to help you create a perfect academic poster. We provide clear information that's supported by a robust range of quality sources and tailored to your desired audience. Each piece of work we create is beautifully organised and signposted in order to make it easy to follow.",
       "description": "Each poster that we create must pass our quality checks, including the design! We make sure that the work we deliver is beautifully arranged and visually appealing. We'll make sure to strike a balance between the proportion of images and text and include any graphics or charts that you think will be important."
+    }
+  ],
+  "servicesPrice": [
+    {
+      "label": "250 Words 1/2 pages",
+      "value": 50
+    },
+    {
+      "label": "500 Words 1 page",
+      "value": 65
+    },
+    {
+      "label": "750 Words 2 pages",
+      "value": 70
+    },
+    {
+      "label": "1000 Words 2-3 pages",
+      "value": 80
+    },
+    {
+      "label": "1250 Words 3 pages",
+      "value": 99
+    },
+    {
+      "label": "1500 Words 3-4 pages",
+      "value": 120
+    },
+    {
+      "label": "1750 Words over 4 pages",
+      "value": 142
+    },
+    {
+      "label": "2000 Words 5 pages",
+      "value": 155
     }
   ]
 }

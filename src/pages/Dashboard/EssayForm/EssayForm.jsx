@@ -1,42 +1,58 @@
-import React from "react";
-import { useForm } from "react-hook-form";
+import React, { useEffect, useState } from "react";
 import { Container } from "react-bootstrap";
+import data from "../../../data.json";
 import "./_essay-form.scss";
 
 const EssayForm = () => {
-  const { register, handleSubmit } = useForm();
-  const onSubmit = (data) => console.log(data);
+  const [user, setUser] = useState({});
+
+  useEffect(() => {
+    const url = `http://localhost:5000/orders`;
+    fetch(url)
+      .then((res) => res.json())
+      .then((data) => setUser(data));
+  }, []);
+
   return (
     <main style={{ overflow: "hidden" }}>
       <div id="dashboard">
         <Container>
-          <div className="form-box shadow">
-            <form onSubmit={handleSubmit(onSubmit)}>
-              <h1 className="pb-3 text-white">Essays</h1>
-              <input
-                placeholder="Service Name"
-                type="text"
-                className="input-form shadow"
-                {...register("service_name")}
-              />
-              <br />
-              <input
-                placeholder="Number of Page"
-                type="text"
-                className="input-form shadow"
-                {...register("page_number", { required: true })}
-              />
-              <br />
-              <input
-                placeholder="Number of Price"
-                type="text"
-                className="input-form shadow"
-                {...register("page_price", { required: true })}
-              />
-              <br />
-              <button type="submit" className="button shadow">
-                Add
-              </button>
+          <div className="app-container shadow">
+            <form>
+              <table>
+                <thead>
+                  <tr>
+                    <th>Length</th>
+                    <th>Price</th>
+                    <th>Update</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {data.servicesPrice.map((service) => (
+                    <tr>
+                      <td>
+                        <input
+                          type="text"
+                          name="name"
+                          value={service.name}
+                          readOnly
+                        />
+                      </td>
+                      <td>
+                        <input
+                          type="number"
+                          name="price"
+                          required="required"
+                          value={service.price}
+                        />
+                      </td>
+                      <td>
+                        <input type="submit" value="Update" />
+                      </td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
             </form>
           </div>
         </Container>
