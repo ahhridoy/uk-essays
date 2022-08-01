@@ -15,6 +15,7 @@ const EditableRow = ({
           name="label"
           value={editFormData.label}
           onChange={handleEditFormChange}
+          readOnly
         ></input>
       </td>
       <td>
